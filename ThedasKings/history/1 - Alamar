@@ -1,0 +1,16 @@
+# 1 - Alamar
+
+# County Title
+title = c_alamar
+
+# Settlements
+max_settlements = 2
+b_alamar = city
+
+#b_
+
+# Misc 
+culture = 
+religion = andrastian_chantry
+
+# History
