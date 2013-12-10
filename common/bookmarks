@@ -1,0 +1,9 @@
+bookmark =
+{
+	name = "THE_FIFTH_BLIGHT"
+	desc = "THE_FIFTH_BLIGHT_DESC"
+	date = 930.1.1
+	
+	character =  # King Cailen of Ferelden
+
+}
