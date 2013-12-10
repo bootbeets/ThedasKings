@@ -1,0 +1,1142 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or cultures, make sure they are unique.
+
+alamarri = {
+	graphical_culture = norsegfx
+	
+	avaars = {
+		graphical_culture = norsegfx
+		
+		color = { 0.3 0.55 0.8 }
+		
+		
+		male_names = {
+			Abernath Agmo Aldenon Ap Arland Barlin Brandel Bulfa Byron Cadrim Ceorlic Conobar Cormac Dane Daveth Drass Eddelbrek Eirik Elorn Elstan
+			Fergus Gable Garavel Gareth Hafter Harwen Havard Herren Imrek Ines Irminric Irving Kell Kester Kolgrim Kylon Levi Loghain Lomo
+			Luthias Maric Mather Morrighan Murdock Ormo Oswyn Owen Owyne Radun Raelnor Rendorn Rexel Rhys Riordan Ruadan Rylock Sadatt Sarha Sarim
+			Sighard Taoran Teagan Urien Wade Yuriah
+		}
+		female_names = {
+			Alfstanna Andraste Cauthrien Elethia Farrah Habren Haelia Kaitlyn Keili Landra Lowenna Mallol Mheairi Moira Morag Morrigan Rowan Sang Sorcha Tamra
+		}
+
+		dukes_called_kings = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+
+	chasind = {
+		graphical_culture = norsegfx
+		
+		color = { 0.25 0.5 0.75 }
+		
+		male_names = {
+			Abernath Agmo Aldenon Ap Arland Baba Barlin Brandel Bulfa Byron Cadrim Cahir Ceorlic Conobar Cormac Dane Daveth Drass Eddelbrek Eirik Elorn Elstan
+			Fergus Gable Garavel Gareth Hafter Harwen Havard Herren Imrek Ines Irminric Irving Kell Kester Kolgrim Kylon Levi Loghain Lomo Luthias Maric
+			Mather Morrighan Murdock Ormo Oswyn Owen Owyne Radun Raelnor Rendorn Rexel Rhys Riordan Ruadan Rylock Sadatt Sarha Sarim Sighard Taoran Teagan Urien
+			Velcorminth Wade Yuriah Zorya
+		}
+		female_names = {
+			Alfstanna Cauthrien Elethia Farrah Flemeth Habren Haelia Kaitlyn Keili Landra Lowenna Mallol Mheairi Moira Morag Morrigan Rowan Sang Sorcha
+			Stoyanka Tamra
+		}
+		
+		dukes_called_kings = yes
+		
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	clayne = {
+		graphical_culture = norsegfx
+		
+		color = { 0.2 0.45 0.65 }
+		
+		male_names = {
+			Abernath Agmo Aldenon Ap Arland Baba Barlin Brandel Bulfa Byron Cadrim Cahir Ceorlic Conobar Cormac Dane Daveth Drass Eddelbrek Eirik Elorn Elstan
+			Fergus Gable Garavel Gareth Hafter Harwen Havard Herren Imrek Ines Irminric Irving Kell Kester Kolgrim Kylon Levi Loghain Lomo Luthias Maric
+			Mather Morrighan Murdock Ormo Oswyn Owen Owyne Radun Raelnor Rendorn Rexel Rhys Riordan Ruadan Rylock Sadatt Sarha Sarim Sighard Taoran Teagan Urien
+			Velcorminth Wade Yuriah Zorya
+		}
+		female_names = {
+			Alfstanna Cauthrien Elethia Farrah Habren Haelia Kaitlyn Keili Landra Lowenna Mallol Mheairi Moira Morag Morrigan Rowan Sang Sorcha Tamra
+		}
+		
+		dukes_called_kings = yes
+		
+		modifier = default_culture_modifier
+	}
+	fereldan = {
+		graphical_culture = englishgfx
+		
+		color = { 0.15 0.4 0.55 }
+		
+		male_names = {
+			Aidan Albert Aldebrant Aldenon Aldous Alec Alistair Arland Barlin Bevin Braden Brandel Bryant Bryce Bulfa Byron Cadrim Cailan Calenhad Carroll
+			Carver Cassian Ceorlic Colbert Connor Cullen Cyril Daltin Danal Darren Daveth Derren Devons Donall Drass Duncan Eams Eddelbrek Eeamon Eirik Fergus
+			Florian Gable Gallagher Garavel Gareth Godwin Greagor Harwen Henric Herren Imrek Irminric Irving Joanaley Jory Jowan Karl Kendrick Kester Kylon
+			Landra Leliana Leonas Levi Lloyd Loghain Malcolm Maric Mathias Mervis Mikhael Nathaniel Niall Oren Oswyn Owen Perrin Perth Phineas Pryce Raelnor
+			Rendon Rendorn Rexel Rhys Riordan Roderick Sabin Sadatt Severin Sighard Steafan Sweeney Taoran Teagan Temmerly Thiall Thomas Tilver Timothy Tomas Urien	
+			Valendrin Varel Vaughan Wade Walter Wesley Weylon Wilhem
+		}
+		female_names = {
+			Adria Alfstanna Allison Amalia Anora Aveline Bella Bethany Cauthrien Danella Delilah Eleanor Esmerelle Evelina Farrah Goldanna Habren Ines Joanna
+			Justine Kaitlyn Keili Landry Leandra Lilith Lily Liza Mallol Maverlies Mheairi Miriam Moira Nancine Rosamund Rowan Rylien Rylock Sang Sarha Sophia
+			Sorcha Tamra Valena Veness Wynne
+		}
+		
+		
+		modifier = default_culture_modifier
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 20
+		mat_grf_name_chance = 0
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+	}
+}
+
+orlesian = {
+	graphical_culture = westerngfx
+
+	cirriane = {
+		graphical_culture = norsegfx
+		
+		color = { 0.5 0.5 0.5 }
+
+		male_names = {
+			Abernath Agmo Aldenon Ap Arland Barlin Brandel Bulfa Byron Cadrim Ceorlic Conobar Cormac Dane Daveth Drass Eddelbrek Eirik Elorn Elstan
+			Fergus Gable Garavel Gareth Hafter Harwen Havard Herren Imrek Ines Irminric Irving Kell Kester Kolgrim Kylon Levi Loghain Lomo
+			Luthias Maric Mather Morrighan Murdock Ormo Oswyn Owen Owyne Radun Raelnor Rendorn Rexel Rhys Riordan Ruadan Rylock Sadatt Sarha Sarim
+			Sighard Taoran Teagan Urien Wade Yuriah
+		}
+		female_names = {
+			Alfstanna Andraste Cauthrien Elethia Farrah Habren Haelia Kaitlyn Keili Landra Lowenna Mallol Mheairi Moira Morag Morrigan Rowan Sang Sorcha Tamra
+		}
+		
+		dukes_called_kings = yes
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 5
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+	}
+	orlesian = {
+		graphical_culture = frankishgfx
+		
+		color = { 0.5 0.5 0.5 }
+
+		male_names = {
+			Alte Benoit Bregan Cole Cyril Dulci Edmonde Emile Florian Gascard Gaspard Genevieve Ghyslain Guillaume Guy Hubert Jovi Julien Kordillus
+			Martel Meghren Michel Nicolas Propser Regalyan Remi Reville Stroud Varian
+		}
+		female_names = {
+			Adrian Aura Aveline Babbette Celene Erlina Evangeline Fifi Fiona Isolde Jeaneve Justina Leliana Liselle Marjolaine Vivienne
+		}
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 5
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+	}
+}
+
+free_marcher = {
+	graphical_culture = occitangfx
+
+	plaescine = {
+		graphical_culture = norsegfx
+		
+		color = { 0.8 0.2 0.2 }
+		
+		male_names = {
+			Abernath Agmo Aldenon Ap Arland Barlin Brandel Bulfa Byron Cadrim Ceorlic Conobar Cormac Dane Daveth Drass Eddelbrek Eirik Elorn Elstan
+			Fergus Gable Garavel Gareth Hafter Harwen Havard Herren Imrek Ines Irminric Irving Kell Kester Kolgrim Kylon Levi Loghain Lomo
+			Luthias Maric Mather Morrighan Murdock Ormo Oswyn Owen Owyne Radun Raelnor Rendorn Rexel Rhys Riordan Ruadan Rylock Sadatt Sarha Sarim
+			Sighard Taoran Teagan Urien Wade Yuriah
+			}
+		female_names = {
+			Alfstanna Andraste Cauthrien Elethia Farrah Habren Haelia Kaitlyn Keili Landra Lowenna Mallol Mheairi Moira Morag Morrigan Rowan Sang Sorcha Tamra
+		}
+		
+		dukes_called_kings = yes
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 5
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+	}
+	starkhaven = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	kirkwaller = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Charity Elegant Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Patience Petrice Revka Ruvena Serenity Tarohne Virtue Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	ostwick = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	markham = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}	
+	hercine = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}		
+	tantervale = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}		
+	hasmal = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}		
+	ansburg = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}		
+	bastion = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}	
+	wycome = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}	
+	hercina = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}	
+	caimen_brea = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}	
+	navarran = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}	
+	cumberland = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}	
+	trevis = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}	
+	hunter_fell = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}	
+	nessum = {
+		graphical_culture = occitangfx
+		second_graphical_culture = southerngfx # Fallback type
+		
+		color = { 0.8 0.7 0.2 }
+
+		male_names = {
+			Aden Bran Brekker Cairn Cavril Corff Decimus Emeric Evets Ewald Fell Friedrich Gustav Hayder Jeven Karras Kelder Keran Khedra Liam Marlowe Martin Meeran
+			Mekel Mettin Orden Otto Orwald Paxley Perrin Quentin Ravi Samson Seamus Sebastian Tobrius Veld Wilmod Wright Xenon
+		}
+		female_names = {
+			Agatha Alain Cassandra Chanrade Ella Elthina Flora Ginnis Idunna Jethann Johane Leandra Lirene Lusine Macha Margitte Marlein Meredith Moira Nyree Olivia 
+			Petrice Revka Ruvena Tarohne Viveka
+		}
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 0
+		father_name_chance = 50
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}		
+}
+
+dwarven = {
+	graphical_culture = westerngfx
+
+	kal_sharok = {
+		graphical_culture = frankishgfx
+		
+		color = { 0.8 0.8 0.2 }
+		male_names = {
+			Novas Lywulf
+		}
+		female_names = {
+			Kalah
+		}
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 60
+		mat_grf_name_chance = 10
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 60
+		mother_name_chance = 10
+	}
+	
+	orzammar = {
+		graphical_culture = normangfx
+
+		color = { 0.8 0.7 0.1 }
+		
+		male_names = {
+			Ademaro Ahren Alimar Anso Anwer Baizyl Bartrand Beraht Bhelen Bodahn Boermor Brogan Bruntin Burkel Caridin Czibor Dailian Darvianak Denek Dougal Dulin
+			Dworkin Dwyn Endrin Emrys Everd Frandlin Figor Garin Gerav Gertek Goilinar Gorim Gwiddor Hirol Hugin Iwan Janar Javaris Jerrik Jukka Kardol Kasch
+			Legnar Leske Loilinar Lucjan Mainar Mandar Merin Minderel Nalthur Nevin Oghren Olaniv Ordel Orseck Orson Oskias Piotin Pyral Renvil Rhatigan Rogek Roggar
+			Ronus Roshen Seweryn Temmerin Tegrin Thaulid Tovez Trian Varric Varick Vartag Velanz Voldrik Wojech Yevhen
+		}
+		female_names = {
+			Adal Branka Corra Dagna Farinden Felsi Filda Hanashan Hespith Jarvia Kalah Laryn Lenka Mardy Mischa Myaja Nadezda Nerav Olinda Orta Rica Shayle Sigrun Unna Utha Zerlinda
+		}
+		from_dynasty_prefix = "de "
+		grammar_transform = french
+		
+		bastard_dynasty_prefix = "Fitz"
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+	}
+}
+
+rialto = {
+	graphical_culture = occitangfx
+
+	antivan = {
+		graphical_culture = southerngfx
+		
+		color = { 0.4 0.7 0.5 }
+
+		male_names = {
+			Caldera Cesar Castillon Claudio Luis Nuncio Taliesen Velasco Vicento Zevran Yavana
+		}
+		female_names = {
+			Madrigal Oriana
+		}
+
+		pat_grf_name_chance = 45
+		mat_grf_name_chance = 15
+		father_name_chance = 30
+		
+		pat_grm_name_chance = 40
+		mat_grm_name_chance = 10
+		mother_name_chance = 40
+
+		modifier = default_culture_modifier
+	}
+	rivaini = {
+		graphical_culture = andalusiangfx
+		
+		color = { 0.4 0.7 0.4 }
+
+		male_names = {
+			Duncan
+		}
+		female_names = {
+			Asha Isabela
+        }
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 10
+		father_name_chance = 30
+		
+		pat_grm_name_chance = 40
+		mat_grm_name_chance = 25
+		mother_name_chance = 25
+
+		modifier = default_culture_modifier
+	}
+}
+
+imperial = {
+	graphical_culture = easterngfx
+
+	seheron = {
+		graphical_culture = andalusiangfx
+		
+		color = { 0.5 0.2 0.5 }
+
+		male_names = {
+			Abas Abirad Aboughamr Aboulgharib Aleksandr_Alexander Artashes Artashir_Ardeshir Artavazd Arsen Arshak Ashot_Ashot Athom Atrnerseh_Atrnerseh Avag Avedis Bagour_Bagour Bagrat Bedros_Peter Boghos_Paul Davit_David Eshkhan Gagik_Gagik Gevorg_George
+			Gosdantin_Constantine Grigor_Gregory Gurgen_Lupo Hagop Hamazasp Hethum Hovhannes_John Hovsep_Joseph Ishkhan_Ishkhan Ivane Kapriel_Gabriel Khachik Khosrov_Khosrau Levon_Leo Malkhas_Malkhas Mamigon Manuel_Manuel Margos_Marcus Melek Mihrdat_Mithridates Mikayel_Michael Mleh Mushegh Mushel Mzhezh
+			Nerseh_Narses Oshin Roupen_Reuben Sahag_Isaac Sarkis_Sergius Sevag Shahanshah_Shahanshah Smbat_Smbat Stepanos_Stephen Tachat Taniel_Daniel Tatoul Tigran Tornik_Tornik Tovmas_Thomas Thoros_Theodore Trdat Vache Vachagan Vagharshak Vahag Vahan Vahram Vakhtank Varazdat Vartan Vassak Vesd Vrtanes Zakare Zarmihr
+		}
+		female_names = {
+			Aghavni Alitz_Alice Almasd Anahid Anna_Anna Anoush Arda Arevig Arin Baydzar Berjanoush Berjouhi Datevig Dalita Eliz_Eloise Gadar Gorandoukht_Gorandukht Hasmig Houri Hranoush
+			Hripsimeh Keghanoush Keran Khorishah Kohar Latavri Leyli Lousin Mara Margarid_Margaret Maria_Maria Mariyam_Mariam Meghranoush Nane Nazani Ovsanna Pounig Razmouhi Rita Satenik_Satinik Seta Siran Sirvart
+			Srpouhi Shoushanig Takouhi Tamar_Tamar Vartanoush Vartouhi Vosgi Yeva Zabel_Elizabeth Zmroukhd
+		}
+		
+		from_dynasty_prefix = "ve "
+		
+		disinherit_from_blinding = yes
+		
+		modifier = default_culture_modifier
+	}
+	tevinters = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.8 0.3 0.8 }
+
+		male_names = {
+			Caladrius Corin Danarius Danrinius Devon Hessarian Parthalan Thalisian Titus
+		}
+		female_names = {
+			Eleni Hadriana Maevaris Senestra Tallis Vasilia
+		}
+
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
+	magister = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.8 0.3 0.8 }
+
+		male_names = {
+			Corypheus
+		}
+		female_names = {
+			Mae
+		}
+
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
+}
+
+elven = {
+	graphical_culture = westerngfx
+
+	dalish_elf = {
+		graphical_culture = celticgfx
+		
+		color = { 0.3 0.8 0.8 }
+
+		male_names = {
+			Athras Cammen Deygan Fenariel Feynriel Ilen Jacen Josmael Junar Palivel Sarel Sendis Tamlen Varathorm Yevven Zathrian
+		}
+		female_names = {
+			Ariane Arianni Ashalle Danyla Elora Fina Gheyna Iselle Lanaya Maren Marethari Melora Merril Mithra Panowen Seranni Variel Velanna
+		}
+		
+		dukes_called_kings = yes
+		
+		modifier = default_culture_modifier
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 15
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 15
+		mother_name_chance = 10
+	}
+	city_elf = {
+		graphical_culture = celticgfx
+		
+		color = { 0.3 0.7 0.7 }
+
+		male_names = {
+			Adwen Alarith Arvin Cyrion Elren Fenris Garahel Gethon Huon Nelaros Soris Taeodor
+		}
+		female_names = {
+			Adaia Athenril Briala Dera Devera Dilwyn Elva Fiona Iona Katriel Lanaya Lia Namaya Nesiara Nessa Nola Orana Rinna Shaevra Shianni Valora
+		}
+		
+		modifier = default_culture_modifier
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 15
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 15
+		mother_name_chance = 10
+	}
+	high_elf = {
+		graphical_culture = celticgfx
+		
+		color = { 0.3 0.8 0.6 }
+
+		male_names = {
+			Elrond
+		}
+		female_names = {
+			Galadrial
+		}
+	
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 80
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+	}
+	
+}
+
+anderfells = {
+	graphical_culture = easterngfx
+
+	anders = {
+		graphical_culture = ugricgfx
+		
+		color = { 0.1 0.6 0.6 }
+
+		male_names = {
+			Anders
+		}
+		female_names = {
+			Lady
+		}
+		from_dynasty_prefix = "of "
+
+		modifier = default_culture_modifier
+	}
+	orth	 = {
+		graphical_culture = ugricgfx
+		
+		color = { 0.4 0.75 0.85 }
+
+		male_names = {
+			Orth
+		}
+		female_names = {
+			Lady
+		}
+		from_dynasty_prefix = "of "
+
+		modifier = default_culture_modifier
+	}
+}
+
+qun = {
+	graphical_culture = muslimgfx
+
+	qunari = {
+		graphical_culture = turkishgfx
+		
+		color = { 0.85 0.55 0.15 }
+
+		male_names = {
+			Qunari
+		}
+		female_names = {
+			FQunari
+		}
+		
+		from_dynasty_prefix = "ve "
+		
+		male_patronym = "oglu"
+		prefix = no
+		
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = default_culture_modifier
+	}
+	tal_vashoth = {
+		graphical_culture = turkishgfx
+		
+		color = { 0.85 0.79 0.25 }
+
+		male_names = {
+           		Armaas Jarvy Maraas Salit Tennant
+		}
+		female_names = {
+			Tal
+		}
+		
+		from_dynasty_prefix = "of "
+		founder_named_dynasties = yes
+
+		modifier = default_culture_modifier
+	}
+}
+
+darkspawn = {
+	graphical_culture = muslimgfx
+	
+	darkspawn = { 
+		graphical_culture = muslimgfx #arabicgfx
+		
+		color = { 0.1 0.75 0.1 }
+
+		male_names = {
+			Darkspawn
+		}
+		female_names = {
+			Darkspawn	
+		}
+		from_dynasty_prefix = "mn "
+		
+		male_patronym = "ibn "
+		female_patronym = "bint "
+		prefix = yes
+		
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = default_culture_modifier
+	}
+	arch_daemon = { # Berber
+		graphical_culture = muslimgfx #arabicgfx
+		
+		color = { 0.2 0.9 0.2 }
+
+		male_names = {
+			Dragon
+		}
+		female_names = {
+			Dragon	
+		}
+		
+		from_dynasty_prefix = "mn "
+		
+		male_patronym = "ibn "
+		female_patronym = "bint "
+		prefix = yes
+		
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+
+		modifier = default_culture_modifier
+
+		pat_grf_name_chance = 60
+		mat_grf_name_chance = 20
+		father_name_chance = 10
+		
+		pat_grm_name_chance = 40
+		mat_grm_name_chance = 20
+		mother_name_chance = 30
+	}
+}
+
+fade = {
+	graphical_culture = easterngfx
+
+	daemons = {
+		graphical_culture = easternslavicgfx
+		graphical_unit_culture = western
+		
+		color = { 0.2 0.4 0.1 }
+
+		male_names = {
+			Daedra
+		}
+		female_names = {
+			Desire
+		}
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "ovich"
+		female_patronym = "ovna"
+		prefix = no
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	spirits = {
+		graphical_culture = westernslavicgfx
+		
+		color = { 0.4 0.6 0.4 }
+
+		male_names = {
+			Vigil
+		}
+		female_names = {
+			Honest
+		}
+		
+		from_dynasty_prefix = "of "
+
+		modifier = default_culture_modifier
+	}
+}
