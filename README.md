@@ -9,7 +9,7 @@ Type in your name and current task into the box to distinguish your branch and h
 
 You can quickly look at and compare your work to any other contributors branch using the green "Compare and Review" button, so you can see if anyone elses work overlaps with your own. Clicking on the 'Network' tab on the sidebar to the right of the main page will allow you to quickly review what changes have been made in all branches of the mod - at the moment you can see that I created a branch and added a TEST file.
 
-Inside your branch, you can create new files by using the icon to the right of Thedas-Kings. This little icon works within any subfolder as well. Should you need to create any new folders, simply type the folder name followed by / into the file name textbox, and it will automatically create the folder for you to use, so long as there is a file inside it.
+Inside your branch, you can create new files by using the icon to the right of Thedas-Kings. This little icon works within any subfolder as well. Should you need to create any new folders, simply type the folder name followed by / into the file name textbox, and it will automatically create the folder for you to use, so long as there is a file inside it. Another option is to use the Github software to move files and folders around, see Extra Details below.
 
 You can also create files in notepad++ and copy paste them over to the site once they are done. I recommend that you update your branch with any changes you make after a session of working, so that we can see how often you are updating your code. You don't need to make it all perfect until you publish it, don't worry!
 
