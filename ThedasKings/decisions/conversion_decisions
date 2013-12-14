@@ -1,0 +1,327 @@
+decisions = {
+	
+	convert_to_liege_religion = {
+		potential = {
+			is_playable = yes
+			liege = {
+				NOT = { character = ROOT }
+				NOT = { religion = ROOT }
+				religion_group = ROOT
+			}
+		}
+		allow = {
+			NOT = { trait = zealous }
+		}
+		effect = {
+			prestige = -500
+			if = {
+				limit = { higher_tier_than = BARON }
+				religion_authority = {
+					modifier = ruler_converted_from
+				}
+			}
+			liege = {
+				reverse_religion = ROOT
+			}
+			if = {
+				limit = { higher_tier_than = BARON }
+				hidden_tooltip = {
+					religion_authority = {
+						modifier = ruler_converted_to
+					}
+				}
+			}
+			piety = 200
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	convert_to_liege_culture = {
+		potential = {
+			is_playable = yes
+			liege = {
+				NOT = { character = ROOT }
+				NOT = { culture = ROOT }
+			}
+		}
+		allow = {
+			prestige = 50
+		}
+		effect = {
+			prestige = -50
+			liege = {
+				reverse_culture = ROOT
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	convert_to_parent_religion = {
+		potential = {
+			is_playable = yes
+			independent = yes
+			is_heretic = yes
+		}
+		allow = {
+			NOT = { trait = zealous }
+		}
+		effect = {
+			prestige = -500
+			if = {
+				limit = { higher_tier_than = BARON }
+				religion_authority = {
+					modifier = ruler_converted_from
+				}
+			}
+			
+			abandon_heresy = yes
+			
+			if = {
+				limit = { higher_tier_than = BARON }
+				hidden_tooltip = {
+					religion_authority = {
+						modifier = ruler_converted_to
+					}
+				}
+			}
+			piety = 200
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	# Pagans are allowed to convert to the attacker's religion when under holy war
+	convert_to_attacker_religion = {
+		is_high_prio = yes
+		
+		potential = {
+			is_playable = yes
+			OR = {
+				religion_group = pagan_group
+			}
+			controls_religion = no
+			war = yes
+			any_war = {
+				defender = { character = ROOT }
+				attacker = {
+					OR = {
+						religion_group = maker
+					}
+				}
+				OR = {
+					using_cb = crusade
+					using_cb = religious
+				}
+			}
+		}
+		
+		allow = {
+			NOT = { trait = zealous }
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			if = {
+				limit = { religion_group = pagan_group }
+				add_trait = sympathy_pagans
+			}
+
+			
+			any_war = {
+				limit = {
+					defender = { character = ROOT }
+					attacker = {
+						OR = {
+							religion_group = maker
+						}
+					}
+					OR = {
+						using_cb = crusade
+						using_cb = religious
+					}
+				}
+				attacker = {
+					hidden_tooltip = {
+						letter_event = { id = 62800 }
+					}
+					hidden_tooltip = {
+						ROOT = {
+							any_courtier = {
+								limit = {
+									religion = ROOT
+									employer = { character = ROOT }
+								}
+								religion = PREVPREV
+							}
+							any_vassal = {
+								limit = {
+									is_playable = no
+									religion = ROOT
+								}
+								religion = PREVPREV
+							}
+							capital_scope = {
+								if = {
+									limit = { religion = ROOT }
+									religion = PREVPREV
+								}
+							}
+						}
+					}
+					reverse_religion = ROOT 
+				}
+			}
+			
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			
+			piety = 100
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_war = {
+						defender = { character = ROOT }
+						attacker = {
+							OR = {
+								religion_group = maker
+							}
+						}
+						OR = {
+							using_cb = crusade
+							using_cb = religious
+						}
+						war_score = 50
+						thirdparty_title_scope = {
+							ROOT = {
+								primary_title = {
+									title = PREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				any_war = {
+					defender = { character = ROOT }
+					attacker = {
+						OR = {
+							religion_group = maker
+						}
+					}
+					OR = {
+						using_cb = crusade
+						using_cb = religious
+					}
+					war_score = 75
+					thirdparty_title_scope = {
+						ROOT = {
+							primary_title = {
+								title = PREVPREV
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# Pagans can convert to the Maker faith if their wife or a concubine is Maker
+	convert_to_spouse_catholic = {
+		potential = {
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = maker
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = maker
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
+			religion = maker
+			
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
