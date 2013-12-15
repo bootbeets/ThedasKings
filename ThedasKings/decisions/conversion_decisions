@@ -143,7 +143,6 @@ decisions = {
 				limit = { religion_group = pagan_group }
 				add_trait = sympathy_pagans
 			}
-
 			
 			any_war = {
 				limit = {
@@ -259,7 +258,7 @@ decisions = {
 		}
 	}
 	
-	# Pagans can convert to the Maker faith if their wife or a concubine is Maker
+	# Pagans can convert to the Chantry faith if their wife or a concubine is Chantry
 	convert_to_spouse_catholic = {
 		potential = {
 			is_playable = yes
@@ -268,13 +267,13 @@ decisions = {
 			NOT = { trait = zealous }
 			OR = {
 				any_spouse = {
-					religion = maker
+					religion = chantry
 					hidden_tooltip = {
 						is_alive = yes
 					}
 				}
 				any_consort = {
-					religion = maker
+					religion = chantry
 					hidden_tooltip = {
 						is_alive = yes
 					}
@@ -307,7 +306,7 @@ decisions = {
 				}
 			}		
 			
-			religion = maker
+			religion = chantry
 			
 			hidden_tooltip = {
 				religion_authority = {
@@ -325,3 +324,72 @@ decisions = {
 			factor = 0
 		}
 	}
+	
+	# Pagans can convert to the Imperial Chantry if their wife or a concubine is a believer
+	convert_to_spouse_jewish = {
+		potential = {
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = imperial chantry
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = imperial chantry
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
+			religion = imperial chantry
+			
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}
