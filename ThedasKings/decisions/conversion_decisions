@@ -110,18 +110,12 @@ decisions = {
 		
 		potential = {
 			is_playable = yes
-			OR = {
-				religion_group = pagan_group
-			}
+			religion_group = pagan_group
 			controls_religion = no
 			war = yes
 			any_war = {
 				defender = { character = ROOT }
-				attacker = {
-					OR = {
-						religion_group = maker
-					}
-				}
+				attacker = { religion_group = maker }
 				OR = {
 					using_cb = crusade
 					using_cb = religious
@@ -135,6 +129,7 @@ decisions = {
 		
 		effect = {
 			prestige = -500
+			piety = 100
 			religion_authority = {
 				modifier = ruler_converted_from
 			}
@@ -147,11 +142,8 @@ decisions = {
 			any_war = {
 				limit = {
 					defender = { character = ROOT }
-					attacker = {
-						OR = {
-							religion_group = maker
-						}
-					}
+					attacker = { religion_group = maker	}
+									
 					OR = {
 						using_cb = crusade
 						using_cb = religious
@@ -194,8 +186,6 @@ decisions = {
 					modifier = ruler_converted_to
 				}
 			}
-			
-			piety = 100
 		}
 		
 		revoke_allowed = {
@@ -212,11 +202,7 @@ decisions = {
 				NOT = {
 					any_war = {
 						defender = { character = ROOT }
-						attacker = {
-							OR = {
-								religion_group = maker
-							}
-						}
+						attacker = { religion_group = maker }
 						OR = {
 							using_cb = crusade
 							using_cb = religious
@@ -236,11 +222,7 @@ decisions = {
 				factor = 2
 				any_war = {
 					defender = { character = ROOT }
-					attacker = {
-						OR = {
-							religion_group = maker
-						}
-					}
+					attacker = { religion_group = maker }
 					OR = {
 						using_cb = crusade
 						using_cb = religious
@@ -257,7 +239,7 @@ decisions = {
 			}
 		}
 	}
-	
+
 	# Pagans can convert to the Chantry faith if their wife or a concubine is Chantry
 	convert_to_spouse_catholic = {
 		potential = {
@@ -267,13 +249,13 @@ decisions = {
 			NOT = { trait = zealous }
 			OR = {
 				any_spouse = {
-					religion = chantry
+					religion = andrastian_chantry
 					hidden_tooltip = {
 						is_alive = yes
 					}
 				}
 				any_consort = {
-					religion = chantry
+					religion = andrastian_chantry
 					hidden_tooltip = {
 						is_alive = yes
 					}
@@ -306,7 +288,7 @@ decisions = {
 				}
 			}		
 			
-			religion = chantry
+			religion = andrastian_chantry
 			
 			hidden_tooltip = {
 				religion_authority = {
@@ -334,13 +316,13 @@ decisions = {
 			NOT = { trait = zealous }
 			OR = {
 				any_spouse = {
-					religion = imperial chantry
+					religion = imperial_chantry
 					hidden_tooltip = {
 						is_alive = yes
 					}
 				}
 				any_consort = {
-					religion = imperial chantry
+					religion = imperial_chantry
 					hidden_tooltip = {
 						is_alive = yes
 					}
@@ -373,7 +355,7 @@ decisions = {
 				}
 			}		
 			
-			religion = imperial chantry
+			religion = imperial_chantry
 			
 			hidden_tooltip = {
 				religion_authority = {
