@@ -72,6 +72,8 @@ plot_decisions = {
 									using_cb = invasion
 									using_cb = religious
 									using_cb = tribal_invasion
+									using_cb = muslim_invasion
+									using_cb = viking_invasion
 									using_cb = claim_all
 									using_cb = claim
 									using_cb = other_claim
@@ -155,6 +157,8 @@ plot_decisions = {
 									using_cb = invasion
 									using_cb = religious
 									using_cb = tribal_invasion
+									using_cb = muslim_invasion
+									using_cb = viking_invasion
 									using_cb = claim_all
 									using_cb = claim
 									using_cb = other_claim
@@ -239,6 +243,8 @@ plot_decisions = {
 									using_cb = invasion
 									using_cb = religious
 									using_cb = tribal_invasion
+									using_cb = muslim_invasion
+									using_cb = viking_invasion
 									using_cb = claim_all
 									using_cb = claim
 									using_cb = other_claim
@@ -322,6 +328,8 @@ plot_decisions = {
 									using_cb = invasion
 									using_cb = religious
 									using_cb = tribal_invasion
+									using_cb = muslim_invasion
+									using_cb = viking_invasion
 									using_cb = claim_all
 									using_cb = claim
 									using_cb = other_claim
@@ -417,6 +425,8 @@ plot_decisions = {
 									using_cb = invasion
 									using_cb = religious
 									using_cb = tribal_invasion
+									using_cb = muslim_invasion
+									using_cb = viking_invasion
 									using_cb = claim_all
 									using_cb = claim
 									using_cb = other_claim
@@ -523,8 +533,14 @@ plot_decisions = {
 								defender = { character = PREV }
 								OR = {
 									using_cb = religious
+									using_cb = muslim_invasion
+									using_cb = viking_invasion
 									using_cb = crusade
 								}
+							}
+							AND = {
+								attacker = { character = PREV }			
+								using_cb = viking_invasion
 							}
 						}
 					}
@@ -754,6 +770,8 @@ plot_decisions = {
 								OR = {
 									using_cb = religious
 									using_cb = crusade
+									using_cb = muslim_invasion
+									using_cb = viking_invasion
 									using_cb = invasion
 									using_cb = tribal_invasion
 									using_cb = claim_all
@@ -767,4 +785,5 @@ plot_decisions = {
 		}
 	}
 }
+
 
