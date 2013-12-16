@@ -144,9 +144,8 @@ decisions = {
 				religion_group = maker
 				religion_group = pagan_group
 			}
-				}
-			}
 			NOT = {	has_character_flag = holding_grand_hunt }
+			
 		}
 		allow = {
 			war = no
@@ -191,8 +190,7 @@ decisions = {
 
 			}
 		}
-	}	
-	
+	}
 	commit_suicide = {
 		potential = {
 			age = 16
@@ -211,3 +209,5 @@ decisions = {
 			factor = 0
 		}
 	}
+	
+}
