@@ -343,7 +343,7 @@ succession_laws = {
 	}
 	succ_papal_succession = {
 		potential = {
-			title = k_chantry
+			title = k_papal_state
 		}
 		
 		effect = {
@@ -387,25 +387,20 @@ succession_laws = {
 					tier = baron
 					OR = {
 						is_republic = yes
-						AND = {
-							is_theocracy = yes
-						}
+						is_theocracy = yes
 					}
 				}
 				holder_scope = {
-					OR = {
-						is_republic = yes
-						AND = {
-							is_theocracy = yes
-							}
-					}
+					is_republic = yes
+					is_theocracy = yes
+					
 				}
 			}
 			OR = {
 				is_landless_type_title = yes
 				holder_scope = { is_theocracy = no }
 				holder_scope = { 
-					NOT = { religion = chantry }
+					NOT = { religion = andrastian_chantry }
 				}
 			}
 			holder_scope = { 
@@ -442,9 +437,7 @@ succession_laws = {
 			}
 			
 			holder_scope = {
-				OR = {
-					religion = chantry
-				}
+				religion = andrastian_chantry
 				is_merchant_republic = no
 				OR = {
 					independent = yes
@@ -597,3 +590,4 @@ gender_laws = {
 			always = no
 		}			
 	}
+}
