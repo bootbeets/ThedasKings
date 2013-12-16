@@ -102,3 +102,4 @@ decisions = {
 			factor = 0 # The AI is limited to the similar event 63040
 		}
 	}
+}
