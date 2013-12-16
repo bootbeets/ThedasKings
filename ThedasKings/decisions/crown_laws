@@ -135,7 +135,7 @@ de_jure_laws = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
 						NOT = { religion = pagan }
-						NOT = { religion = avaar }
+						NOT = { religion = avvar }
 						NOT = { religion = chasind }
 						NOT = { religion = orth }
 					}
@@ -222,7 +222,7 @@ de_jure_laws = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
 						NOT = { religion = pagan }
-						NOT = { religion = avaar }
+						NOT = { religion = avvar }
 						NOT = { religion = chasind }
 						NOT = { religion = orth }
 					}
@@ -313,7 +313,7 @@ de_jure_laws = {
 					text = TT_NOT_UNREFORMED_PAGAN
 					hidden_tooltip = {
 						NOT = { religion = pagan }
-						NOT = { religion = avaar }
+						NOT = { religion = avvar }
 						NOT = { religion = chasind }
 						NOT = { religion = orth }
 					}
@@ -396,7 +396,7 @@ de_jure_laws = {
 		default = yes
 		potential = {
 			year = 1000
-			holder_scope = { religion = chantry }
+			holder_scope = { religion = andrastian_chantry }
 		}
 		revoke_allowed = {
 			always = no
@@ -423,7 +423,7 @@ de_jure_laws = {
 		temple_all_opinion = 10 # Bishops will tend to be more loyal to the Crown
 		group = investiture_law
 		potential = {
-			holder_scope = { religion = chantry }
+			holder_scope = { religion = andrastian_chantry }
 		}
 		revoke_allowed = {
 			always = no
