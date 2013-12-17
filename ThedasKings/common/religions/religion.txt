@@ -1,11 +1,10 @@
-Maker = {
+maker = {
 	has_coa_on_barony_only = yes
 	graphical_culture = westerngfx
 	crusade_cb = crusade
 	playable = yes
 	pacifist = yes # Will make Hordes lose their super aggressiveness
 	
-	# Names given only to Christian characters (base names)
 	male_names = {
 		Cathaire Havard Hessarian Hector
 	}
@@ -13,7 +12,7 @@ Maker = {
 		Brona Justinia
 	}
 	
-	Chantry = {
+	andrastian_chantry = {
 		graphical_culture = westerngfx
 
 		icon = 1
@@ -21,15 +20,38 @@ Maker = {
 		
 		color = { 0.8 0.8 0.6 }
 		
-		crusade_name = Exalted March
-		scripture_name = Chant of Light
-		priest_title = Revered Mother
+		crusade_name = EXALTED_MARCH
+		scripture_name = THE_CHANT_OF_LIGHT
 		god_names = {
-			God The Maker God Blessed Andraste God Our Lady Redeemer
+			GOD_THE_MAKER GOD_BLESSED_ANDRASTE GOD_OUR_LADY_REDEEMER
 		}
-		evil_god_names = {
-			Maferath
-		}		
+
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_divorce = no
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+	}
+	
+	disciples_of_andraste = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 6
+		
+		color = { 0.8 0.8 0.6 }
+		parent = andrastian_chantry
+		
+		crusade_name = "EXALTED_MARCH"
+		scripture_name = THE_CHANT_OF_LIGHT
+		god_names = {
+			GOD_THE_MAKER GOD_BLESSED_ANDRASTE GOD_OUR_LADY_REDEEMER
+		}
 
 		investiture = yes
 		can_excommunicate = yes
@@ -42,38 +64,8 @@ Maker = {
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
 	}
-	Disciples of Andraste
-		graphical_culture = westerngfx
-
-		icon = 1
-		heresy_icon = 6
 		
-		color = { 0.8 0.8 0.6 }
-		parent = chantry
-		
-		crusade_name = Exalted March
-		scripture_name = Chant of Light
-		priest_title = Revered Father
-		god_names = {
-			God The Maker God Blessed Andraste God Our Lady Redeemer
-		}
-		evil_god_names = {
-			Maferath
-		}		
-
-		investiture = yes
-		can_excommunicate = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_grant_claim = yes
-		can_call_crusade = yes
-		female_temple_holders = yes
-		
-		religious_clothing_head = 0
-		religious_clothing_priest = 1
-	}
-		
-	Imperial Chantry = {
+	imperial_chantry = {
 		graphical_culture = westerngfx
 
 		icon = 2
@@ -81,12 +73,11 @@ Maker = {
 		
 		color = { 0.7 0 0.5 }
 		
-		crusade_name = Black March
-		scripture_name = The Chant of Light
-		priest_title = Revered Elder
+		crusade_name = "EXALTED_MARCH"
+		scripture_name = THE_CHANT_OF_LIGHT
 		
 		god_names = {
-			God The Maker
+			GOD_THE_MAKER GOD_PROPHET_ANDRASTE
 		}
 		
 		investiture = no
@@ -105,7 +96,7 @@ Maker = {
 	
 }
 
-Qun = {
+qun = {
 	has_coa_on_barony_only = no
 	graphical_culture = muslimgfx
 	crusade_cb = crusade
@@ -117,7 +108,7 @@ Qun = {
 		Sten 
 	}
 	
-	Qun = {
+	the_qun = {
 		graphical_culture = muslimgfx
 
 		icon = 3
@@ -125,10 +116,10 @@ Qun = {
 		
 		color = { 0 0.6 0 }
 		
-		crusade_name = "Campaign"
-		scripture_name = The Qun
+		crusade_name = CAMPAIGN
+		scripture_name = TOME_OF_KOSLUN
 		god_names = {
-			God The Qun
+			GOD_THE_QUN
 		}
 		
 		can_grant_claim = yes
@@ -139,23 +130,23 @@ Qun = {
 	}
 }
 
-Elven Pantheon = {
+elven_pantheon = {
 	has_coa_on_barony_only = yes
 	graphical_culture = westerngfx
 	playable = yes
 	pacifist = yes
 	
-	The Creators = { # Use for misc other pagans
+	the_creators = {
 		graphical_culture = westerngfx
 
 		icon = 5
 		
 		color = { 0.6 0.0 0.0 }
 		god_names = {
-			God Elgar Nan God Mythal God Falcon Din God Dirthamen God Andruil God Sylaise God June God Ghilan Nain 
+			GOD_ELGAR_NAN GOD_MYTHAL GOD_FALON_DIN GOD_DIRTHAMEN GOD_ANDRUIL GOD_SYLAISE GOD_JUNE GOD_GHILAN_NAIN GOD_FEN_HAREL 
 		}
-		crusade_name = Great March
-		scripture_name = Keeper Records
+		crusade_name = GREAT_MARCH
+		scripture_name = KEEPER_RECORDS
 		priests_can_marry = yes
 		
 		defensive_attrition = yes
@@ -164,7 +155,7 @@ Elven Pantheon = {
 		religious_clothing_priest = 3
 	}
 	
-	The Forgotten Ones = {
+	the_forgotten_ones = {
 		graphical_culture = westerngfx
 
 		icon = 20
@@ -172,194 +163,193 @@ Elven Pantheon = {
 		
 		color = { 0.6 0.6 0.6 }
 		god_names = {
-			God The Forgotten
+			GOD_ANARIS GOD_GELDAURAN GOD_DAERN_THAL GOD_FEN_HAREL
 		}
-		crusade_name = Great March
-		scripture_name = Keeper Records
+		crusade_name = GREAT_MARCH
+		scripture_name = KEEPER_RECORDS
 		priests_can_marry = yes
 		
 		defensive_attrition = yes
 		
-		parent = The Creators
+		parent = the_creators
 		
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
 	}		
 }	
 	
-Old Gods = {
-	has_coa_on_barony_only = yes
-	graphical_culture = muslimgfx
-	playable = no
-	
-	Dragon of Silence = {
-		graphical_culture = persiangfx
-		
-		icon = 10
-		heresy_icon = 12
-		
-		color = { 0.5 0.7 0.2 }
-		crusade_name = The First Blight
-		scripture_name = The Calling
-		god_names = {
-			God Dumat God Dragon of Silence God The Archdemon
-		}
-		
-		can_call_crusade = yes
-		can_grant_invasion_cb = invasion
-		
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
-	}
-	
-	Dragon of Chaos = {
-		graphical_culture = persiangfx
-		
-		icon = 10
-		heresy_icon = 12
-		
-		color = { 0.5 0.7 0.2 }
-		crusade_name = The Second Blight
-		scripture_name = The Calling
-		god_names = {
-			God Zazikel God Dragon of Chaos God The Archdemon
-		}
-		
-		can_call_crusade = yes
-		can_grant_invasion_cb = invasion
-		
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
-	}
-	
-	Dragon of Fire = {
-		graphical_culture = persiangfx
-		
-		icon = 10
-		heresy_icon = 12
-		
-		color = { 0.5 0.7 0.2 }
-		crusade_name = The Third Blight
-		scripture_name = The Calling
-		god_names = {
-			God Toth God Dragon of Fire God The Archdemon
-		}
-		
-		can_call_crusade = yes
-		can_grant_invasion_cb = invasion
-
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
-	}
-	
-	Dragon of Slaves = {
-		graphical_culture = persiangfx
-		
-		icon = 10
-		heresy_icon = 12
-		
-		color = { 0.5 0.7 0.2 }
-		crusade_name = The Fourth Blight
-		scripture_name = The Calling
-		god_names = {
-			God Andoral God Dragon of Slaves God The Archdemon
-		}
-		
-		can_call_crusade = yes
-		can_grant_invasion_cb = invasion
-
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
-	}
-	
-	Dragon of Beauty = {
-		graphical_culture = persiangfx
-		
-		icon = 10
-		heresy_icon = 12
-		
-		color = { 0.5 0.7 0.2 }
-		crusade_name = The Fifth Blight
-		scripture_name = The Calling
-		god_names = {
-			God Urthemiel God Dragon of Beauty God The Archdemon
-		}
-		
-		can_call_crusade = yes
-		can_grant_invasion_cb = invasion
-
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
-	}
-	
-	Dragon of Mystery = {
-		graphical_culture = persiangfx
-		
-		icon = 10
-		heresy_icon = 12
-		
-		color = { 0.5 0.7 0.2 }
-		crusade_name = The Sixth Blight
-		scripture_name = The Calling
-		god_names = {
-			God Raziakle God Dragon of Mystery God The Archdemon
-		}
-		
-		can_call_crusade = yes
-		can_grant_invasion_cb = invasion
-
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
-	}
-	
-	Dragon of Night = {
-		graphical_culture = persiangfx
-		
-		icon = 10
-		heresy_icon = 12
-		
-		color = { 0.5 0.7 0.2 }
-		crusade_name = The Seventh Blight
-		scripture_name = The Calling
-		god_names = {
-			God Luscan God Dragon of Night God The Archdemon
-		}
-		
-		can_call_crusade = yes
-		can_grant_invasion_cb = invasion
-
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
-	}
-	
-	Old Gods = {
-		graphical_culture = persiangfx
-		
-		icon = 10
-		heresy_icon = 12
-		
-		color = { 0.5 0.7 0.2 }
-		crusade_name = Lesser Blight
-		scripture_name = The Words of Dumat
-		god_names = {
-			God Dumat God Dragon of Silence God Zazikel God Dragon of Chaos God Toth God Dragon of Fire God Andoral God Dragon of Slaves God Urthemiel God Dragon of Beauty God Razikale God Dragon of Mystery God Lusacan God Dragon of Night
-		}
-		
-		can_call_crusade = yes
-		can_grant_invasion_cb = invasion
-
-		religious_clothing_head = 5
-		religious_clothing_priest = 5
-	}
+the_old_gods = {
+        has_coa_on_barony_only = yes
+        graphical_culture = muslimgfx
+        playable = no
+       
+        dragon_of_silence = {
+                graphical_culture = persiangfx
+               
+                icon = 10
+                heresy_icon = 12
+               
+                color = { 0.5 0.7 0.2 }
+                crusade_name = THE_FIRST_BLIGHT
+                scripture_name = THE_CALLING
+                god_names = {
+                        GOD_DUMAT GOD_DRAGON_OF_SILENCE GOD_THE_ARCHDEMON
+                }
+               
+                can_call_crusade = yes
+                can_grant_invasion_cb = invasion
+               
+                religious_clothing_head = 5
+                religious_clothing_priest = 5
+        }
+       
+        dragon_of_chaos = {
+                graphical_culture = persiangfx
+               
+                icon = 10
+                heresy_icon = 12
+               
+                color = { 0.5 0.7 0.2 }
+                crusade_name = THE_SECOND_BLIGHT
+                scripture_name = THE_CALLING
+                god_names = {
+                        GOD_ZAZIKEL GOD_DRAGON_OF_CHAOS GOD_THE_ARCHDEMON
+                }
+               
+                can_call_crusade = yes
+                can_grant_invasion_cb = invasion
+               
+                religious_clothing_head = 5
+                religious_clothing_priest = 5
+        }
+       
+        dragon_of_fire = {
+                graphical_culture = persiangfx
+               
+                icon = 10
+                heresy_icon = 12
+               
+                color = { 0.5 0.7 0.2 }
+                crusade_name = THE_THIRD_BLIGHT
+                scripture_name = THE_CALLING
+                god_names = {
+                        GOD_TOTH GOD_DRAGON_OF_FIRE GOD_THE_ARCHDEMON
+                }
+               
+                can_call_crusade = yes
+                can_grant_invasion_cb = invasion
+ 
+                religious_clothing_head = 5
+                religious_clothing_priest = 5
+        }
+       
+        dragon_of_slaves = {
+                graphical_culture = persiangfx
+               
+                icon = 10
+                heresy_icon = 12
+               
+                color = { 0.5 0.7 0.2 }
+                crusade_name = THE_FOURTH_BLIGHT
+                scripture_name = THE_CALLING
+                god_names = {
+                        GOD_ANDORAL GOD_DRAGON_OF_SLAVES GOD_THE_ARCHDEMON
+                }
+               
+                can_call_crusade = yes
+                can_grant_invasion_cb = invasion
+ 
+                religious_clothing_head = 5
+                religious_clothing_priest = 5
+        }
+       
+        dragon_of_beauty = {
+                graphical_culture = persiangfx
+               
+                icon = 10
+                heresy_icon = 12
+               
+                color = { 0.5 0.7 0.2 }
+                crusade_name = THE_FIFTH_BLIGHT
+                scripture_name = THE_CALLING
+                god_names = {
+                        GOD_URTHEMIEL GOD_DRAGON_OF_BEAUTY GOD_THE_ARCHDEMON
+                }
+               
+                can_call_crusade = yes
+                can_grant_invasion_cb = invasion
+ 
+                religious_clothing_head = 5
+                religious_clothing_priest = 5
+        }
+       
+        dragon_of_mystery = {
+                graphical_culture = persiangfx
+               
+                icon = 10
+                heresy_icon = 12
+               
+                color = { 0.5 0.7 0.2 }
+                crusade_name = THE_SIXTH_BLIGHT
+                scripture_name = THE_CALLING
+                god_names = {
+                        GOD_RAZIKALE GOD_DRAGON_OF_MYSTERY GOD_THE_ARCHDEMON
+                }
+               
+                can_call_crusade = yes
+                can_grant_invasion_cb = invasion
+ 
+                religious_clothing_head = 5
+                religious_clothing_priest = 5
+        }
+       
+        dragon_of_night = {
+                graphical_culture = persiangfx
+               
+                icon = 10
+                heresy_icon = 12
+               
+                color = { 0.5 0.7 0.2 }
+                crusade_name = THE_SEVENTH_BLIGHT
+                scripture_name = THE_CALLING
+                god_names = {
+                        GOD_LUSACAN GOD_DRAGON_OF_NIGHT GOD_THE_ARCHDEMON
+                }
+               
+                can_call_crusade = yes
+                can_grant_invasion_cb = invasion
+ 
+                religious_clothing_head = 5
+                religious_clothing_priest = 5
+        }
+       
+        old_gods = {
+                graphical_culture = persiangfx
+               
+                icon = 10
+                heresy_icon = 12
+               
+                color = { 0.5 0.7 0.2 }
+                crusade_name = LESSER_BLIGHT
+                scripture_name = THE_WORDS_OF_DUMAT
+                god_names = {
+                        GOD_DUMAT GOD_DRAGON_OF_SILENCE GOD_ZAZIKEL GOD_DRAGON_OF_CHAOS GOD_TOTH GOD_DRAGON_OF_FIRE GOD_ANDORAL GOD_DRAGON_OF_SLAVES GOD_URTHEMIEL GOD_DRAGON_OF_BEAUTY GOD_RAZIKALE GOD_DRAGON_OF_MYSTERY GOD_LUSACAN GOD_DRAGON_OF_NIGHT
+                }
+               
+                can_call_crusade = yes
+                can_grant_invasion_cb = invasion
+ 
+                religious_clothing_head = 5
+                religious_clothing_priest = 5
+        }
 }
 	
-The Stone = {
+the_stone = {
 	has_coa_on_barony_only = yes
 	graphical_culture = westerngfx
 	playable = yes
 	pacifist = yes
 	
-	# Names given only to Pagan characters (base names)
 	male_names = {
 		
 	}
@@ -367,17 +357,17 @@ The Stone = {
 		
 	}
 
-	The Ancestors = { # Use for misc other pagans
+	our_ancestors = { # Use for misc other pagans
 		graphical_culture = westerngfx
 
 		icon = 5
 		
 		color = { 0.6 0.0 0.0 }
 		god_names = {
-			God The Stone God The Ancestors
+			GOD_THE_STONE GOD_OUR_ANCESTORS
 		}
-		crusade_name = Great Holy War
-		scripture_name = The Memories
+		crusade_name = CAMPAIGN
+		scripture_name = THE_MEMORIES
 		priests_can_marry = yes
 		
 		religious_clothing_head = 3
@@ -385,146 +375,146 @@ The Stone = {
 	}
 }
 
-Pagan Group = {
-	has_coa_on_barony_only = no
-	graphical_culture = westerngfx
-	playable = yes
-	
-	# Names given only to Pagan characters (base names)
-	male_names = {
-		Anund Asbjörn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm Gudmund Gudröd Hardeknud Helge Odd Orm 
-		Orvar Ottar Rikulfr Rurik Sigbjörn Styrbjörn Starkad Styrkar Sämund Sölve Sörkver Thorolf Tjudmund Toke Tolir 
-		Torbjörn Torbrand Torfinn Torgeir Toste Tyke
-	}
-	female_names = {
-		Aslaug Bothild Björg Freja Grima Gytha Kráka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
-	}
-
-	Pagan = { # Use for misc other pagans
-		graphical_culture = westerngfx
-
-		icon = 5
-		
-		color = { 0.6 0.0 0.0 }
-		god_names = {
-			God The Spirits God The Ancestors
-		}
-		crusade_name = Great Holy War
-		scripture_name = The Legends
-		priests_can_marry = yes
-		max_consorts = 3
-		
-		defensive_attrition = yes
-		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-	}
-	
-	Avaar = {
-		graphical_culture = norsegfx
-
-		icon = 19
-		heresy_icon = 21
-		
-		color = { 60 120 180 }
-		god_names = {
-			God Korth Mountain-Father God Lady of The Skies God Hakkon Wintersbreath God Imhar the Clever
-		}
-		
-		unit_modifier = {
-			heavy_infantry_offensive = 0.3
-			heavy_infantry_defensive = 0.3
-			
-			key = "OFF_RELIGION"
-		}
-		
-		crusade_name = Great Holy War
-		scripture_name = The Sagas
-		priests_can_marry = yes
-		allow_looting = yes
-		female_temple_holders = yes
-		defensive_attrition = yes
-		max_consorts = 3
-		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		
-		aggression = 0.5 # AI aggression factor
-		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-		
-		intermarry = norse_pagan_reformed
-	}	
-	
-
-	
-	Chasind = {
-		graphical_culture = norsegfx
-
-		icon = 31
-		heresy_icon = 33
-		
-		color = { 0.6 0.4 0.3 }
-		crusade_name = Great Holy War
-		scripture_name = The Legends
-		god_names = {
-			God Dievas God Gabija God Perkunas God Laima
-		}
-		
-		unit_modifier = {		
-			heavy_infantry_offensive = 0.3
-			heavy_infantry_defensive = 0.3
-			
-			key = "DEF_RELIGION"
-		}
-		
-		priests_can_marry = yes
-		female_temple_holders = yes
-		defensive_attrition = yes
-		allow_looting = yes
-		max_consorts = 3
-		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		reformed = baltic_pagan_reformed
-		
-		short_reign_opinion_year_mult = 4 # The default is 2
-		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-	}	
-	
-		
-	Orth = {
-		graphical_culture = norsegfx
-
-		icon = 25
-		heresy_icon = 27
-		
-		color = { 0.5 0.5 0.0 }
-		crusade_name = Great Holy War
-		scripture_name = The Legends
-		god_names = {
-			God Ukko God Perkele God Jumi God The Great Bear God Kuu God Tapio God Taara God Omol God Mastor Ava
-		}
-		
-		unit_modifier = {		
-			heavy_infantry_offensive = 0.3
-			heavy_infantry_defensive = 0.3
-			
-			key = "DEF_RELIGION"
-		}
-		
-		priests_can_marry = yes
-		female_temple_holders = yes
-		defensive_attrition = yes
-		allow_looting = yes
-		max_consorts = 3
-		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
-		reformed = finnish_pagan_reformed
-		
-		short_reign_opinion_year_mult = 4 # The default is 2
-		
-		aggression = 0.2 # AI aggression factor
-		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
-	}
+pagan_group = {
+        has_coa_on_barony_only = no
+        graphical_culture = westerngfx
+        playable = yes
+       
+        # Names given only to Pagan characters (base names)
+        male_names = {
+                Anund Asbjörn Aslak Audun Bagge Balder Brage Egil Emund Frej Gnupa Gorm Gudmund Gudröd Hardeknud Helge Odd Orm
+                Orvar Ottar Rikulfr Rurik Sigbjörn Styrbjörn Starkad Styrkar Sämund Sölve Sörkver Thorolf Tjudmund Toke Tolir
+                Torbjörn Torbrand Torfinn Torgeir Toste Tyke
+        }
+        female_names = {
+                Aslaug Bothild Björg Freja Grima Gytha Kráka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
+        }
+ 
+        pagan = { # Use for misc other pagans
+                graphical_culture = westerngfx
+ 
+                icon = 5
+               
+                color = { 0.6 0.0 0.0 }
+                god_names = {
+                        GOD_THE_SPIRITS GOD_OUR_ANCESTORS
+                }
+                crusade_name = GREAT_HOLY_WAR
+                scripture_name = THE_LEGENDS
+                priests_can_marry = yes
+                max_consorts = 3
+               
+                defensive_attrition = yes
+               
+                religious_clothing_head = 3
+                religious_clothing_priest = 3
+        }
+       
+        avvar = {
+                graphical_culture = norsegfx
+ 
+                icon = 19
+                heresy_icon = 21
+               
+                color = { 60 120 180 }
+                god_names = {
+                        GOD_KORTH_MOUNTAIN_FATHER GOD_LADY_OF_THE_SKIES GOD_HAKKON_WINTERSBREATH GOD_IMHAR_THE_CLEVER
+                }
+               
+                unit_modifier = {
+                        heavy_infantry_offensive = 0.3
+                        heavy_infantry_defensive = 0.3
+                       
+                        key = "OFF_RELIGION"
+                }
+               
+                crusade_name = GREAT_HOLY_WAR
+                scripture_name = THE_LEGENDS
+                priests_can_marry = yes
+                allow_looting = yes
+                female_temple_holders = yes
+                defensive_attrition = yes
+                max_consorts = 3
+                independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+               
+                aggression = 0.5 # AI aggression factor
+               
+                religious_clothing_head = 3
+                religious_clothing_priest = 3
+               
+                intermarry = norse_pagan_reformed
+        }      
+       
+ 
+       
+        chasind = {
+                graphical_culture = norsegfx
+ 
+                icon = 31
+                heresy_icon = 33
+               
+                color = { 0.6 0.4 0.3 }
+                crusade_name = GREAT_HOLY_WAR
+                scripture_name = THE_LEGENDS
+                god_names = {
+                        GOD_WITCHES_OF_THE_WILDS
+                }
+               
+                unit_modifier = {              
+                        heavy_infantry_offensive = 0.3
+                        heavy_infantry_defensive = 0.3
+                       
+                        key = "DEF_RELIGION"
+                }
+               
+                priests_can_marry = yes
+                female_temple_holders = yes
+                defensive_attrition = yes
+                allow_looting = yes
+                max_consorts = 3
+                independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+                reformed = baltic_pagan_reformed
+               
+                short_reign_opinion_year_mult = 4 # The default is 2
+               
+                religious_clothing_head = 3
+                religious_clothing_priest = 3
+        }      
+       
+               
+        orth = {
+                graphical_culture = norsegfx
+ 
+                icon = 25
+                heresy_icon = 27
+               
+                color = { 0.5 0.5 0.0 }
+                crusade_name = GREAT_HOLY_WAR
+                scripture_name = THE_LEGENDS
+                god_names = {
+                        GOD_THE_SPIRITS
+                }
+               
+                unit_modifier = {              
+                        heavy_infantry_offensive = 0.3
+                        heavy_infantry_defensive = 0.3
+                       
+                        key = "DEF_RELIGION"
+                }
+               
+                priests_can_marry = yes
+                female_temple_holders = yes
+                defensive_attrition = yes
+                allow_looting = yes
+                max_consorts = 3
+                independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+                reformed = finnish_pagan_reformed
+               
+                short_reign_opinion_year_mult = 4 # The default is 2
+               
+                aggression = 0.2 # AI aggression factor
+               
+                religious_clothing_head = 3
+                religious_clothing_priest = 3
+        }
 }

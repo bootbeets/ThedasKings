@@ -110,18 +110,12 @@ decisions = {
 		
 		potential = {
 			is_playable = yes
-			OR = {
-				religion_group = pagan_group
-			}
+			religion_group = pagan_group
 			controls_religion = no
 			war = yes
 			any_war = {
 				defender = { character = ROOT }
-				attacker = {
-					OR = {
-						religion_group = maker
-					}
-				}
+				attacker = { religion_group = maker }
 				OR = {
 					using_cb = crusade
 					using_cb = religious
@@ -135,6 +129,7 @@ decisions = {
 		
 		effect = {
 			prestige = -500
+			piety = 100
 			religion_authority = {
 				modifier = ruler_converted_from
 			}
@@ -143,16 +138,12 @@ decisions = {
 				limit = { religion_group = pagan_group }
 				add_trait = sympathy_pagans
 			}
-
 			
 			any_war = {
 				limit = {
 					defender = { character = ROOT }
-					attacker = {
-						OR = {
-							religion_group = maker
-						}
-					}
+					attacker = { religion_group = maker	}
+									
 					OR = {
 						using_cb = crusade
 						using_cb = religious
@@ -195,8 +186,6 @@ decisions = {
 					modifier = ruler_converted_to
 				}
 			}
-			
-			piety = 100
 		}
 		
 		revoke_allowed = {
@@ -213,11 +202,7 @@ decisions = {
 				NOT = {
 					any_war = {
 						defender = { character = ROOT }
-						attacker = {
-							OR = {
-								religion_group = maker
-							}
-						}
+						attacker = { religion_group = maker }
 						OR = {
 							using_cb = crusade
 							using_cb = religious
@@ -237,11 +222,7 @@ decisions = {
 				factor = 2
 				any_war = {
 					defender = { character = ROOT }
-					attacker = {
-						OR = {
-							religion_group = maker
-						}
-					}
+					attacker = { religion_group = maker }
 					OR = {
 						using_cb = crusade
 						using_cb = religious
@@ -258,8 +239,8 @@ decisions = {
 			}
 		}
 	}
-	
-	# Pagans can convert to the Maker faith if their wife or a concubine is Maker
+
+	# Pagans can convert to the Chantry faith if their wife or a concubine is Chantry
 	convert_to_spouse_catholic = {
 		potential = {
 			is_playable = yes
@@ -268,13 +249,13 @@ decisions = {
 			NOT = { trait = zealous }
 			OR = {
 				any_spouse = {
-					religion = maker
+					religion = andrastian_chantry
 					hidden_tooltip = {
 						is_alive = yes
 					}
 				}
 				any_consort = {
-					religion = maker
+					religion = andrastian_chantry
 					hidden_tooltip = {
 						is_alive = yes
 					}
@@ -307,7 +288,7 @@ decisions = {
 				}
 			}		
 			
-			religion = maker
+			religion = andrastian_chantry
 			
 			hidden_tooltip = {
 				religion_authority = {
@@ -325,3 +306,72 @@ decisions = {
 			factor = 0
 		}
 	}
+	
+	# Pagans can convert to the Imperial Chantry if their wife or a concubine is a believer
+	convert_to_spouse_jewish = {
+		potential = {
+			is_playable = yes
+			religion_group = pagan_group
+			controls_religion = no
+			NOT = { trait = zealous }
+			OR = {
+				any_spouse = {
+					religion = imperial_chantry
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+				any_consort = {
+					religion = imperial_chantry
+					hidden_tooltip = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = -500
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			
+			if = {
+				limit = {
+					trait = cynical
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_pagans
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = cynical }
+				}
+				random = {
+					chance = 50
+					add_trait = sympathy_pagans
+				}
+			}		
+			
+			religion = imperial_chantry
+			
+			hidden_tooltip = {
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+			piety = 200
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}
