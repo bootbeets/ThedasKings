@@ -12,7 +12,7 @@
  #}
  
  # Castle
-castle = {
+castle = { }
 	# All cultural buildings follow the same pattern:
 	# tech required is 0, 1, 2, 4 for the levels of the buildings
 	# cost is 200 + 100 per level
