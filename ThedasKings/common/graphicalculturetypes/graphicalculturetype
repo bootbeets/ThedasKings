@@ -1,5 +1,102 @@
 # Skin tones are 0 (light), 1 (tan), 2 (dark) and 3 (black)
 
+# Human
+
+avvargfx = {
+	skin_tone = 0
+}
+
+chasindgfx = {
+	skin_tone = 0
+}
+
+claynegfx = {
+	skin_tone = 0
+}
+
+fereldangfx = {
+	skin_tone = 0
+}
+
+cirrianegfx = {
+	skin_tone = 0
+}
+
+orlesiangfx = {
+	skin_tone = 0
+}
+
+plaescinegfx = {
+	skin_tone = 0
+}
+
+freemarchergfx = {
+	skin_tone = 1
+}
+
+antivangfx = {
+	skin_tone = 1
+}
+
+rivainigfx = {
+	skin_tone = 2
+}
+
+tevintergfx = {
+	skin_tone = 1
+}
+
+seherongfx = {
+	skin_tone = 2
+}
+
+andersgfx = {
+	skin_tone = 2
+}
+
+
+
+# Other Races
+
+kalsharokgfx = {
+	skin_tone = 2
+}
+
+orzimmargfx = {
+	skin_tone = 1
+}
+
+cityelfgfx = {
+	skin_tone = 1
+}
+
+dalishelfgfx = {
+	skin_tone = 1
+}
+
+qunarigfx = {
+	skin_tone = 1
+}
+
+darkspawngfx = {
+	skin_tone = 1
+}
+
+archdemongfx = {
+	skin_tone = 1
+}
+
+demongfx = {
+	skin_tone = 1
+}
+
+spiritgfx = {
+	skin_tone = 1
+}
+
+
+################################# VANILLA #################################
+
 # Western
 
 frankishgfx = {
