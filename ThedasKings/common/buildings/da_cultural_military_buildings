@@ -240,20 +240,245 @@ castle = {
 		upgrades_from = ca_culture_fereldan_knights_3
 		build_cost = 500
 		build_time = 2190
-		heavy_infantry = 80
+		heavy_infantry = 100
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
 	}
 
 ########################## ORLESIAN EMPIRE ##########################
-
 # Heavy Infantry Chevalier Wannabes
-# Heartlander Pike Auxillary
-
+ca_culture_orlesian_mini_chevalier_1 = {
+		desc = ca_culture_orlesian_mini_chevalier_1
+		potential = {
+			FROM = {
+				OR = {
+					culture = orlesian
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 30
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_orlesian_mini_chevalier_2 = {
+		desc = ca_culture_orlesian_mini_chevalier_2
+		potential = {
+			FROM = {
+				OR = {
+					culture = orlesian
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_orlesian_mini_chevalier_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 60
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_orlesian_mini_chevalier_3 = {
+		desc = ca_culture_orlesian_mini_chevalier_3
+		potential = {
+			FROM = {
+				OR = {
+					culture = orlesian
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_orlesian_mini_chevalier_2
+		build_cost = 400
+		build_time = 2190
+		heavy_infantry = 100
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_orlesian_mini_chevalier_4 = {
+		desc = ca_culture_orlesian_mini_chevalier_4
+		potential = {
+			FROM = {
+				OR = {
+					culture = orlesian
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_culture_orlesian_mini_chevalier_3
+		build_cost = 600
+		build_time = 2190
+		heavy_infantry = 150
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+# Heartlander Pike Auxiliary
+ca_culture_orlesian_pike_auxiliary_1 = {
+		desc = ca_culture_orlesian_pike_auxiliary_1
+		potential = {
+			FROM = {
+				OR = {
+					culture = orlesian
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		pikemen = 50
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_orlesian_pike_auxiliary_2 = {
+		desc = ca_culture_orlesian_pike_auxiliary_2
+		potential = {
+			FROM = {
+				OR = {
+					culture = orlesian
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_orlesian_pike_auxiliary_1
+		build_cost = 300
+		build_time = 1095
+		pikemen = 100
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_orlesian_pike_auxiliary_3 = {
+		desc = ca_culture_orlesian_pike_auxiliary_3
+		potential = {
+			FROM = {
+				OR = {
+					culture = orlesian
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_orlesian_pike_auxiliary_2
+		build_cost = 400
+		build_time = 2190
+		pikemen = 150
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_orlesian_pike_auxiliary_4 = {
+		desc = ca_culture_orlesian_pike_auxiliary_4
+		potential = {
+			FROM = {
+				OR = {
+					culture = orlesian
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_culture_orlesian_pike_auxiliary_3
+		build_cost = 600
+		build_time = 2190
+		pikemen = 200
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
 ########################## FREE MARCHER ##########################
-
 # Professional Pike & Bow Formations
+ca_culture_free_marcher_pikenbow_1 = {
+		desc = ca_culture_free_marcher_pikenbow_1
+		potential = {
+			FROM = {
+				OR = {
+					culture = free_marcher
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		pikemen = 50
+		archers = 25
+		pikemen_defence = 0.5
+		archers_defence = 0.25
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_orlesian_pike_auxiliary_2 = {
+		desc = ca_culture_free_marcher_pikenbow_2
+		potential = {
+			FROM = {
+				OR = {
+					culture = free_marcher
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_free_marcher_pikenbow_1
+		build_cost = 300
+		build_time = 1095
+		pikemen = 100
+		archers = 50
+		pikemen_defence = 0.5
+		archers_defence = 0.25
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_free_marcher_pikenbow_3 = {
+		desc = ca_culture_free_marcher_pikenbow_3
+		potential = {
+			FROM = {
+				OR = {
+					culture = free_marcher
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_free_marcher_pikenbow_2
+		build_cost = 400
+		build_time = 2190
+		pikemen = 150
+		archers = 75
+		pikemen_defence = 0.5
+		archers_defence = 0.25
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_free_marcher_pikenbow_4 = {
+		desc = ca_culture_free_marcher_pikenbow_4
+		potential = {
+			FROM = {
+				OR = {
+					culture = free_marcher
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_culture_free_marcher_pikenbow_3
+		build_cost = 600
+		build_time = 2190
+		pikemen = 200
+		archers = 100
+		pikemen_defence = 0.5
+		archers_defence = 0.25
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
 
 ########################## RIALTO NON REPUBLIC ##########################
 
@@ -289,3 +514,5 @@ castle = {
 ########################## FADE ##########################
 	
 # Tears in the fade, allowing simply more things.
+
+}
