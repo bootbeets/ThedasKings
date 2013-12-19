@@ -118,7 +118,7 @@ alamarri = {
 	}
 }
 
-orlesian = {
+imperial_orlesian = {
 	graphical_culture = westerngfx
 
 	cirriane = {
@@ -821,7 +821,7 @@ imperial = {
 		
 		modifier = default_culture_modifier
 	}
-	tevinters = {
+	tevinter = {
 		graphical_culture = byzantinegfx
 		
 		color = { 0.8 0.3 0.8 }
@@ -953,7 +953,7 @@ elven = {
 	
 }
 
-anderfells = {
+anderfel = {
 	graphical_culture = easterngfx
 
 	anders = {
@@ -1032,7 +1032,7 @@ qun = {
 	}
 }
 
-darkspawn = {
+horde = {
 	graphical_culture = muslimgfx
 	
 	darkspawn = { 
@@ -1057,7 +1057,7 @@ darkspawn = {
 
 		modifier = default_culture_modifier
 	}
-	arch_daemon = { # Berber
+	arch_demon = { # Berber
 		graphical_culture = muslimgfx #arabicgfx
 		
 		color = { 0.2 0.9 0.2 }
@@ -1093,7 +1093,7 @@ darkspawn = {
 fade = {
 	graphical_culture = easterngfx
 
-	daemons = {
+	demons = {
 		graphical_culture = easternslavicgfx
 		graphical_unit_culture = western
 		
