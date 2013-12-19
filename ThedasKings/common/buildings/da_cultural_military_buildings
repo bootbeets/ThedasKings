@@ -1,0 +1,291 @@
+### Chalkface ###
+
+castle = {
+########################## ALAMARRI GROUP ##########################
+###Alamarri Mabari###
+	ca_culture_alamarri_mabari_1 = {
+		desc = ca_culture_alamarri_tribe_1
+		potential = {
+			FROM = {
+				OR = {
+					culture = avaars
+					culture = chasind
+					culture = clayne
+					culture = plaescine
+					culture = cirriane
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		light_infantry_offensive = 0.15
+		light_infantry = 50
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_alamarri_mabari_2 = {
+		desc = ca_culture_alamarri_tribe_2
+		potential = {
+			FROM = {
+				OR = {
+					culture = avaars
+					culture = chasind
+					culture = clayne
+					culture = plaescine
+					culture = cirriane
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_alamarri_tribe_1
+		build_cost = 300
+		build_time = 1095
+		light_infantry_offensive = 0.15
+		light_infantry = 100
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_alamarri_mabari_3 = {
+		desc = ca_culture_alamarri_tribe_3
+		potential = {
+			FROM = {
+				OR = {
+					culture = avaars
+					culture = chasind
+					culture = clayne
+					culture = plaescine
+					culture = cirriane
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_mabari_tribe_2
+		build_cost = 400
+		build_time = 2190
+		light_infantry_offensive = 0.15
+		light_infantry = 200
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_alamarri_mabari_4 = {
+		desc = ca_culture_alamarri_tribe_4
+		potential = {
+			FROM = {
+				OR = {
+					culture = avaars
+					culture = chasind
+					culture = clayne
+					culture = plaescine
+					culture = cirriane
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_culture_alamarri_tribe_3
+		build_cost = 600
+		build_time = 2190
+		light_infantry_offensive = 0.15
+		light_infantry = 400
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+###Fereldan Mabari###
+	ca_culture_fereldan_mabari_1 = {
+		desc = ca_culture_fereldan_mabari_1
+		potential = {
+			FROM = {
+				OR = {
+					culture = fereldan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		light_infantry_offensive = 0.25
+		light_infantry = 25
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_fereldan_mabari_2 = {
+		desc = ca_culture_fereldan_mabari_2
+		potential = {
+			FROM = {
+				OR = {
+					culture = fereldan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_fereldan_mabari_1
+		build_cost = 300
+		build_time = 1095
+		light_infantry_offensive = 0.25
+		light_infantry = 50
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_fereldan_mabari_3 = {
+		desc = ca_culture_fereldan_mabari_3
+		potential = {
+			FROM = {
+				OR = {
+					culture = fereldan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_fereldan_mabari_2
+		build_cost = 400
+		build_time = 2190
+		light_infantry_offensive = 0.25
+		light_infantry = 100
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_fereldan_mabari_4 = {
+		desc = ca_culture_fereldan_mabari_4
+		potential = {
+			FROM = {
+				OR = {
+					culture = fereldan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_culture_fereldan_mabari_3
+		build_cost = 500
+		build_time = 2190
+		light_infantry_offensive = 0.25
+		light_infantry = 150
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+###Fereldan Regional Knight-Lites###
+	ca_culture_fereldan_knights_1 = {
+		desc = ca_culture_fereldan_knights_1
+		potential = {
+			FROM = {
+				OR = {
+					culture = fereldan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		heavy_infantry = 20
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_fereldan_knights_2 = {
+		desc = ca_culture_fereldan_knights_2
+		potential = {
+			FROM = {
+				OR = {
+					culture = fereldan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_fereldan_knights_1
+		build_cost = 300
+		build_time = 1095
+		heavy_infantry = 40
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_fereldan_knights_3 = {
+		desc = ca_culture_fereldan_knights_3
+		potential = {
+			FROM = {
+				OR = {
+					culture = fereldan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_culture_fereldan_knights_2
+		build_cost = 400
+		build_time = 2190
+		heavy_infantry = 60
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_fereldan_knights_4 = {
+		desc = ca_culture_fereldan_knights_4
+		potential = {
+			FROM = {
+				OR = {
+					culture = fereldan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
+		upgrades_from = ca_culture_fereldan_knights_3
+		build_cost = 500
+		build_time = 2190
+		heavy_infantry = 80
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+
+########################## ORLESIAN EMPIRE ##########################
+
+# Heavy Infantry Chevalier Wannabes
+# Heartlander Pike Auxillary
+
+########################## FREE MARCHER ##########################
+
+# Professional Pike & Bow Formations
+
+########################## RIALTO NON REPUBLIC ##########################
+
+# Urban Light Infantry
+# Urban Crossbowmen
+
+########################## ANDERFELLS ##########################
+
+# Ranger Light Infantry
+
+########################## TEVINTER EMPIRE ##########################
+
+# Auxillary Militia
+# Frontier Cohorts
+
+########################## DWARVES ##########################
+
+# Military Tradition - Heavy Infantry
+
+########################## ELVEN STUFF ##########################
+
+# Very high quality archers
+
+########################## QUNARI ##########################
+
+# Auxillary Pike Phalanx
+# Qunari Cohort
+
+########################## DARKSPAWN ##########################
+
+# THE HORDE
+
+########################## FADE ##########################
+	
+# Tears in the fade, allowing simply more things.
