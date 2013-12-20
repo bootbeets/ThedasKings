@@ -33,19 +33,6 @@ RETTYPE_INF2 =
 	}
 }
 
-RETTYPE_CAV1 =
-{
-	first_type = 4
-	first_amount = 100
-	second_type = 3
-	second_amount = 400
-	
-	modifier = {
-		knights_offensive = 0.3
-		light_cavalry_offensive = 0.3
-	}
-}
-
 RETTYPE_SKIR1 = 
 {
 	first_type = 5
