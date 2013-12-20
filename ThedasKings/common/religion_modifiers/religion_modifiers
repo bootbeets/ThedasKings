@@ -37,35 +37,12 @@ ruler_defied_pope = {
 	years = 10
 }
 
-ruler_defied_patriarch = {
-	authority = -1
-	years = 10
-}
-
-ruler_bowed_to_patriarch = {
-	authority = 1
-	years = 10
-}
-
-religious_order_formed = {
-	authority = 5
-	years = 10
-}
 
 head_of_religion_neglect = {
 	authority = -1
 	years = 10
 }
 
-won_viking_invasion = {
-	authority = 5
-	years = 20
-}
-
-lost_viking_invasion = {
-	authority = -5
-	years = 20
-}
 
 won_county_conquest = {
 	authority = 1
@@ -104,16 +81,6 @@ ruler_converted_from = {
 
 ruler_converted_to = {
 	authority = 3
-	years = 20
-}
-
-rise_of_the_shia_caliphate = {
-	authority = 30
-	years = 50
-}
-
-holy_order_expelled = {
-	authority = -5
 	years = 20
 }
 
