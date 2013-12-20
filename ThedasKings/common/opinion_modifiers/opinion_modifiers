@@ -1682,7 +1682,7 @@ opinion_great_feast = {
 }
 
 opinion_homosexual = {
-	opinion = -10
+	opinion = 0
 }
 
 opinion_upset = {
@@ -1930,85 +1930,8 @@ opinion_refused_abdicate_title = {
 	revoke_reason = yes # This one gives righteous cause to revoke ONE title
 }
 
-opinion_nomuslim = {
-	opinion = -10
-}
-
 opinion_pleased = {
 	opinion = 10
-}
-
-opinion_sadaqah = {
-	opinion = 15
-}
-
-opinion_hajj_promised = {
-	opinion = 10
-	months = 60
-}
-
-opinion_jihad_promised = {
-	opinion = 10
-	months = 60
-}
-
-opinion_bring_on_hajj = {
-	opinion = 15
-	months = 1000
-}
-
-opinion_declined_hajj = {
-	opinion = -20
-	months = 1000
-}
-opinion_attepmt_hajj = {
-	opinion = -30
-	months = 1000
-}
-
-opinion_refused_hajj = {
-	opinion = -20
-	months = 1000
-}
-
-opinion_hajj_saved_from_bandit = {
-	opinion = 15
-	months = 1000
-}
-opinion_hajj_saving_on_hajj = {
-	opinion = 5
-	months = 1000
-}
-
-opinion_hajj_attempt_murder = {
-	opinion = -40
-	months = 1000
-}
-
-opinion_hajj_rivalry_mended = {
-	opinion = 25
-	months = 1000
-}
-
-opinion_hajj_not_helpin  = {
-	opinion = -33
-	months = 72	
-}
-
-opinion_helped_wudu = {
-	opinion = 10
-	months = 60
-}
-
-opinion_chief_qadi = {
-	opinion = 15
-}
-
-opinion_merciful_qadi = {
-	opinion = 10
-}
-opinion_arbitrary_qadi = {
-	opinion = -10
 }
 
 opinion_court_calligrapher = {
@@ -2049,28 +1972,6 @@ opinion_adopted_foreign_ways = {
 	months = 120
 }
 
-opinion_fatwa_target = {
-	opinion = -20
-	months = 36
-	prison_reason = yes # This one gives righteous cause to imprison a character
-	revoke_reason = yes # This one gives righteous cause to revoke ONE title
-}
-
-opinion_has_fatwa = {
-	opinion = -20
-	months = 36
-}
-
-opinion_issued_fatwa = {
-	opinion = -40
-	months = 36
-}
-
-opinion_triumph_held = {
-	opinion = 20
-	months = 36
-}
-
 opinion_castrated_me = {
 	opinion = -80
 	months = 1200	# For life
@@ -2109,16 +2010,6 @@ opinion_coerced_into_leaving_faction = {
 opinion_coerced_into_joining_faction = {
 	opinion = -10
 	months = 120
-}
-
-opinion_tzykanion_pos = {
-	opinion = 15
-	months = 24
-}
-
-opinion_tzykanion_neg = {
-	opinion = -15
-	months = 24
 }
 
 opinion_feuding_family = {
@@ -2171,26 +2062,6 @@ opinion_forced_relative_consort = {
 	months = 1200
 }
 
-opinion_nerge_rival = {
-	opinion = -25
-	months = 36
-}
-
-opinion_held_nerge = {
-	opinion = 15
-	months = 12
-}
-
-opinion_punished_nerge = {
-	opinion = -15
-	months = 36
-}
-
-opinion_held_blot = {
-	opinion = 15
-	months = 12
-}
-
 opinion_feast_scandal = {
 	opinion = -15
 	months = 12
@@ -2216,55 +2087,11 @@ opinion_feast_friend = {
 	months = 12
 }
 
-opinion_homosexual_sympathy = {
-	opinion = 15
-	months = 12
-}
-
-opinion_ukon_juhla = {
-	opinion = 15
-	months = 12
-}
-
-opinion_uzgavenes = {
-	opinion = 15
-	months = 12
-}
-
-opinion_refused_blot = {
-	opinion = -15
-	months = 12
-}
-
-opinion_refused_ukon_juhla = {
-	opinion = -10
-	months = 12
-}
-
-opinion_refused_uzgavenes = {
-	opinion = -10
-	months = 12
-}
-
 opinion_went_berserk = {
 	opinion = -30
 	months = 12
 }
 
-opinion_jarilo = {
-	opinion = 15
-	months = 12
-}
-
-opinion_refused_jarilo = {
-	opinion = -10
-	months = 12
-}
-
-opinion_represented_jarilo = {
-	opinion = 10
-	months = 12
-}
 
 opinion_mutual_respect = {
 	opinion = 15
@@ -2315,16 +2142,6 @@ opinion_expelled_from_realm = {
 	months = 1200
 }
 
-opinion_passover = {
-	opinion = 15
-	months = 12
-}
-
-opinion_refused_passover = {
-	opinion = -10
-	months = 12
-}
-
 opinion_rejected_school = {
 	opinion = -25
 	months = 24
@@ -2354,26 +2171,8 @@ opinion_duchy_adventure_target = {
 	months = 24
 }
 
-opinion_witch = {
-	opinion = -200
-	months = 1200
-	prison_reason = yes
-	revoke_reason = yes
-	execute_reason = yes
-	inherit = yes
-}
 
 opinion_the_chosen_one = {
 	opinion = 500
 	months = 12000
-}
-
-opinion_restored_to_rome = {
-	opinion = 100
-	months = 1200
-}
-
-opinion_creator_of_rel_heal = {
-	opinion = 100
-	months = 1200
 }
