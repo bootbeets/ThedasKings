@@ -1,0 +1,376 @@
+
+# SPECIAL TITLES
+
+k_andrastian_chantry = {
+	color={ 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = # b_grand_cathedral in Val Royeaux
+	
+	title = "WHITE_DIVINE"
+	foa = "WHITE_DIVINE_FOA"
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = andrastian_chantry
+	
+	religion = andrastian_chantry
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	# Regnal names
+	female_names = {
+		Justinia Ambrosia Hortensia Renata Galatea Joyous Clemence Rosamund Amara Theodosia Faustine Beatrix
+	}
+}
+
+k_imperial_chantry = {
+	color={ 183 60 155 }
+	color2={ 220 220 0 }
+	
+	capital =  # b_argent_spire in Minrathous
+	
+	title = "BLACK_DIVINE"
+	foa = "BLACK_DIVINE_FOA"
+	short_name = yes
+
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = imperial_chantry
+	
+	religion = imperial_chantry
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	# Regnal names
+	male_names = {
+		Valhail
+	}
+	female_names = {
+		Euphoria
+	}
+}
+
+d_grand_cleric_ferelden = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital = #b_grand_chantry of Denerim
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_grand_cleric_orlais = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital = #b_ another chantry in Val Royeux
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_grand_cleric_kirkwall = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital = # b_kirkwall_chantry
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_grand_cleric_starkhaven = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_starkhaven_chantry
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_grand_cleric_nevarre = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_nevarre_chantry
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_grand_cleric_anderfel = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_hossburg_chantry
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_grand_cleric_antiva = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_antiva_city_chantry
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_grand_cleric_rivain = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_dairsmuid_chantry
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_grand_cleric_tevinter = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_argent_spire
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_grand_cleric_cumberland = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_cumberland_chantry
+	
+	religion = andrastian_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_seheron = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_alam_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_minrathous = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_argent_spire_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_vol_dorma = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_vol_dorma_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_vyrantium = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_vyrantium_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_neromenian = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_neromenian_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_qarinus = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_qarinus_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_caimen_brea = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_caimen_brea_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_anderfel = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_hossberg_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_rivain = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_dairmund_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_antiva = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_antiva_city_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_starkhaven = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_starkhaven_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_orlais = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_chantry in Val Royeaux
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_emerus = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_kirkwall_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
+
+d_imperial_cleric_fereldan = {
+	color={ 183 50 155 }
+	color2={ 220 220 0 }
+	
+	capital =  #b_denerim_chantry
+	
+	religion = imperial_chantry
+	
+	landless = yes
+	
+	primary = yes
+}
