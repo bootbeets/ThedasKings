@@ -1,0 +1,134 @@
+########################################################
+# RELIGIOUS TITLES
+# Titles given out by the religious head
+########################################################
+#	religion: Religion that owns this title.
+#	can_elect_head: If holders of this title can elect a new head.
+#	grant_limit: Max number of holders.
+#	realm_in_name: Append the name of the country after the title (Queen [of Sweden])
+#	allow: conditions for the character to hold the title
+#	gain_effect: fires when the title is granted
+#	lose_effect: fires when a title is lost if dismissal_trigger evaluates to false
+#	message: should fire a message to the its owner when set
+#	The other fields are all character modifiers.
+
+########################################################
+
+#Orlesian Chantry
+
+#The Grand Cleric of Ferelden, Chantry of Denerim 		ORANGE
+#The Grand Cleric of Orlais, Chantry in Val Royeux		PURPLE
+#The Grand Cleric of The Southern Marches, Chantry in Kirkwall	RED
+#The Grand Cleric of The Northern Marches, in Starkhaven	PINK
+#The Grand Cleric of Nevarra, in Nevarra 			GREY
+#The Grand Cleric of Anderfel, in Hossberg			WHITE
+#The Grand Cleric of Antiva, In Antiva Chantry			ROSE
+#The Grand Cleric of Rivain, In Dairsmund			BROWN
+#The Grand Cleric of Tevinter, in Exile at Halamshiral 		BLACK
+#The Grand Cleric of Cumberland, in Cumberland			YELLOW
+
+#Imperial Chantry
+
+#The Grand Cleric of Seheron, Chantry of Alam
+#The Grand Cleric of Minrathous, Chantry
+#The Grand Cleric of Vol Dorma, Chantry
+#The Grand Cleric of Vyrantium, Chantry
+#The Grand Cleric of Neromenian, Chantry
+#The Grand Cleric of Qarinus, Chantry
+#The Grand Cleric of Caimen Brea, Unoccupied
+#The Grand Cleric of Anderfel, Unoccupied
+#The Grand Cleric of Rivain, Unoccupied
+#The Grand Cleric of Antiva, Unoccupied
+#The Grand Cleric of the Marches, Unoccupied (Starkhaven)
+#The Grand Cleric of Orlais, Unoccupied
+#The Grand Cleric of Emerus, Unoccupied
+#The Grand Cleric of Ferelden, Unoccupied
+
+########################################################
+
+title_grand_cleric_andraste = {
+	religion = andrastian_chantry
+	can_elect_head = yes
+	
+	grant_limit = 10
+	
+	realm_in_name = no
+	show_as_title = yes
+	
+	opinion_effect = 20
+	dignity = 0.9
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.5
+	
+	allow = {
+		religion = andrastian_chantry
+		is_theocracy = yes
+		primary_title = {
+			OR = {
+				title = d_grand_cleric_fereldan
+				title = d_grand_cleric_orlais
+				title = d_grand_cleric_kirkwall
+				title = d_grand_cleric_starkhaven
+				title = d_grand_cleric_nevarra
+				title = d_grand_cleric_anderfel
+				title = d_grand_cleric_antiva
+				title = d_grand_cleric_rivain
+				title = d_grand_cleric_tevinter
+				title = d_grand_cleric_cumberland
+				}
+			}
+	}
+	
+	gain_effect = {
+	}
+	
+	lose_effect = {
+	}
+}
+
+title_grand_cleric_imperial = {
+	religion = imperial_chantry
+	can_elect_head = yes
+	
+	grant_limit = 14
+	
+	realm_in_name = no
+	show_as_title = yes
+	
+	opinion_effect = 20
+	dignity = 0.9
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.5
+	
+	allow = {
+		religion = imperial_chantry
+		is_theocracy = yes
+		primary_title = {
+			OR = {
+				title = d_imperial_cleric_seheron
+				title = d_imperial_cleric_minrathous
+				title = d_imperial_cleric_vol_dorma
+				title = d_imperial_cleric_vyrantium
+				title = d_imperial_cleric_neromenian
+				title = d_imperial_cleric_qarinus
+				title = d_imperial_cleric_caimen_brea
+				title = d_imperial_cleric_anderfel
+				title = d_imperial_cleric_rivain
+				title = d_imperial_cleric_antiva
+				title = d_imperial_cleric_marches
+				title = d_imperial_cleric_orlais
+				title = d_imperial_cleric_emerus
+				title = d_imperial_cleric_fereldan
+				}
+			}
+
+	}
+	
+	gain_effect = {
+	}
+	
+	lose_effect = {
+	}
+}
