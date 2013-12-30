@@ -1,0 +1,236 @@
+# Skin tones are 0 (light), 1 (tan), 2 (dark) and 3 (black)
+
+# Human
+
+avvargfx = {
+	skin_tone = 0
+}
+
+chasindgfx = {
+	skin_tone = 0
+}
+
+claynegfx = {
+	skin_tone = 0
+}
+
+fereldangfx = {
+	skin_tone = 0
+}
+
+cirrianegfx = {
+	skin_tone = 0
+}
+
+orlesiangfx = {
+	skin_tone = 0
+}
+
+plaescinegfx = {
+	skin_tone = 0
+}
+
+freemarchergfx = {
+	skin_tone = 1
+}
+
+antivangfx = {
+	skin_tone = 1
+}
+
+rivainigfx = {
+	skin_tone = 2
+}
+
+tevintergfx = {
+	skin_tone = 1
+}
+
+seherongfx = {
+	skin_tone = 2
+}
+
+andersgfx = {
+	skin_tone = 2
+}
+
+
+
+# Other Races
+
+kalsharokgfx = {
+	skin_tone = 2
+}
+
+orzimmargfx = {
+	skin_tone = 1
+}
+
+cityelfgfx = {
+	skin_tone = 1
+}
+
+dalishelfgfx = {
+	skin_tone = 1
+}
+
+qunarigfx = {
+	skin_tone = 1
+}
+
+darkspawngfx = {
+	skin_tone = 1
+}
+
+archdemongfx = {
+	skin_tone = 1
+}
+
+demongfx = {
+	skin_tone = 1
+}
+
+spiritgfx = {
+	skin_tone = 1
+}
+
+
+################################# VANILLA #################################
+
+# Western
+
+frankishgfx = {
+	skin_tone = 0
+}
+englishgfx = {
+	skin_tone = 0
+}
+germangfx = {
+	skin_tone = 0
+}
+occitangfx = {
+	skin_tone = 0
+}
+southerngfx = {
+	skin_tone = 1
+}
+celticgfx = {
+	skin_tone = 0
+}
+norsegfx = {
+	skin_tone = 0
+	christian_portraits = yes
+}
+knightsgfx = {
+	skin_tone = 0
+}
+republicsgfx = {
+	skin_tone = 0
+}
+saxongfx = {
+	skin_tone = 0
+}
+normangfx = {
+	skin_tone = 0
+}
+holygfx = {
+	skin_tone = 0
+}
+norseholygfx = {
+	skin_tone = 0
+}
+balticholygfx = {
+	skin_tone = 0
+}
+finnishholygfx = {
+	skin_tone = 0
+}
+
+# Eastern
+
+easternslavicgfx = {
+	skin_tone = 0
+}
+westernslavicgfx = {
+	skin_tone = 0
+}
+byzantinegfx = {
+	skin_tone = 1
+}
+ugricgfx = {
+	skin_tone = 0
+}
+slavicholygfx = {
+	skin_tone = 0
+}
+orthodoxholygfx = {
+	skin_tone = 1
+}
+
+# Muslim
+
+arabicgfx = {
+	skin_tone = 2
+}
+turkishgfx = {
+	skin_tone = 2
+}
+mongolgfx = {
+	skin_tone = 1
+}
+africangfx = {
+	skin_tone = 3
+}
+andalusiangfx = {
+	skin_tone = 1
+}
+
+bektashigfx = {
+	skin_tone = 2
+}
+
+hashshashingfx = {
+	skin_tone = 2
+}
+
+immortalsgfx = {
+	skin_tone = 2
+}
+
+#Other
+
+westafricangfx = {
+	skin_tone = 3
+}
+
+persiangfx = {
+	skin_tone = 2
+}
+
+westafricanholygfx = {
+	skin_tone = 3
+}
+
+# Culture groups
+
+muslimgfx = {
+	skin_tone = 2
+}
+easterngfx = {
+	skin_tone = 0
+}
+westerngfx = {
+	skin_tone = 0
+}
+mesoamericangfx = {
+	skin_tone = 1
+}
+jewishgfx = {
+	skin_tone = 1
+}
+aztecholygfx = {
+	skin_tone = 1
+}
+jewishholygfx = {
+	skin_tone = 1
+}
