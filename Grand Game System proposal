@@ -104,7 +104,7 @@ COMMANDS
 	remove_lover =
 	remove_regiment	=
 	remove_rival =
-	remove_settlement	=
+	remove_settlement =
 	remove_spouse	=
 	remove_title =
 	remove_trait =
@@ -119,16 +119,16 @@ OBJECTIVES:
 http://www.ckiiwiki.com/Objective_modding	
 
 PLOT/FACTION TARGETS
-	character			        	The plotter
-	spouse				       	  The plotter's spouse
-	rivals				         	The plotter's rivals
-	friends				         	The plotter's friends
-	liege_titles		       	The plotter's liege's titles
-	vassal_titles		      	The plotter's vassals' titles
-	realm_titles    		  	Titles in the plotter's realm
-	realm_characters    	  Characters in the plotter's realm
-	realm_characters_plus	  Characters in the plotter's realm, plus rivals and relatives of the plotter, parents, children and spouse
-	independent_rulers		  Independent rulers
+	character	       	The plotter
+	spouse			The plotter's spouse
+	rivals			The plotter's rivals
+	friends			The plotter's friends
+	liege_titles		The plotter's liege's titles
+	vassal_titles		The plotter's vassals' titles
+	realm_titles    	Titles in the plotter's realm
+	realm_characters    	Characters in the plotter's realm
+	realm_characters_plus	Characters in the plotter's realm, plus rivals and relatives of the plotter, parents, children and spouse
+	independent_rulers	Independent rulers
 
 PLOT POOL
 	intrigue_plot = YES
