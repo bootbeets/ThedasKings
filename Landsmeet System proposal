@@ -1,0 +1,221 @@
+LANDSMEET SYSTEM
+
+"For five years Anora has been queen, and proven herself worthy of the Therin name. She can lead our people through this
+crisis, and I can lead her armies. My lords and ladies, our land has been threatened before. It's been invaded, and lost,
+and won times beyond counting. We Ferelndans have proven that we will never truly be conquered so long as we are united.
+We must not let ourselves be divided now. Stand with me, and we shall defeat even the Blight itself!"
+ - Teyrn Loghain, 9:31 Dragon
+
+[Five Seconds later]
+
+"Traitors! Which of you stood against the Orlesian Emperor when his troops flattened your fields and raped your wives?
+You fought with us once, Eamon. You cared about this land once. Before you got too old and fat and content to even see
+what you risk. None of you deserve a say in what happens here! None of you have spilled blood for this land the way I have!
+How DARE you judge me!"
+ - Teyrn Loghain 9:31 Dragon
+
+
+
+The Landsmeet System is the game that Lords play once they have scrambled their way to the top tiers of their Kingdoms
+political ladder. The King, his council and the most prestigious of the realm landowners have in this their own private
+arena to decide, ideally, matters of state. More realistically, they now have a much higher stakes game of petty intrigue
+to play, pitting them against other and the Monarch in their quest to be at the top of the ladder - almost coincidently
+directing the realm through various political crises in the process. All matters of state, the monarch and international
+politics are run through this system and provide matters for debate and intrigue, ranging from minor nobles raising an
+issue in front of the realm to full blown civil war over claimants to the throne.
+
+To this end, the focus is upon:
+	Providing the player with a challenge to reach, an obstacle to clear and a set of characters to manage as Monarch.
+	Restricting the power of the Monarch both systematically via domestic policy, and randomly via Faction Leaders.
+	Hurting Blobbing. You have to be powerful at home before you can be a steamroller abroad.
+	Allowing the realm to be destabilised, without removing the opportunity for stability.
+	Tiering the most prestigious away from the general mass, providing four faces to remember instead of sixty.
+	Earning minor titles... but BETTER ones. What? No-one is going to turn down a title that comes with taxation rights.
+
+PRIMARY COMPONENTS:
+
+TRACKED CHARACTERS:
+	Monarch
+	Monarch Spouse (If Powerful)
+	Regent (If in place)
+	Councillors
+		Diplomat
+		Marshal
+		Intrigue
+		Steward
+		Grey Warden Advisor
+		Grand Cleric
+	All Four Personality Faction Leaders
+
+All Tracked Characters may be approached by outside influences to lobby for a certain change to be made a la Crown or
+Domestic laws, or international relations. This gives the 12 around the Monarch the ability to act treacherously for
+profit and cause scandal.
+	
+NOTABLE REALM NOBLES:
+The four most prestigious members of the realm are elevated to faction leaders in court, and maintenance events ensure
+unpopular or incapable members are replaced by new ones to keep the factions balanced and powerful.
+
+LOBBYING OF MINOR LORDS
+A method of lobbying by smaller lords, who may aim to turn a Faction leader onto the issue of their choice, or have them
+speak out in favour of their smaller cases. They may also ask for a political alliance to support their own faction.
+
+Minor Lords may start their own factions aimed at a specific issue, but these are dependant on the support of either the
+majority of the Minor Lordlings or on other faction leaders. They are vulnerable to petty scheming and the whims of
+the 13 Tracked Characters.
+
+SLIGHTLY LESS PETTY POLITICS
+The Tracked Characters, particularly the King and the Four Factions, are vulnerable to Political Debates. These high cousins
+of petty squabbles are basically spats between the participants, which are very dangerous but also very rewarding. To be
+at the top is a profitable venture, but only one can be there. Depending on the Domestic Policy, either the King, the
+Faction Leaders or neither have an advantage. This is tracked through the Kings Authority modifier on his sheet, vs the
+Political Standing of the Faction Leaders, plus each factions strength.
+
+ISSUE POLITICS
+When an issue faction reaches a certain power base, or acquires a powerful enough ally, the game will trigger an event where
+the case is presented at court for the consideration of all members of the court. Here the opposing faction personalities
+may bring to bear their own political power in support or opposition of the vote, or simply to abstain (which may result
+in loss of standing), and if the Monarch feels the balance is swinging too far away from his own stance, he will intervene.
+This is a series of events that effect all characters in the realm, and over the course of a few month debate period the
+argument may escalate to civil war, or fizzle out. Only one of these major debates may occur every few years, with a longer
+cooldown period for the specific issue raised.
+
+MONARCH ACTIONS
+All actions that the Monarch does, in support of a minor lordling, in regards to Orlais, if they do something unexpected,
+if they were to do something unkingly, is potentially reacted to by the 12 other Tracked Characters. This is dampened by
+the Monarch's Authority or Popularity, or the support of a Faction Leader, and maintaining good relations with the realm
+will allow the Monarch much freedom to act as they wish.
+
+REGAL SUCCESSION
+During life, the King designates an heir apparent, usually his firstborn, and depending on how low
+his Authority may be, he may be pushed to changing that to one more pleasing a particular Faction Leader
+	
+IF: The designated heir inherits, and no-one makes a move to replace them with another, they are crowned quickly.
+	
+IF: The designated heir inherits, but someone is unhappy with the choice, then it goes to debate and the crowning is
+delayed or the issue is possibly put to a bannorn wide vote between the best candidates. The resulting winner is quickly
+crowned.
+
+IF: The designated heir inherits, and someone objects enough to violence, then the debate quickly turns into desperate
+plots to possess the King or the loyalty of his men, and eventually turns to Civil War or a humiliating backing off and
+punishing to the losing party.
+
+In the case of no King being selected formally, then the 'King' is not titled as such, merely: "Designated Heir" or
+similar, and if replaced they lose all but the claim. In the case of the 'King' being backed in a civil war, they are
+Crowned informally, but gain the title until deposed.
+
+
+[WILL REVIEW WHAT COULD BE USED IN ADDITION TO GRAND GAME STUFF]
+
+
+EVENTS:
+
+TOOLS:
+http://www.ckiiwiki.com/Scopes
+http://forum.paradoxplaza.com/forum/showthread.php?604588-Events
+
+VARIABLE
+        ROOT         Who got the event
+        FROM         Who sent this event to us
+        PREV         Previous scope
+
+        SET VARIABLE =
+        CHANGE VARIABLE =
+        CHECK VARIABLE = { which = ** value = 1.0 }
+
+TRIGGERS
+        any_current_enemy =
+        any_friend =
+        any_courtier =
+        any_dynasty_member =
+        any_rival =
+        any_ward =
+        any_realm_lord =
+        num_of_rivals =
+        num_of_friends =
+        has_character_flag =
+        has_character_modifier =
+        has_lover =
+        at_location =
+        opinion = { who =
+        reverse_opinion = { who =
+        holder_scope =
+        liege_before_war =
+        has_job_title =
+        has_minor_title =
+        location = { is_heresy_of = ROOT } #character's location
+
+OPTIONS
+        random_rival =
+        random_rival =
+        random_dynasty_member =
+        random_realm_lord =
+        any_neighbor_province =
+
+http://www.ckiiwiki.com/Commands
+
+COMMANDS
+        add_weak_claim =
+        add_weak_pressed_claim =
+        add_rival =
+        activate_plot =
+        add_casus_belli =
+        add_friend =
+        approve_law =
+        befriend =
+        bribe_character_command =
+        break_betrothal =
+        change_controller =
+        clr_character_flag =
+        clr_country_flag =
+        clr_global_flag =
+        clr_province_flag =
+        clr_title_flag =
+        execute_character_command =
+        gain_all_occupied_titles =
+        gain_settlements_under_title =
+        gain_title_plus_barony_if_unlanded =
+        give_job_title =
+        give_minor_title =
+        impregnate =
+        imprison =
+        kill =
+        leave_plot =
+        remove_character_modifier =
+        remove_claim =
+        remove_friend =
+        remove_from_unit =
+        remove_lover =
+        remove_regiment =
+        remove_rival =
+        remove_settlement =
+        remove_spouse =
+        remove_title =
+        remove_trait =
+        requestpeace =
+        reveal_plot =
+        reveal_plot_w_message =
+        set_hereditary_job =
+        vote_on_law_command =
+
+
+OBJECTIVES:
+http://www.ckiiwiki.com/Objective_modding        
+
+PLOT/FACTION TARGETS
+        character                       The plotter
+        spouse                        The plotter's spouse
+        rivals                        The plotter's rivals
+        friends                        The plotter's friends
+        liege_titles                The plotter's liege's titles
+        vassal_titles                The plotter's vassals' titles
+        realm_titles            Titles in the plotter's realm
+        realm_characters            Characters in the plotter's realm
+        realm_characters_plus        Characters in the plotter's realm, plus rivals and relatives of the plotter, parents, children and spouse
+        independent_rulers        Independent rulers
+
+PLOT POOL
+        intrigue_plot = YES
+        military_plot = YES
+        vassal_rank_plot = YES
+        vassal_intrigue_plot = YES
+        murder_plot = YES
