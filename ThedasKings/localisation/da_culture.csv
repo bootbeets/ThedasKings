@@ -1,10 +1,11 @@
 alamarri;Alamarri;;;;;;;;;;;;;x
-avaars;Avaars;;;;;;;;;;;;;x
+avaar;Avaar;;;;;;;;;;;;;x
 chasind;Chasind;;;;;;;;;;;;;x
 clayne;Clayne;;;;;;;;;;;;;x
 fereldan;Fereldan;;;;;;;;;;;;;x
 imperial_orlesian;Orlesian;;;;;;;;;;;;;x
 cirriane;Cirriane;;;;;;;;;;;;;x
+inghirsh;Inghirsh;;;;;;;;;;;;;x
 orlesian;Orlesian;;;;;;;;;;;;;x
 free_marcher;Free Marcher;;;;;;;;;;;;;x
 plaescine;Plaescine;;;;;;;;;;;;;x
@@ -24,6 +25,11 @@ cumberland;Cumberlander;;;;;;;;;;;;;x
 trevis;Trevis;;;;;;;;;;;;;x
 hunter_fell;Hunter Fell;;;;;;;;;;;;;x
 nessum;Nessum;;;;;;;;;;;;;x
+ancient_tevinter;Ancient Tevinter;;;;;;;;;;;;;x
+neromenian;Neromenian;;;;;;;;;;;;;x
+qarinus;Qarinus;;;;;;;;;;;;;x
+tevinter;Tevinter;;;;;;;;;;;;;x
+barindur;Barindur;;;;;;;;;;;;;x
 dwarven;Dwarva;;;;;;;;;;;;;x
 kal_sharok;Kal Sharok;;;;;;;;;;;;;x
 orzammar;Orzammar;;;;;;;;;;;;;x
@@ -32,7 +38,7 @@ antivan;Antivan;;;;;;;;;;;;;x
 rivaini;Rivaini;;;;;;;;;;;;;x
 imperial;Imperial;;;;;;;;;;;;;x
 seheron;Seheron;;;;;;;;;;;;;x
-tevinter;Tevinter;;;;;;;;;;;;;x
+imperial_tevinter;Tevinter;;;;;;;;;;;;;x
 magister;Magister;;;;;;;;;;;;;x
 elven;Elvhen;;;;;;;;;;;;;x
 dalish_elf;Dalish;;;;;;;;;;;;;x
@@ -46,7 +52,7 @@ qunari;Qunari;;;;;;;;;;;;;x
 tal_vashoth;Tal Vashoth;;;;;;;;;;;;;x
 horde;Darkspawn Horde;;;;;;;;;;;;;x
 darkspawn;Darkspawn;;;;;;;;;;;;;x
-arch_demon;Arch Demon;;;;;;;;;;;;;x
+arch_demon;Archdemon;;;;;;;;;;;;;x
 fade;Fade;;;;;;;;;;;;;x
-demons;Demons;;;;;;;;;;;;;x
-spirits;Spirits;;;;;;;;;;;;;x
+demon;Demon;;;;;;;;;;;;;x
+spirit;Spirit;;;;;;;;;;;;;x

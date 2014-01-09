@@ -196,10 +196,7 @@ the_old_gods = {
                         GOD_DUMAT GOD_DRAGON_OF_SILENCE GOD_THE_ARCHDEMON
                 }
                
-                can_call_crusade = yes
-                can_grant_invasion_cb = invasion
-               
-                religious_clothing_head = 5
+				religious_clothing_head = 5
                 religious_clothing_priest = 5
         }
        
@@ -216,10 +213,7 @@ the_old_gods = {
                         GOD_ZAZIKEL GOD_DRAGON_OF_CHAOS GOD_THE_ARCHDEMON
                 }
                
-                can_call_crusade = yes
-                can_grant_invasion_cb = invasion
-               
-                religious_clothing_head = 5
+				religious_clothing_head = 5
                 religious_clothing_priest = 5
         }
        
@@ -236,9 +230,6 @@ the_old_gods = {
                         GOD_TOTH GOD_DRAGON_OF_FIRE GOD_THE_ARCHDEMON
                 }
                
-                can_call_crusade = yes
-                can_grant_invasion_cb = invasion
- 
                 religious_clothing_head = 5
                 religious_clothing_priest = 5
         }
@@ -276,9 +267,6 @@ the_old_gods = {
                         GOD_URTHEMIEL GOD_DRAGON_OF_BEAUTY GOD_THE_ARCHDEMON
                 }
                
-                can_call_crusade = yes
-                can_grant_invasion_cb = invasion
- 
                 religious_clothing_head = 5
                 religious_clothing_priest = 5
         }
@@ -296,9 +284,6 @@ the_old_gods = {
                         GOD_RAZIKALE GOD_DRAGON_OF_MYSTERY GOD_THE_ARCHDEMON
                 }
                
-                can_call_crusade = yes
-                can_grant_invasion_cb = invasion
- 
                 religious_clothing_head = 5
                 religious_clothing_priest = 5
         }
@@ -316,14 +301,11 @@ the_old_gods = {
                         GOD_LUSACAN GOD_DRAGON_OF_NIGHT GOD_THE_ARCHDEMON
                 }
                
-                can_call_crusade = yes
-                can_grant_invasion_cb = invasion
- 
                 religious_clothing_head = 5
                 religious_clothing_priest = 5
         }
        
-        old_gods = {
+        darkspawn_old_gods = {
                 graphical_culture = persiangfx
                
                 icon = 10
@@ -337,8 +319,24 @@ the_old_gods = {
                 }
                
                 can_call_crusade = yes
-                can_grant_invasion_cb = invasion
  
+                religious_clothing_head = 5
+                religious_clothing_priest = 5
+        }
+		
+		old_gods = {
+                graphical_culture = persiangfx
+               
+                icon = 10
+                heresy_icon = 12
+               
+                color = { 0.5 0.7 0.2 }
+                crusade_name = LESSER_BLIGHT
+                scripture_name = THE_WORDS_OF_DUMAT
+                god_names = {
+                        GOD_DUMAT GOD_DRAGON_OF_SILENCE GOD_ZAZIKEL GOD_DRAGON_OF_CHAOS GOD_TOTH GOD_DRAGON_OF_FIRE GOD_ANDORAL GOD_DRAGON_OF_SLAVES GOD_URTHEMIEL GOD_DRAGON_OF_BEAUTY GOD_RAZIKALE GOD_DRAGON_OF_MYSTERY GOD_LUSACAN GOD_DRAGON_OF_NIGHT
+                }
+                
                 religious_clothing_head = 5
                 religious_clothing_priest = 5
         }

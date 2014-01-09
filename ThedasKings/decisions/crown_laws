@@ -1,20 +1,34 @@
-# Crown level (de jure) laws
-# Laws ending with 0 will be default laws at game start
+#################
+### Chalkface ###
+#################
 
 de_jure_laws = {
 
-# CENTRALIZATION
+###### CROWN AUTHORITY ######
 
-	centralization_0 = {
+#Bloooooop
+
+#Domestic Policy
+#Antivan	Weak
+#Ander		Conflicted
+#Fereldan	Equal
+#Tevinter	Respected
+#Orlesian	Strong
+
+####### CHANTRY AUTHORITY ######
+
+	chantry_0 = { #Minimal
 		show_as_title = yes
-		group = centralization
+		group = chantry
 		default = yes
 		
-		feudal_opinion = 5
+		rel_head_opinion = -50
 		
 		allow = {
-			holder_scope = { is_republic = no }
-			has_law = centralization_1
+			holder_scope = {
+				OR = { religion = andrastian_chantry religion = imperial_chantry }
+			has_law = chantry_1
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -27,431 +41,522 @@ de_jure_laws = {
 		}
 		effect = {
 			hidden_tooltip = {
-				revoke_law = centralization_0
-				revoke_law = centralization_1
-				revoke_law = centralization_2
-				revoke_law = centralization_3
-				revoke_law = centralization_4
+				revoke_law = chantry_0
+				revoke_law = chantry_1
+				revoke_law = chantry_2
+				revoke_law = chantry_3
+				revoke_law = chantry_4
 			}
-			
-			set_appoint_generals = no
-#			set_appoint_regents = no
-			set_the_kings_peace = no
-			set_the_kings_full_peace = no
-			set_protected_inheritance = no
-			set_allow_title_revokation = no
-			set_allow_free_infidel_revokation = no
-#			set_allow_free_revokation = no
-		}
-		
-		city_vassal_min_levy = 0.0
-		castle_vassal_min_levy = 0.0
-		temple_vassal_min_levy = 0.0
-	}
-	
-	centralization_1 = {
-		show_as_title = yes
-		group = centralization
-		
-		feudal_opinion = -5
-		
-		allow = {
-			OR = {
-				has_law = centralization_0
-				has_law = centralization_2
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { has_law = centralization_0 }
-			}
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		
-		pass_effect = {
-			hidden_tooltip = {
-				if = { 
-					limit = {
-						has_law = centralization_0
-					}
-					any_de_jure_vassal = {
-						limit = {
-							OR = {
-								religion = ROOT
-								is_liege_or_above = ROOT
-							}
-						}
-						opinion = {
-							who = ROOT
-							modifier = opinion_increased_authority
-							months = 60
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			hidden_tooltip = {
-				revoke_law = centralization_0
-				revoke_law = centralization_1
-				revoke_law = centralization_2
-				revoke_law = centralization_3
-				revoke_law = centralization_4
-			}
-			set_appoint_generals = yes
-#			set_appoint_regents = no
-			set_the_kings_peace = no
-			set_the_kings_full_peace = no
-			set_protected_inheritance = no
-			set_allow_title_revokation = yes
-			set_allow_free_infidel_revokation = no
-#			set_allow_free_revokation = no
-		}
-		
-		city_vassal_min_levy = 0.2
-		castle_vassal_min_levy = 0.2
-		temple_vassal_min_levy = 0.2
-	}
-	
-	centralization_2 = {
-		show_as_title = yes
-		group = centralization
-		
-		feudal_opinion = -10
-		
-		allow = {
-			holder_scope = { 
-				is_republic = no 
-				
-				custom_tooltip = { 
-					text = TT_NOT_UNREFORMED_PAGAN
-					hidden_tooltip = {
-						NOT = { religion = pagan }
-						NOT = { religion = avvar }
-						NOT = { religion = chasind }
-						NOT = { religion = orth }
-					}
-				}
-			}
-			OR = {
-				has_law = centralization_1
-				has_law = centralization_3
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.01
-			}
-			modifier = {
-				factor = 0
-				NOT = { has_law = centralization_1 }
-			}
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		
-		pass_effect = {
-			hidden_tooltip = {
-				if = { 
-					limit = {
-						has_law = centralization_1
-					}
-					any_de_jure_vassal = {
-						limit = {
-							OR = {
-								religion = ROOT
-								is_liege_or_above = ROOT
-							}
-						}
-						opinion = {
-							who = ROOT
-							modifier = opinion_increased_authority
-							months = 60
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			hidden_tooltip = {
-				revoke_law = centralization_0
-				revoke_law = centralization_1
-				revoke_law = centralization_2
-				revoke_law = centralization_3
-				revoke_law = centralization_4
-			}
-			set_appoint_generals = yes
-#			set_appoint_regents = no
-			set_the_kings_peace = yes
-			set_the_kings_full_peace = no
-			set_protected_inheritance = no
-			set_allow_title_revokation = yes
-			set_allow_free_infidel_revokation = yes
-#			set_allow_free_revokation = no
-		}
-		
-		city_vassal_min_levy = 0.4
-		castle_vassal_min_levy = 0.4
-		temple_vassal_min_levy = 0.4
-	}
-	
-	centralization_3 = {
-		show_as_title = yes
-		group = centralization
-		
-		feudal_opinion = -20
-		
-		allow = {
-			holder_scope = { 
-				is_republic = no 
-				custom_tooltip = {
-					text = TT_NOT_UNREFORMED_PAGAN
-					hidden_tooltip = {
-						NOT = { religion = pagan }
-						NOT = { religion = avvar }
-						NOT = { religion = chasind }
-						NOT = { religion = orth }
-					}
-				}
-			}
-			OR = {
-				has_law = centralization_2
-				has_law = centralization_4
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.005
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					NOT = { has_law = centralization_2 }
-					NOT = { ruled_years = 20 }
-				}
-			}
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		
-		pass_effect = {
-			hidden_tooltip = {
-				if = { 
-					limit = {
-						has_law = centralization_2
-					}
-					any_de_jure_vassal = {
-						limit = {
-							OR = {
-								religion = ROOT
-								is_liege_or_above = ROOT
-							}
-						}
-						opinion = {
-							who = ROOT
-							modifier = opinion_increased_authority
-							months = 60
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-		
-			hidden_tooltip = {
-				revoke_law = centralization_0
-				revoke_law = centralization_1
-				revoke_law = centralization_2
-				revoke_law = centralization_3
-				revoke_law = centralization_4
-			}
-			set_appoint_generals = yes
-#			set_appoint_regents = yes
-			set_the_kings_peace = yes
-			set_the_kings_full_peace = no
-			set_protected_inheritance = yes
-			set_allow_title_revokation = yes
-			set_allow_free_infidel_revokation = yes
-#			set_allow_free_revokation = no
-		}
-		
-		city_vassal_min_levy = 0.6
-		castle_vassal_min_levy = 0.6
-		temple_vassal_min_levy = 0.6
-	}
-	
-	centralization_4 = {
-		show_as_title = yes
-		group = centralization
-		
-		feudal_opinion = -30
-		
-		allow = {
-			holder_scope = { 
-				is_republic = no 
-				custom_tooltip = {
-					text = TT_NOT_UNREFORMED_PAGAN
-					hidden_tooltip = {
-						NOT = { religion = pagan }
-						NOT = { religion = avvar }
-						NOT = { religion = chasind }
-						NOT = { religion = orth }
-					}
-				}
-			}
-			has_law = centralization_3
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.001
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					NOT = { has_law = centralization_3 }
-					NOT = { ruled_years = 20 }
-				}
-			}
-		}
-		
-		ai_will_revoke = {
-			factor = 0
-		}
-		
-		pass_effect = {
-			hidden_tooltip = {
-				if = { 
-					limit = {
-						has_law = centralization_3
-					}
-					any_de_jure_vassal = {
-						limit = {
-							OR = {
-								religion = ROOT
-								is_liege_or_above = ROOT
-							}
-						}
-						opinion = {
-							who = ROOT
-							modifier = opinion_increased_authority
-							months = 60
-						}
-					}
-				}
-			}
-		}
-		
-		effect = {
-			hidden_tooltip = {
-				revoke_law = centralization_0
-				revoke_law = centralization_1
-				revoke_law = centralization_2
-				revoke_law = centralization_3
-				revoke_law = centralization_4
-			}
-			set_appoint_generals = yes
-#			set_appoint_regents = yes
-			set_the_kings_peace = yes
-			set_the_kings_full_peace = yes
-			set_protected_inheritance = yes
-			set_allow_title_revokation = yes
-			set_allow_free_infidel_revokation = yes
-#			set_allow_free_revokation = yes
-		}
-		
-		city_vassal_min_levy = 0.8
-		castle_vassal_min_levy = 0.8
-		temple_vassal_min_levy = 0.8
-	}
-	
-# INVESTITURE
-
-	investiture_law_0 = {
-		show_as_title = yes
-		group = investiture_law
-		default = yes
-		potential = {
-			year = 1000
-			holder_scope = { religion = andrastian_chantry }
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
 		}
 		effect = {
-			hidden_tooltip = {
-				revoke_law = investiture_law_0
-				revoke_law = investiture_law_1
-			}
-			set_investiture = head
-		}
-	}
-	
-	investiture_law_1 = {
-		show_as_title = yes
-		rel_head_opinion = -30
-		free_invest_vassal_opinion = 10 # vassals with bishops will appreciate this law
-		temple_all_opinion = 10 # Bishops will tend to be more loyal to the Crown
-		group = investiture_law
-		potential = {
-			holder_scope = { religion = andrastian_chantry }
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			modifier = {
-				factor = 0.002 # Rare to do this
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					holder_scope = {
-						NOT = { trait = cynical }
-					}
-					NOT = { has_law = investiture_law_0 }
-				}
-			}
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = investiture_law_0
-				revoke_law = investiture_law_1
-			}
 			set_investiture = any
 		}
 	}
+
+	chantry_1 = { #Weak
+		show_as_title = yes
+		group = chantry
+		default = yes
+		
+		rel_head_opinion = -25
+		
+		allow = {
+			holder_scope = {
+				OR = {	
+					religion = andrastian_chantry
+					religion = imperial_chantry
+				}
+				OR = {
+					has_law = chantry_0
+					has_law = chantry_2
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+			}
+		ai_will_do = {
+			factor = 0
+			}
+		ai_will_revoke = {
+			factor = 0
+			}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = chantry_0
+				revoke_law = chantry_1
+				revoke_law = chantry_2
+				revoke_law = chantry_3
+				revoke_law = chantry_4
+				}
+			}
+		effect = {
+			set_investiture = any
+		}
+	}
+
+	chantry_2 = { #Moderate
+		show_as_title = yes
+		group = chantry
+		default = yes
+		
+		rel_head_opinion = 0
+		
+		allow = {
+			holder_scope = {
+				OR = {	
+					religion = andrastian_chantry
+					religion = imperial_chantry
+				}
+				OR = {
+					has_law = chantry_1
+					has_law = chantry_3
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+			}
+		ai_will_do = {
+			factor = 0
+			}
+		ai_will_revoke = {
+			factor = 0
+			}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = chantry_0
+				revoke_law = chantry_1
+				revoke_law = chantry_2
+				revoke_law = chantry_3
+				revoke_law = chantry_4
+				}
+			}
+		effect = {
+			set_investiture = papal
+		}
+	}
+
+	chantry_3 ={ #Strong
+		show_as_title = yes
+		group = chantry
+		default = yes
+		
+		rel_head_opinion = 25
+		
+		allow = {
+			holder_scope = {
+				OR = {	
+					religion = andrastian_chantry
+					religion = imperial_chantry
+				}
+				OR = {
+					has_law = chantry_2
+					has_law = chantry_4
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+			}
+		ai_will_do = {
+			factor = 0
+			}
+		ai_will_revoke = {
+			factor = 0
+			}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = chantry_0
+				revoke_law = chantry_1
+				revoke_law = chantry_2
+				revoke_law = chantry_3
+				revoke_law = chantry_4
+				}
+			}
+		effect = {
+			set_investiture = papal
+		}
+	}
+
+	chantry_4 = { #Extraordinary
+		show_as_title = yes
+		group = chantry
+		default = yes
+		
+		rel_head_opinion = 50
+		
+		allow = {
+			holder_scope = {
+				OR = { religion = andrastian_chantry religion = imperial_chantry }
+			has_law = chantry_3
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = chantry_0
+				revoke_law = chantry_1
+				revoke_law = chantry_2
+				revoke_law = chantry_3
+				revoke_law = chantry_4
+				}
+		}
+		effect = {
+			set_investiture = papal
+		}
+	}
+
+###### MAGE STATUS ######
+
+	mage_0 = { #Magiocracy
+		show_as_title = yes
+		group = mage
+		default = yes
+		
+		allow = {
+			has_law = mage_1
+			}
+		revoke_allowed = {
+			always = no
+			}
+		ai_will_do = {
+			factor = 0
+			}
+		ai_will_revoke = {
+			factor = 0
+			}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
 	
+	mage_1 = { #Liberated
+		show_as_title = yes
+		group = mage
+		default = yes
+		
+		allow = {
+			OR = {
+				has_law = mage_0
+				has_law = mage_2
+				}
+		}
+		revoke_allowed = {
+			always = no
+			}
+		ai_will_do = {
+			factor = 0
+			}
+		ai_will_revoke = {
+			factor = 0
+			}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+
+	mage_2 = { #Circle of Magi
+		show_as_title = yes
+		group = mage
+		default = yes
+		
+		allow = {
+			holder_scope = {
+				OR = { religion = andrastian_chantry religion = imperial_chantry }
+			OR = {
+				has_law = mage_1
+				has_law = mage_3
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+			}
+		ai_will_do = {
+			factor = 0
+			}
+		ai_will_revoke = {
+			factor = 0
+			}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+
+	mage_3 = { #Imprisoned
+		show_as_title = yes
+		group = mage
+		default = yes
+		
+		allow = {
+			OR = {
+				has_law = mage_2
+				has_law = mage_4
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+	
+	mage_4 = { #Maleficarum
+		show_as_title = yes
+		group = mage
+		default = yes
+		
+		allow = {
+			has_law = mage_3
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+
+****** Circle Autonomy *****
+
+	circle_0 = { #Independant
+		show_as_title = yes
+		group = circle
+		default = yes
+		
+		allow = {
+			has_law = mage_2
+			has_law = circle_1
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+	
+	circle_1 = { #Unregulated
+		show_as_title = yes
+		group = circle
+		default = yes
+		
+		allow = {
+			has_law = mage_2
+			OR = {
+				has_law = circle_0
+				has_law = circle_2
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+	
+	circle_2 = { #Restricted
+		show_as_title = yes
+		group = circle
+		default = yes
+		
+		allow = {
+			has_law = mage_2
+			OR = {
+				has_law = circle_1
+				has_law = circle_3
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+	
+	circle_3 = { #Policed
+		show_as_title = yes
+		group = circle
+		default = yes
+		
+		allow = {
+			has_law = mage_2
+			OR = {
+				has_law = circle_2
+				has_law = circle_4
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+	
+	circle_4 = { #Servitude
+		show_as_title = yes
+		group = circle
+		default = yes
+		
+		allow = {
+			has_law = mage_2
+			has_law = circle_3
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+
+###### SLAVERY ######
+
+#Universal
+#Tevinter
+#Elven
+#Servitude
+#Illegal
+	
+###### ALIENAGE ######
+
+#Autonomous	
+#Protected
+#Contained
+#Exploited
+#Enslaved
+
+
+###### Commercial Policy ######
+
+#Lawless
+#Unregulated
+#Balanced
+#Restricted
+#Monopolised
+
+
+###### JUDICIAL POLICY ######
+
+#Lawless
+#Forgiving
+#Balanced
+#Strict
+#Harsh
+
 }

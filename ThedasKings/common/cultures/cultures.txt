@@ -4,7 +4,7 @@
 alamarri = {
 	graphical_culture = norsegfx
 	
-	avaars = {
+	avaar = {
 		graphical_culture = norsegfx
 		
 		color = { 0.3 0.55 0.8 }
@@ -150,6 +150,37 @@ imperial_orlesian = {
 
 		modifier = default_culture_modifier
 	}
+	
+	inghirsh = {
+		graphical_culture = norsegfx
+		
+		color = { 0.5 0.5 0.5 }
+
+		male_names = {
+			Abernath Agmo Aldenon Ap Arland Barlin Brandel Bulfa Byron Cadrim Ceorlic Conobar Cormac Dane Daveth Drass Eddelbrek Eirik Elorn Elstan
+			Fergus Gable Garavel Gareth Hafter Harwen Havard Herren Imrek Ines Irminric Irving Kell Kester Kolgrim Kylon Levi Loghain Lomo
+			Luthias Maric Mather Morrighan Murdock Ormo Oswyn Owen Owyne Radun Raelnor Rendorn Rexel Rhys Riordan Ruadan Rylock Sadatt Sarha Sarim
+			Sighard Taoran Teagan Urien Wade Yuriah
+		}
+		female_names = {
+			Alfstanna Andraste Cauthrien Elethia Farrah Habren Haelia Kaitlyn Keili Landra Lowenna Mallol Mheairi Moira Morag Morrigan Rowan Sang Sorcha Tamra
+		}
+		
+		dukes_called_kings = yes
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 5
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 50
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+	}
+	
 	orlesian = {
 		graphical_culture = frankishgfx
 		
@@ -659,61 +690,36 @@ free_marcher = {
 	}		
 }
 
-dwarven = {
-	graphical_culture = westerngfx
+anderfel = {
+	graphical_culture = easterngfx
 
-	kal_sharok = {
-		graphical_culture = frankishgfx
+	anders = {
+		graphical_culture = ugricgfx
 		
-		color = { 0.8 0.8 0.2 }
+		color = { 0.1 0.6 0.6 }
+
 		male_names = {
-			Novas Lywulf
+			Anders
 		}
 		female_names = {
-			Kalah
+			Lady
 		}
+		from_dynasty_prefix = "of "
 
 		modifier = default_culture_modifier
-
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 60
-		mat_grf_name_chance = 10
-		father_name_chance = 10
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 10
-		mat_grm_name_chance = 60
-		mother_name_chance = 10
 	}
-	
-	orzammar = {
-		graphical_culture = normangfx
-
-		color = { 0.8 0.7 0.1 }
+	orth	 = {
+		graphical_culture = ugricgfx
 		
+		color = { 0.4 0.75 0.85 }
+
 		male_names = {
-			Ademaro Ahren Alimar Anso Anwer Baizyl Bartrand Beraht Bhelen Bodahn Boermor Brogan Bruntin Burkel Caridin Czibor Dailian Darvianak Denek Dougal Dulin
-			Dworkin Dwyn Endrin Emrys Everd Frandlin Figor Garin Gerav Gertek Goilinar Gorim Gwiddor Hirol Hugin Iwan Janar Javaris Jerrik Jukka Kardol Kasch
-			Legnar Leske Loilinar Lucjan Mainar Mandar Merin Minderel Nalthur Nevin Oghren Olaniv Ordel Orseck Orson Oskias Piotin Pyral Renvil Rhatigan Rogek Roggar
-			Ronus Roshen Seweryn Temmerin Tegrin Thaulid Tovez Trian Varric Varick Vartag Velanz Voldrik Wojech Yevhen
+			Orth
 		}
 		female_names = {
-			Adal Branka Corra Dagna Farinden Felsi Filda Hanashan Hespith Jarvia Kalah Laryn Lenka Mardy Mischa Myaja Nadezda Nerav Olinda Orta Rica Shayle Sigrun Unna Utha Zerlinda
+			Lady
 		}
-		from_dynasty_prefix = "de "
-		grammar_transform = french
-		
-		bastard_dynasty_prefix = "Fitz"
-		
-		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
-		pat_grf_name_chance = 30
-		mat_grf_name_chance = 10
-		father_name_chance = 25
-		
-		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
-		pat_grm_name_chance = 20
-		mat_grm_name_chance = 40
-		mother_name_chance = 5
+		from_dynasty_prefix = "of "
 
 		modifier = default_culture_modifier
 	}
@@ -793,7 +799,7 @@ imperial = {
 		
 		modifier = default_culture_modifier
 	}
-	tevinter = {
+	imperial_tevinter = {
 		graphical_culture = byzantinegfx
 		
 		color = { 0.8 0.3 0.8 }
@@ -851,6 +857,188 @@ imperial = {
 	}
 }
 
+ancient_tevinter = {
+	graphical_culture = { byzantinegfx }
+	
+	neromenian = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.8 0.3 0.8 }
+
+		male_names = {
+			Caladrius Corin Danarius Danrinius Devon Hessarian Parthalan Thalisian Titus
+		}
+		female_names = {
+			Eleni Hadriana Maevaris Senestra Tallis Vasilia
+		}
+
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
+	
+	qarinus = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.8 0.3 0.8 }
+
+		male_names = {
+			Caladrius Corin Danarius Danrinius Devon Hessarian Parthalan Thalisian Titus
+		}
+		female_names = {
+			Eleni Hadriana Maevaris Senestra Tallis Vasilia
+		}
+
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
+
+	tevinter = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.8 0.3 0.8 }
+
+		male_names = {
+			Caladrius Corin Danarius Danrinius Devon Hessarian Parthalan Thalisian Titus
+		}
+		female_names = {
+			Eleni Hadriana Maevaris Senestra Tallis Vasilia
+		}
+
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
+
+	barindur = {
+		graphical_culture = byzantinegfx
+		
+		color = { 0.8 0.3 0.8 }
+
+		male_names = {
+			Caladrius Corin Danarius Danrinius Devon Hessarian Parthalan Thalisian Titus
+		}
+		female_names = {
+			Eleni Hadriana Maevaris Senestra Tallis Vasilia
+		}
+
+		from_dynasty_prefix = "of "
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 50
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 50
+		mat_grm_name_chance = 50
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+
+		modifier = default_culture_modifier
+	}
+
+}
+
+dwarven = {
+	graphical_culture = westerngfx
+
+	kal_sharok = {
+		graphical_culture = frankishgfx
+		
+		color = { 0.8 0.8 0.2 }
+		male_names = {
+			Novas Lywulf
+		}
+		female_names = {
+			Kalah
+		}
+
+		modifier = default_culture_modifier
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 60
+		mat_grf_name_chance = 10
+		father_name_chance = 10
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 60
+		mother_name_chance = 10
+	}
+	
+	orzammar = {
+		graphical_culture = normangfx
+
+		color = { 0.8 0.7 0.1 }
+		
+		male_names = {
+			Ademaro Ahren Alimar Anso Anwer Baizyl Bartrand Beraht Bhelen Bodahn Boermor Brogan Bruntin Burkel Caridin Czibor Dailian Darvianak Denek Dougal Dulin
+			Dworkin Dwyn Endrin Emrys Everd Frandlin Figor Garin Gerav Gertek Goilinar Gorim Gwiddor Hirol Hugin Iwan Janar Javaris Jerrik Jukka Kardol Kasch
+			Legnar Leske Loilinar Lucjan Mainar Mandar Merin Minderel Nalthur Nevin Oghren Olaniv Ordel Orseck Orson Oskias Piotin Pyral Renvil Rhatigan Rogek Roggar
+			Ronus Roshen Seweryn Temmerin Tegrin Thaulid Tovez Trian Varric Varick Vartag Velanz Voldrik Wojech Yevhen
+		}
+		female_names = {
+			Adal Branka Corra Dagna Farinden Felsi Filda Hanashan Hespith Jarvia Kalah Laryn Lenka Mardy Mischa Myaja Nadezda Nerav Olinda Orta Rica Shayle Sigrun Unna Utha Zerlinda
+		}
+		from_dynasty_prefix = "de "
+		grammar_transform = french
+		
+		bastard_dynasty_prefix = "Fitz"
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+	}
+}
+
+
 elven = {
 	graphical_culture = westerngfx
 
@@ -907,7 +1095,7 @@ elven = {
 			Elrond
 		}
 		female_names = {
-			Galadrial
+			Galadriel
 		}
 	
 		modifier = default_culture_modifier
@@ -923,41 +1111,6 @@ elven = {
 		mother_name_chance = 0
 	}
 	
-}
-
-anderfel = {
-	graphical_culture = easterngfx
-
-	anders = {
-		graphical_culture = ugricgfx
-		
-		color = { 0.1 0.6 0.6 }
-
-		male_names = {
-			Anders
-		}
-		female_names = {
-			Lady
-		}
-		from_dynasty_prefix = "of "
-
-		modifier = default_culture_modifier
-	}
-	orth	 = {
-		graphical_culture = ugricgfx
-		
-		color = { 0.4 0.75 0.85 }
-
-		male_names = {
-			Orth
-		}
-		female_names = {
-			Lady
-		}
-		from_dynasty_prefix = "of "
-
-		modifier = default_culture_modifier
-	}
 }
 
 qun = {
@@ -1065,14 +1218,14 @@ horde = {
 fade = {
 	graphical_culture = easterngfx
 
-	demons = {
+	demon = {
 		graphical_culture = easternslavicgfx
 		graphical_unit_culture = western
 		
 		color = { 0.2 0.4 0.1 }
 
 		male_names = {
-			Daedra
+			Pride
 		}
 		female_names = {
 			Desire
@@ -1095,7 +1248,7 @@ fade = {
 
 		modifier = default_culture_modifier
 	}
-	spirits = {
+	spirit = {
 		graphical_culture = westernslavicgfx
 		
 		color = { 0.4 0.6 0.4 }
@@ -1104,7 +1257,7 @@ fade = {
 			Vigil
 		}
 		female_names = {
-			Honest
+			Hope
 		}
 		
 		from_dynasty_prefix = "of "
