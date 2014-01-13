@@ -2,6 +2,23 @@
 
 laws = {
 
+###### Commercial Policy ######
+
+#Lawless
+#Unregulated
+#Balanced
+#Restricted
+#Monopolised
+
+
+###### JUDICIAL POLICY ######
+
+#Lawless
+#Forgiving
+#Balanced
+#Strict
+#Harsh
+
 	# FEUDAL VASSAL LEVY SIZE LAWS
 	##############################
 	
@@ -373,131 +390,6 @@ laws = {
 		city_vassal_max_levy = -0.05
 	}
 	
-	
-	# CITY VASSAL TAX SIZE LAWS
-	##############################
-	
-	city_tax_0 = {
-		group = city_tax
-		city_opinion = 10
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = city_tax_0
-				revoke_law = city_tax_1
-				revoke_law = city_tax_2
-				revoke_law = city_tax_3
-			}
-		}
-		
-		city_vassal_tax_modifier = 0.15
-	}
-
-	city_tax_1 = {
-		group = city_tax
-		city_opinion = 0
-		default = yes
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 1
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = city_tax_0
-				revoke_law = city_tax_1
-				revoke_law = city_tax_2
-				revoke_law = city_tax_3
-			}
-		}
-		
-		city_vassal_tax_modifier = 0.25
-	}
-	
-	city_tax_2 = {
-		group = city_tax
-		city_opinion = -10
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = city_tax_0
-				revoke_law = city_tax_1
-				revoke_law = city_tax_2
-				revoke_law = city_tax_3
-			}
-		}
-		city_vassal_tax_modifier = 0.35
-	}
-	
-	city_tax_3 = {
-		group = city_tax
-		city_opinion = -20
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = city_tax_0
-				revoke_law = city_tax_1
-				revoke_law = city_tax_2
-				revoke_law = city_tax_3
-			}
-		}
-		
-		city_vassal_tax_modifier = 0.45
-	}
 	
 	# TEMPLE VASSAL LEVY SIZE LAWS
 	##############################
