@@ -1,3 +1,5 @@
+##### Chalkface #####
+
 decisions = {
 	
 	feast_0 = {
@@ -5,9 +7,7 @@ decisions = {
 			is_ruler = yes
 			is_feudal = yes
 			prisoner = no
-			NOT = {
-				religion_group = pagan_group
-			}
+			religion_group = maker
 			NOT = {
 				has_character_modifier = holding_large_feast
 			}
@@ -80,43 +80,33 @@ decisions = {
 		}
 	}
 	
-	summer_fair = {
+	first_day_celebrations = {
 		potential = {
-			is_ruler = yes
-			religion_group = maker
 			prisoner = no
+			capable_only = yes
+			religion_group = maker
 			NOT = {
-				has_character_modifier = holding_summer_fair
+				has_character_modifier = first_day_celebrations
 			}
-			NOT = {
-				has_character_modifier = summer_fair_timer
-			}
-			num_of_vassals = 1
+			NOT = { has_character_flag = do_not_disturb }
 		}
 		allow = {
 			war = no
 			any_demesne_title = {
 				is_occupied = no
 			}
-			scaled_wealth = 0.25
 			prisoner = no
-			month = 4
+			scaled_wealth = 0.20
+			month = 1
 			NOT = {
-				month = 7
+				month = 2
 			}
 		}
 		effect = {
-			scaled_wealth = -0.25
+			scaled_wealth = -0.20
 			add_character_modifier = {
-				name = holding_summer_fair
-				duration = 60
-			}
-			hidden_tooltip = {
-				character_event = {
-					id = 74047
-					days = 65
-				}
-				character_event = { id = 74050  }
+				name = first_day_celebrations
+				duration = 30
 			}
 		}
 		revoke_allowed = {
@@ -128,11 +118,239 @@ decisions = {
 			modifier = {
 				factor = 0
 				NOT = {
-					scaled_wealth = 5.0
+					scaled_wealth = 3.0
+				}
+			}					
+		}
+	}
+	
+	wintersend_celebrations = {
+		potential = {
+			prisoner = no
+			capable_only = yes
+			religion_group = maker
+			NOT = { has_character_modifier = wintersend_celebrations }
+			NOT = { has_character_modifier = wintersend_provings }
+			NOT = { has_character_flag = do_not_disturb }
+			NOT = { has_character_modifier = first_day_celebrations }
+			}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			prisoner = no
+			scaled_wealth = 0.20
+			month = 2
+			NOT = {
+				month = 3
+			}
+			NOT = { 
+				top_liege = {
+					primary_title = e_tevinter
+					}
+				}
+			}
+		effect = {
+			scaled_wealth = -0.20
+			add_character_modifier = {
+				name = wintersend_celebrations
+				duration = 30
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 3.0
 				}
 			}
 		}
 	}
+	
+	wintersend_provings = {
+		potential = {
+			prisoner = no
+			capable_only = yes
+			religion_group = maker
+			NOT = { has_character_modifier = wintersend_celebrations }
+			NOT = { has_character_modifier = wintersend_provings }
+			NOT = { has_character_flag = do_not_disturb }
+			NOT = { has_character_modifier = first_day_celebrations }
+			}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			prisoner = no
+			scaled_wealth = 0.20
+			month = 2
+			NOT = {
+				month = 3
+			}
+			top_liege = {
+				primary_title = e_tevinter
+			}
+		}
+		effect = {
+			scaled_wealth = -0.20
+			add_character_modifier = {
+				name = wintersend_provings
+				duration = 30
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 3.0
+				}
+			}
+		}
+	}
+	
+	summerday_celebrations = {
+		potential = {
+			prisoner = no
+			capable_only = yes
+			religion_group = maker
+			NOT = {
+				has_character_modifier = summerday_celebrations
+			}
+			NOT = { has_character_flag = do_not_disturb }
+		}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			prisoner = no
+			scaled_wealth = 0.20
+			month = 5
+			NOT = {
+				month = 6
+			}
+		}
+		effect = {
+			scaled_wealth = -0.20
+			add_character_modifier = {
+				name = summerday_celebrations
+				duration = 30
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 3.0
+				}
+			}					
+		}
+	}
+	
+	all_souls_night = {
+		potential = {
+			prisoner = no
+			capable_only = yes
+			religion_group = maker
+			NOT = {
+				has_character_modifier = all_souls_night_celebrations
+			}
+			NOT = { has_character_flag = do_not_disturb }
+		}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			prisoner = no
+			scaled_wealth = 0.20
+			month = 8
+			NOT = {
+				month = 9
+			}
+		}
+		effect = {
+			scaled_wealth = -0.20
+			add_character_modifier = {
+				name = all_souls_night_celebrations
+				duration = 30
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 3.0
+				}
+			}					
+		}
+	}	
+	
+	satinalia = {
+		potential = {
+			prisoner = no
+			capable_only = yes
+			religion_group = maker
+			NOT = {
+				has_character_modifier = satinalia_celebrations
+			}
+			NOT = { has_character_flag = do_not_disturb }
+		}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			prisoner = no
+			scaled_wealth = 0.20
+			month = 5
+			NOT = {
+				month = 6
+			}
+		}
+		effect = {
+			scaled_wealth = -0.20
+			add_character_modifier = {
+				name = satinalia_celebrations
+				duration = 30
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 3.0
+				}
+			}					
+		}
+	}	
 	
 	hold_grand_hunt = {
 		potential = {
@@ -140,10 +358,7 @@ decisions = {
 			age = 16
 			is_female = no
 			prisoner = no
-			OR = {
-				religion_group = maker
-				religion_group = pagan_group
-			}
+			religion_group = maker
 			NOT = {	has_character_flag = holding_grand_hunt }
 			
 		}
@@ -191,6 +406,7 @@ decisions = {
 			}
 		}
 	}
+	
 	commit_suicide = {
 		potential = {
 			age = 16
@@ -210,4 +426,28 @@ decisions = {
 		}
 	}
 	
+#	give_in_to_temptation = {
+#		potential = {
+#			trait = magi
+#		}
+#		allow = {
+#			trait = magi
+#		}
+#		effect = {
+#			trait = abomination
+			#hidden_tooltip = {
+						#Event ABOMINATION IN THE HOUSE
+						#Event MY FAMILY MEMBER TURNED INTO AN ABOMINATION
+						#Event Templar WTF IS GOING ON HERE if not Magiocracy or Mage liberated
+						#Event Pass on Succession as if Dies
+#		}
+#		revoke allowed = {
+#			always = no
+#		}
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+	
 }
+
