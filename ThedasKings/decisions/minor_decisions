@@ -356,7 +356,6 @@ decisions = {
 		potential = {
 			is_ruler = yes
 			age = 16
-			is_female = no
 			prisoner = no
 			religion_group = maker
 			NOT = {	has_character_flag = holding_grand_hunt }
