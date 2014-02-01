@@ -1,0 +1,44 @@
+Warden System Proposal
+
+“You will guard them and they will hate you for it. Whenever there is not a Blight actively crawling over the surface, 
+humanity will do its best to forget how much they need you. And that's good. We need to stand apart from them, 
+even if they have to push us away to make us do it. That is the only way we can ever make the hard decisions.” ―Kristoff, former Commander of the Grey of Orlais
+
+The Grey Wardens are a very important part of Thedas and should be thoroughly explored and implemented. They will operate not unlike the holy orders do in SoA.
+
+Each nation will have their own branch of the Wardens, lead by a Warden Commander, with the King of that nation being their top liege. This would align more with how the Wardens are represented in Origins, they are described as being semi-autonomous and operate mostly apart from the leadership in Weisshaupt, but are answerable to the King/Queen of the realm in which they reside, can even be elevated to that role and can be expelled by them.
+
+Within each nation, the Wardens will have a stronghold which will be a count level title at minimum. This will allow the Warden Commander can have their own court and maintain a pool of Grey Warden recruits, so that we
+can have Warden related character_events trigger and that character can then join that court.
+
+The Grey Wardens will be most active during a Blight and are the key to ending them. This will be hard to implement as the AI can be unreliable. But we must do our be to ensure that competent Grey Wardens are available
+at all times, and that a nation that may have no Grey Wardens available (due to expulsion perhaps) is not completely defenceless. A lot of this will depend on what sort of world state we enact when a blight does occur.
+Obviously the Warden Commander will usually be considered the senior and most experienced Grey Warden and as a vassal of the King, can be appointed to lead armies.
+
+When a Blight starts, each national branch of the Grey Wardens will become 'for hire', will have no upkeep cost and will only fight Darkspawn. Just like Holy Orders will
+not attack armies of the same faith.
+Assigning Grey Wardens to lead armies against Darkspawn will give positive combat modifiers.
+If a Grey Warden does slay the Archdemon, he will perish.
+
+I propose that the key to ending a Blight is to ensure that Grey Wardens are appointed as Generals. As long as there is a Grey Warden leading some element of the army
+there is a chance, assuming that the Archdemon itself is partaking in the battle, that it can be slain through a battle_event.
+
+To ensure that Blights aren't just an instant game over, I propose that during a Blight, Wardens can be hired as courtiers, this will ensure the player can always field decent generals capable of killing the archdemon. However
+there will be recruitment events that should maintain a pool of decent Warden generals at all times.
+
+
+
+Politics:
+If there is no Blight, Warden Commanders should be mostly politically inactive and remain neutral in conflicts, maybe excepting commanders who are ambitious and have claims. Warden Commanders who offend their
+host lieges through plotting or failed rebellions may be expelled from the realm and can only invited back under a new liege.
+
+The Right of Conscription
+can be used on imprisoned/disgraced nobility, characters can be banished to the Grey Wardens
+by their leige. 
+
+Under certain circumstances, characters can volunteer to join the Wardens and will petition their liege asking
+for leave to go
+
+The Calling
+eventually all Grey Wardens will receive this event, however I propose a minimum of 30 years so that the turn-over rate for
+the Wardens isn't annoyingly high.
