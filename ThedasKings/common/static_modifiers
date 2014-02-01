@@ -422,6 +422,18 @@ default_culture_modifier = {
 # Landed title modifiers
 ##########################################################################
 
+d_ferelden_wardens_modifier = {
+	levy_size = 6
+	heavy_infantry = 200
+}
+
+d_orlais_wardens_modifier = {
+	levy_size = 6
+	heavy_infantry = 100
+	knights = 400
+	archers = 200
+}
+
 d_knights_templar_modifier = {
 	levy_size = 6
 	heavy_infantry = 600
