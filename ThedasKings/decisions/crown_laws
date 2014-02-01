@@ -1,17 +1,17 @@
-#################
 ### Chalkface ###
-#################
 
 de_jure_laws = {
 
 ####### Crown Style ######
-
 	crown_0 = { #Orlesian	Primogeniture, King has no Limits but Skill
 		show_as_title = yes
 		group = crown
 		default = yes
-	
+		
+		feudal_opinion = -5
+		
 		allow = {
+			holder_scope = { is_republic = no }
 			has_law = crown_1
 		}
 
@@ -26,23 +26,181 @@ de_jure_laws = {
 		}
 		effect = {
 			hidden_tooltip = {
-				revoke_law = chantry_0
-				revoke_law = chantry_1
-				revoke_law = chantry_2
-				revoke_law = chantry_3
-				revoke_law = chantry_4
+				revoke_law = crown_0
+				revoke_law = crown_1
+				revoke_law = crown_2
+				revoke_law = crown_3
+				revoke_law = crown_4
 			}
+			set_appoint_generals = yes
+			set_the_kings_peace = yes
+			set_the_kings_full_peace = no
+			set_protected_inheritance = yes
+			set_allow_title_revokation = yes
+			set_allow_free_infidel_revokation = yes
 		}
+		city_vassal_min_levy = 0.6
+		castle_vassal_min_levy = 0.6
+		temple_vassal_min_levy = 0.6
 	}
+	crown_1 = { #Tevinter		King is voted in, but Restricted only by Skill
+		show_as_title = yes
+		group = crown
+		default = yes
+		
+		feudal_opinion = -10
 	
+		allow = {
+			holder_scope = { is_republic = no }
+			OR = { has_law = crown_0 has_law = crown_2 }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = crown_0
+				revoke_law = crown_1
+				revoke_law = crown_2
+				revoke_law = crown_3
+				revoke_law = crown_4
+			}
+			set_appoint_generals = yes
+			set_the_kings_peace = no
+			set_the_kings_full_peace = no
+			set_protected_inheritance = no
+			set_allow_title_revokation = yes
+			set_allow_free_infidel_revokation = no
+		}
+		city_vassal_min_levy = 0.4
+		castle_vassal_min_levy = 0.4
+		temple_vassal_min_levy = 0.4
+	}
+	crown_2 = { #Fereldan	All have Equal Rights, King Elected from Dynasty
+		show_as_title = yes
+		group = crown
+		default = yes
 	
-#Tevinter		King is voted in, but for life
-#Fereldan	All have Equal Rights, King Elected from Dynasty
-#Marcher		Petty King, merely the largest of the Nobles
-#Antivan		King has no Power at all
+		allow = {
+			holder_scope = { is_republic = no }
+			OR = { has_law = crown_1 has_law = crown_3 }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = crown_0
+				revoke_law = crown_1
+				revoke_law = crown_2
+				revoke_law = crown_3
+				revoke_law = crown_4
+			}
+			set_appoint_generals = yes
+			set_the_kings_peace = no
+			set_the_kings_full_peace = no
+			set_protected_inheritance = no
+			set_allow_title_revokation = yes
+			set_allow_free_infidel_revokation = no
+		}
+		city_vassal_min_levy = 0.4
+		castle_vassal_min_levy = 0.4
+		temple_vassal_min_levy = 0.4
+	}
+	crown_3 = { #Marcher		Petty King, merely the largest of the Nobles
+		show_as_title = yes
+		group = crown
+		default = yes
+	
+		allow = {
+			holder_scope = { is_republic = no }
+			OR = { has_law = crown_4 has_law = crown_2 }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = crown_0
+				revoke_law = crown_1
+				revoke_law = crown_2
+				revoke_law = crown_3
+				revoke_law = crown_4
+			}
+			set_appoint_generals = yes
+			set_the_kings_peace = no
+			set_the_kings_full_peace = no
+			set_protected_inheritance = no
+			set_allow_title_revokation = yes
+			set_allow_free_infidel_revokation = no
+		}
+		city_vassal_min_levy = 0.0
+		castle_vassal_min_levy = 0.0
+		temple_vassal_min_levy = 0.0
+	}
+	crown_4 = { #Antivan		King has barely any Power
+		show_as_title = yes
+		group = crown
+		default = yes
+		
+		feudal_opinion = 15
+		
+		allow = {
+			holder_scope = { is_republic = no }
+			has_law = crown_3
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = crown_0
+				revoke_law = crown_1
+				revoke_law = crown_2
+				revoke_law = crown_3
+				revoke_law = crown_4
+			}
+			set_appoint_generals = no
+			set_the_kings_peace = no
+			set_the_kings_full_peace = no
+			set_protected_inheritance = no
+			set_allow_title_revokation = no
+			set_allow_free_infidel_revokation = no
+		}
+		city_vassal_min_levy = 0.0
+		castle_vassal_min_levy = 0.0
+		temple_vassal_min_levy = 0.0
+	}
 
 ####### CHANTRY AUTHORITY ######
-
 	chantry_0 = { #Minimal
 		show_as_title = yes
 		group = chantry
@@ -78,7 +236,6 @@ de_jure_laws = {
 			set_investiture = any
 		}
 	}
-
 	chantry_1 = { #Weak
 		show_as_title = yes
 		group = chantry
@@ -120,7 +277,6 @@ de_jure_laws = {
 			set_investiture = any
 		}
 	}
-
 	chantry_2 = { #Moderate
 		show_as_title = yes
 		group = chantry
@@ -162,8 +318,7 @@ de_jure_laws = {
 			set_investiture = papal
 		}
 	}
-
-	chantry_3 ={ #Strong
+	chantry_3 = { #Strong
 		show_as_title = yes
 		group = chantry
 		default = yes
@@ -204,7 +359,6 @@ de_jure_laws = {
 			set_investiture = papal
 		}
 	}
-
 	chantry_4 = { #Extraordinary
 		show_as_title = yes
 		group = chantry
@@ -242,7 +396,6 @@ de_jure_laws = {
 	}
 
 ####### NON CHANTRY RELIGIOUS AUTHORITY ######
-
 	faith_0 = { #Minimal
 		show_as_title = yes
 		group = faith
@@ -281,7 +434,6 @@ de_jure_laws = {
 			set_investiture = any
 		}
 	}
-
 	faith_1 = { #Weak
 		show_as_title = yes
 		group = faith
@@ -325,7 +477,6 @@ de_jure_laws = {
 			set_investiture = any
 		}
 	}
-
 	faith_2 = { #Moderate
 		show_as_title = yes
 		group = faith
@@ -369,8 +520,7 @@ de_jure_laws = {
 			set_investiture = papal
 		}
 	}
-
-	faith_3 ={ #Strong
+	faith_3 = { #Strong
 		show_as_title = yes
 		group = faith
 		default = yes
@@ -413,7 +563,6 @@ de_jure_laws = {
 			set_investiture = papal
 		}
 	}
-
 	faith_4 = { #Extraordinary
 		show_as_title = yes
 		group = faith
@@ -452,10 +601,8 @@ de_jure_laws = {
 			set_investiture = papal
 		}
 	}
-	
-	
-###### MAGE STATUS ######
 
+###### MAGE STATUS ######
 	mage_0 = { #Magiocracy
 		show_as_title = yes
 		group = mage
@@ -463,7 +610,34 @@ de_jure_laws = {
 		
 		allow = {
 			has_law = mage_1
+			holder_scope = {
+				is_republic = no
+				custom_tooltip = {
+					text = "Has Crown Law"
+					hidden_tooltip = {
+						OR = {
+							has_law = crown_0
+							has_law = crown_1
+							has_law = crown_2
+							has_law = crown_3
+							has_law = crown_4
+						}
+					}
+				}
+				custom_tooltip = {
+					text = "Free from the White Divine"
+					hidden_tooltip = {
+						OR = {
+							NOT = { religion = andrastian_chantry }
+							NOT = { has_law = chantry_4 }
+							NOT = { has_law = chantry_3 }
+							NOT = { has_law = chantry_2 }
+							NOT = { has_law = chantry_1 }
+						}
+					}
+				}
 			}
+		}
 		revoke_allowed = {
 			always = no
 			}
