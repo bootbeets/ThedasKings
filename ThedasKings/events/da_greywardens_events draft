@@ -1,0 +1,632 @@
+###########################################
+#
+# Grey Warden Events
+#
+# ID SoA 1000-2999 is reserved
+#
+###########################################
+###########################################
+
+#namespace = SoA
+
+########################################
+# Fereldan Branch
+########################################
+
+# The Warden-Commander demands one of your children via the Right of Conscription
+character_event = {
+	id = #
+	desc = OK
+	picture = GFX_evt_#
+	border = GFX_event_normal_frame_#
+	
+	hide_window = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		
+		NOT = { has_character_flag = sent_child_to_grey_wardens }
+		any_child = {
+			is_adult = yes
+			is_ruler = no
+			NOT = { trait = incapable }
+			ROOT = {
+				NOT = { 
+					current_heir = { 
+						character = PREVPREV 
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 340
+	}
+	
+	immediate = {
+		random_child = {
+			limit = {
+				is_adult = yes
+				is_ruler = no
+				NOT = { trait = incapable }
+				ROOT = {
+					NOT = { 
+						current_heir = { 
+							character = PREVPREV 
+						}
+					}
+				}
+			}
+			character_event = {
+				id = #
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+character_event = {
+	id = #
+	desc = OK
+	picture = GFX_evt_#
+	border = GFX_event_normal_frame_#
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_ferelden_wardens = {
+			holder_scope = {
+				character_event = {
+					id = #
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+character_event = {
+	id = #
+	desc = OK
+	picture = GFX_evt_#
+	border = GFX_event_normal_frame_#
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			character_event = {
+				id = #
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = #
+	desc = EVTDESC_#
+	border = GFX_event_letter_frame_#
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_# # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		set_character_flag = sent_child_to_grey_wardens
+		
+		d_grey_wardens = {
+			holder_scope = {
+				FROMFROM = {
+					move_character = PREV
+					hidden_tooltip = {
+						clear_wealth = PREV
+					}
+				}
+			}
+		}
+	}
+}
+
+# The child of a ruler volunteers to join the Grey Wardens
+character_event = {
+	id = #
+	desc = #
+	picture = GFX_evt_#
+	border = GFX_event_normal_frame_#
+	
+	only_men = no
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	
+	trigger = {
+		is_ruler = no
+		
+		martial = 10
+		
+		is_title_active = d_ferelden_wardens
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = # }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = # }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			liege = {
+				holy_order = no
+			}
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		
+	}
+	
+	option = {
+		name = EVTOPTA_# # Ask to go
+		ai_chance = {
+			factor = 100
+		}
+		liege = {
+			character_event = {
+				id = #
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_# # It's a bad idea
+	}
+}
+
+# Child, Brother or Sister asks to join the Grey Wardens
+character_event = {
+	id = #
+	desc = EVTDESC_#
+	picture = GFX_evt_#
+	border = GFX_event_normal_frame_#
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_# # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		prestige = 100
+		
+		FROM = {
+			character_event = {
+				id = #
+				tooltip = EVTTOOLTIP_#
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		piety = -100
+		
+		FROM = {
+			character_event = {
+				id = #
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Grey Wardens
+character_event = {
+	id = SoA.1032
+	desc = EVTDESC_SOA_1032
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+		
+		d_knights_templar = {
+			holder_scope = {
+				ROOT = {
+					move_character = PREV
+					hidden_tooltip = {
+						clear_wealth = PREV
+					}
+					add_trait = celibate
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Grey Wardens
+character_event = {
+	id = SoA.1033
+	desc = EVTDESC_SOA_1033
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1033
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_grey_wardens
+		}
+	}
+}
+
+# The Warden-Commander humbly requests the right to build a castle in your demesne
+character_event = {
+	id = #
+	desc = OK
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_religion
+	
+	hide_window = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		
+		is_heretic = no
+		
+		d_knights_templar = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+				NOT = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+			empire = {
+				OR = {
+					title = e_france
+					title = e_italy
+					title = e_byzantium
+					title = e_spain
+					title = e_persia
+					title = e_arabia
+					title = e_abyssinia
+					title = e_britannia
+				}
+			}
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_knights_templar = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_knights_templar = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_knights_templar = {
+				holder_scope = {
+					realm_size = 5
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+				empire = {
+					OR = {
+						title = e_france
+						title = e_italy
+						title = e_byzantium
+						title = e_spain
+						title = e_persia
+						title = e_arabia
+						title = e_abyssinia
+						title = e_britannia
+					}
+				}
+			}
+			province_event = {
+				id = SoA.1051
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+province_event = {
+	id = SoA.1051
+	desc = OK
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_religion
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knights_templar = {
+			holder_scope = {
+				character_event = {
+					id = #
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+character_event = {
+	id = #
+	desc = OK
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_religion
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			character_event = {
+				id = #
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+letter_event = {
+	id = #
+	desc = EVTDESC_#
+	border = GFX_event_letter_frame_#
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_# # Agree
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_grey_wardens
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = # }
+			}
+			remove_character_modifier = expelled_grey_wardens
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		piety = -100
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = #
+	desc = EVTDESC_#
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_#
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+
+# Ping event when expelling the Grey Wardens
+# Only King or above can expell the Grey Wardens
+character_event = {
+	id = #
+	desc = OK
+	picture = GFX_evt_#
+	border = GFX_event_normal_frame_#
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_title_under = {
+			limit = {
+				tier = KING
+				location = {
+					owner = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+				}
+			}
+			usurp_title = FROM
+		}
+		
+		set_defacto_liege = THIS
+	
+		FROM = {
+			letter_event = {
+				id = #
+			}
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_expelled_from_realm
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# Notification event when expelling the Grey Wardens
+letter_event = {
+	id = #
+	desc = EVTDESC_#
+	border = GFX_event_letter_frame_#
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTB_#
+	}
+}
+
+
+########################################
+# Orlaisian Branch
+########################################
+. . .
+
+
+
+
+
+
+
+
+
+
+########################################
+# Marchers Branch
+########################################
+. . .
