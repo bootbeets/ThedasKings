@@ -1,5 +1,7 @@
 ### Chalkface ###
 
+#Unbalanced, untested.
+
 castle = {
 ########################## ALAMARRI GROUP ##########################
 ###Alamarri Mabari###
@@ -245,10 +247,9 @@ castle = {
 		
 		extra_tech_building_start = 0.8
 	}
-
 ########################## ORLESIAN EMPIRE ##########################
 # Heavy Infantry Chevalier Wannabes
-ca_culture_orlesian_mini_chevalier_1 = {
+	ca_culture_orlesian_mini_chevalier_1 = {
 		desc = ca_culture_orlesian_mini_chevalier_1
 		potential = {
 			FROM = {
@@ -395,7 +396,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 	}
 ########################## FREE MARCHER ##########################
 # Professional Pike & Bow Formations
-ca_culture_free_marcher_pikenbow_1 = {
+	ca_culture_free_marcher_pikenbow_1 = {
 		desc = ca_culture_free_marcher_pikenbow_1
 		potential = {
 			FROM = {
@@ -410,8 +411,8 @@ ca_culture_free_marcher_pikenbow_1 = {
 		build_time = 730
 		pikemen = 50
 		archers = 25
-		pikemen_defence = 0.5
-		archers_defence = 0.25
+		pikemen_defensive = 0.5
+		ARCHERS_DEFENSIVE = 0.25
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -431,8 +432,8 @@ ca_culture_free_marcher_pikenbow_1 = {
 		build_time = 1095
 		pikemen = 100
 		archers = 50
-		pikemen_defence = 0.5
-		archers_defence = 0.25
+		pikemen_defensive = 0.5
+		ARCHERS_DEFENSIVE = 0.25
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -452,8 +453,8 @@ ca_culture_free_marcher_pikenbow_1 = {
 		build_time = 2190
 		pikemen = 150
 		archers = 75
-		pikemen_defence = 0.5
-		archers_defence = 0.25
+		pikemen_defensive = 0.5
+		ARCHERS_DEFENSIVE = 0.25
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
@@ -463,7 +464,7 @@ ca_culture_free_marcher_pikenbow_1 = {
 		potential = {
 			FROM = {
 				OR = {
-					culture = free_marcher
+					culture_group = free_marcher
 				}
 			}
 		}
@@ -473,47 +474,396 @@ ca_culture_free_marcher_pikenbow_1 = {
 		build_time = 2190
 		pikemen = 200
 		archers = 100
-		pikemen_defence = 0.5
-		archers_defence = 0.25
+		pikemen_defensive		= 0.5
+		ARCHERS_DEFENSIVE = 0.25
 		ai_creation_factor = 101
 		
 		extra_tech_building_start = 0.8
 	}
-
-########################## RIALTO NON REPUBLIC ##########################
-
+########################## RIALTO ##########################
 # Urban Light Infantry
+	ca_culture_rialto_li_1 = {
+		desc = ca_culture_rialto_li_1
+		potential = {
+			FROM = {
+				OR = {
+					culture = rivaini
+					culture = antivan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		light_infantry = 50
+		LIGHT_INFANTRY_OFFENSIVE = 0.5
+		light_infantry_defensive = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_rialto_li_2 = {
+		desc = ca_culture_rialto_li_2
+		potential = {
+			FROM = {
+				OR = {
+					culture = rivaini
+					culture = antivan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = { ca_culture_rialto_li_1 }
+		build_cost = 300
+		build_time = 1095
+		light_infantry = 100
+		LIGHT_INFANTRY_OFFENSIVE = 0.5
+		light_infantry_defensive = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}	
+	ca_culture_rialto_li_3 = {
+		desc = ca_culture_rialto_li_3
+		potential = {
+			FROM = {
+				OR = {
+					culture = rivaini
+					culture = antivan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = { ca_culture_rialto_li_2 }
+		build_cost = 400
+		build_time = 2190
+		light_infantry = 150
+		LIGHT_INFANTRY_OFFENSIVE = 0.5
+		light_infantry_defensive = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}	
+	ca_culture_rialto_li_4 = {
+		desc = ca_culture_rialto_li_4
+		potential = {
+			FROM = {
+				OR = {
+					culture = rivaini
+					culture = antivan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = { ca_culture_rialto_li_3 }
+		build_cost = 600
+		build_time = 2190
+		light_infantry = 200
+		LIGHT_INFANTRY_OFFENSIVE = 0.5
+		light_infantry_defensive = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}	
 # Urban Crossbowmen
-
+	ca_culture_rialto_cross_1 = {
+		desc = ca_culture_rialto_cross_1
+		potential = {
+			FROM = {
+				OR = {
+					culture = rivaini
+					culture = antivan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		archers = 50
+		archers_offensive = 0.25
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_rialto_cross_2 = {
+		desc = ca_culture_rialto_cross_2
+		potential = {
+			FROM = {
+				OR = {
+					culture = rivaini
+					culture = antivan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = { ca_culture_rialto_cross_1 }
+		build_cost = 300
+		build_time = 1095
+		archers = 100
+		archers_offensive = 0.25
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}	
+	ca_culture_rialto_cross_3 = {
+		desc = ca_culture_rialto_cross_3
+		potential = {
+			FROM = {
+				OR = {
+					culture = rivaini
+					culture = antivan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = { ca_culture_rialto_cross_2 }
+		build_cost = 400
+		build_time = 2190
+		archers = 150
+		archers_offensive = 0.25
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}	
+	ca_culture_rialto_cross_4 = {
+		desc = ca_culture_rialto_cross_4
+		potential = {
+			FROM = {
+				OR = {
+					culture = rivaini
+					culture = antivan
+				}
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = { ca_culture_rialto_cross_3 }
+		build_cost = 600
+		build_time = 2190
+		archers = 200
+		archers_offensive = 0.25
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
 ########################## ANDERFELLS ##########################
-
 # Ranger Light Infantry
-
+	ca_culture_anders_1 = {
+		desc = ca_culture_anders_1
+		potential = {
+			FROM = {
+				culture = anders
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		light_infantry = 50
+		LIGHT_INFANTRY_OFFENSIVE = 0.5
+		light_infantry_defensive = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}	
+	ca_culture_anders_2 = {
+		desc = ca_culture_anders_2
+		potential = {
+			FROM = {
+				culture = anders
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = { ca_culture_anders_1 }
+		build_cost = 300
+		build_time = 1095
+		light_infantry = 100
+		LIGHT_INFANTRY_OFFENSIVE = 0.5
+		light_infantry_defensive = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}	
+	ca_culture_anders_3 = {
+		desc = ca_culture_anders_3
+		potential = {
+			FROM = {
+				culture = anders
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = { ca_culture_anders_2 }
+		build_cost = 400
+		build_time = 2190
+		light_infantry = 150
+		LIGHT_INFANTRY_OFFENSIVE = 0.5
+		light_infantry_defensive = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}	
+	ca_culture_anders_4 = {
+		desc = ca_culture_anders_4
+		potential = {
+			FROM = {
+				culture = anders
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = { ca_culture_anders_3 }
+		build_cost = 600
+		build_time = 2190
+		light_infantry = 200
+		LIGHT_INFANTRY_OFFENSIVE = 0.5
+		light_infantry_defensive = 0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
 ########################## TEVINTER EMPIRE ##########################
-
 # Auxillary Militia
-# Frontier Cohorts
+	ca_culture_tevinter_pike_auxiliary_1 = {
+		desc = ca_culture_tevinter_pike_auxiliary_1
+		potential = {
+			FROM = {
+				culture_group = imperial
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 200
+		build_time = 730
+		pikemen = 300
+		pikemen_morale = -0.5
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_tevinter_pike_auxiliary_2 = {
+		desc = ca_culture_tevinter_pike_auxiliary_2
+		potential = {
+			FROM = {
+				culture_group = imperial
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_tevinter_pike_auxiliary_1
+		build_cost = 300
+		build_time = 1095
+		pikemen = 600
+		pikemen_morale = -0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_tevinter_pike_auxiliary_3 = {
+		desc = ca_culture_tevinter_pike_auxiliary_3
+		potential = {
+			FROM = {
+				culture_group = imperial
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_tevinter_pike_auxiliary_2
+		build_cost = 400
+		build_time = 2190
+		pikemen = 1000
+		pikemen_morale = -0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_tevinter_pike_auxiliary_4 = {
+		desc = ca_culture_tevinter_pike_auxiliary_4
+		potential = {
+			FROM = {
+				culture_group = imperial
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_culture_tevinter_pike_auxiliary_3
+		build_cost = 600
+		build_time = 2190
+		pikemen = 2000
+		pikemen_morale = -0.5
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
 # ELEPHANTS
-
-########################## DWARVES ##########################
-
-# Military Tradition - Heavy Infantry
-
-########################## ELVEN STUFF ##########################
-
-# Very high quality archers
-
-########################## QUNARI ##########################
-
-# Auxillary Pike Phalanx
-# Qunari Cohort
-
-########################## DARKSPAWN ##########################
-
-# THE HORDE
-
-########################## FADE ##########################
-	
-# Tears in the fade, allowing simply more things.
-
+	ca_culture_tevinter_elephants_1 = {
+		desc = ca_culture_elephants_auxiliary_1
+		potential = {
+			FROM = {
+				culture_group = imperial
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ca_wall_2 }
+		build_cost = 500
+		build_time = 730
+		knights = 3
+		knights_defensive = 2
+		knights_offensive = 2
+		
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_tevinter_elephants_2 = {
+		desc = ca_culture_tevinter_elephants_2
+		potential = {
+			FROM = {
+				culture_group = imperial
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = ca_culture_tevinter_elephants_1
+		build_cost = 1000
+		build_time = 1095
+		knights = 6
+		knights_defensive = 2
+		knights_offensive = 2
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_tevinter_elephants = {
+		desc = ca_culture_tevinter_elephants_3
+		potential = {
+			FROM = {
+				culture_group = imperial
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = ca_culture_tevinter_elephants_2
+		build_cost = 2000
+		build_time = 2190
+		knights = 10
+		knights_defensive = 2
+		knights_offensive = 2
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_tevinter_elephants_4 = {
+		desc = ca_culture_tevinter_elephants_4
+		potential = {
+			FROM = {
+				culture_group = imperial
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
+		upgrades_from = ca_culture_tevinter_elephants_3
+		build_cost = 3000
+		build_time = 2190
+		knights = 15
+		knights_defensive = 2
+		knights_offensive = 2
+		ai_creation_factor = 101
+		
+		extra_tech_building_start = 0.8
+	}
 }
