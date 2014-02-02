@@ -1,5 +1,9 @@
 # Dynasty decisions are listed for each living dynasty member. The ruler is in the FROM scope.
 
+#ADOPTION
+#Turn in Mage Kids in hiding
+#Send Bastards Away
+
 dynasty_decisions = {
 
 	legitimize_bastard = {
