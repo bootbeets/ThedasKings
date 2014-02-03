@@ -2,18 +2,29 @@
 
 laws = {
 
-###### Commercial Policy ######
-
+### FOR ALL
 #Tax Rate - Money from All Land Holders within Realm, Barony & Estates
+#Dower for Our Lady - A specific tax on non Chantry holdings
+
+### DUCAL LAWS
 #Tariff Rate - Money from Cities/Merchant Guilds + Large Deals between Players and Merchants
+#Collection Rights - Hire private Tax Collectors to suppliment your own (tax income vs unpopularity)
+#Scutage - Exchanging Levies for gold
+
+### RURAL COUNT LAWS
+#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death
+#Imperial Hwy Toll - A system of getting gold in exchange for local unpopularity
+#River Toll - A system of getting gold in exchange for neighbourly unpopularity
+#Scutage - Exchanging Levies for gold
+
+### CITY COUNT LAWS
+#Tariff Rate - Money from Cities/Merchant Guilds + Large Deals between Players and Merchants
+#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death
+#Burgage Rates - We own a number of estates in town, and rent them out reguarly
 #Guild Rights - Approval of Cities/Merchant Guilds + ?
+#Brothels - Banning of Brothels gives approval from Chantry, negatives and negative events from others
 
 
-###### JUDICIAL POLICY ######
-
-#Legal Severity - Town Guard Quality & Quantity + Efficiency, vs Approval + Neg Commerce Events
-#Brothels - Banning of Brothels gives approval from Pious, negatives and negative events from others
-#Other Specific Illegalities
 
 ###### LEVIES ######
 
