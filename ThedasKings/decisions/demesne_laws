@@ -1,39 +1,297 @@
-# Demesne type (de facto) laws (set for the PRIMARY title in a demesne but affects the whole demesne)
+## Demesne type (de facto) laws (set for the PRIMARY title in a demesne but affects the whole demesne)
 
 laws = {
 
-### FOR ALL
-#Tax Rate - Money from All Land Holders within Realm, Barony & Estates
-#Dower for Our Lady - A specific tax on non Chantry holdings
+### FOR ALL###
+#Tax Rate - Money from All Land Holders within Realm, Barony & Estates, sans Chantry Related [GOLD VS APPROVAL]
+	general_taxation_0 = { #Minimal
+		group = general_taxation
+		feudal_opinion = 0
+		city_opinion = 0
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_taxation_0
+				revoke_law = general_taxation_1
+				revoke_law = general_taxation_2
+				revoke_law = general_taxation_3
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.00
+		city_vassal_tax_modifier		= 0.10
+	}
+	general_taxation_1 = { #Low
+		group = general_taxation
+		feudal_opinion = -10
+		city_opinion = -10
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_taxation_0
+				revoke_law = general_taxation_1
+				revoke_law = general_taxation_2
+				revoke_law = general_taxation_3
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.10
+		city_vassal_tax_modifier		= 0.20
+	}
+	general_taxation_2 = { #Medium
+		group = general_taxation
+		feudal_opinion = -20
+		city_opinion = -20
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_taxation_0
+				revoke_law = general_taxation_1
+				revoke_law = general_taxation_2
+				revoke_law = general_taxation_3
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.20
+		city_vassal_tax_modifier		= 0.30
+	}
+	general_taxation_3 = { #High
+		group = general_taxation
+		feudal_opinion = -30
+		city_opinion = -30
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_taxation_0
+				revoke_law = general_taxation_1
+				revoke_law = general_taxation_2
+				revoke_law = general_taxation_3
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.30
+		city_vassal_tax_modifier		= 0.40
+	}
 
 ### DUCAL LAWS
-#Tariff Rate - Money from Cities/Merchant Guilds + Large Deals between Players and Merchants
-#Collection Rights - Hire private Tax Collectors to suppliment your own (tax income vs unpopularity)
-#Scutage - Exchanging Levies for gold
+#Collection Rights - Hire private Tax Collectors to supplement your own (tax income vs unpopularity) [GOLD VS APPROVAL -EVENT]
+#Scutage - Exchanging Levies for gold [GOLD VS LEVIES]
 
 ### RURAL COUNT LAWS
-#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death
-#Imperial Hwy Toll - A system of getting gold in exchange for local unpopularity
-#River Toll - A system of getting gold in exchange for neighbourly unpopularity
-#Scutage - Exchanging Levies for gold
+#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death  [GOLD VS APPROVAL]
+#Imperial Hwy Toll - A system of getting gold in exchange for local unpopularity [GOLD VS APPROVAL]
+#River Toll - A system of getting gold in exchange for neighbourly unpopularity [GOLD VS NEIGHBOUR APPROVAL]
+#Scutage - Exchanging Levies for gold [GOLD VS LEVIES]
+#Road Patrols - [GUARD VS GOLD -EVENT]
 
 ### CITY COUNT LAWS
-#Tariff Rate - Money from Cities/Merchant Guilds + Large Deals between Players and Merchants
-#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death
-#Burgage Rates - We own a number of estates in town, and rent them out reguarly
-#Guild Rights - Approval of Cities/Merchant Guilds + ?
-#Brothels - Banning of Brothels gives approval from Chantry, negatives and negative events from others
-
+#Tariff Rate - Money from Cities/Merchant Guilds + Large Deals between Players and Merchants [GOLD +EVENT VS APPROVAL]
+	general_tariff_0 = { #Abolished
+	group = general_tariff
+		feudal_opinion = 0
+		city_opinion = 20
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_tariff_0
+				revoke_law = general_tariff_1
+				revoke_law = general_tariff_2
+				revoke_law = general_tariff_3
+			}
+		}
+		city_vassal_tax_modifier		= 0.00
+	}
+	general_tariff_1 = { #Accepted
+	group = general_tariff
+		feudal_opinion = 0
+		city_opinion = 0
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_tariff_0
+				revoke_law = general_tariff_1
+				revoke_law = general_tariff_2
+				revoke_law = general_tariff_3
+			}
+		}
+		city_vassal_tax_modifier		= 0.20
+	}
+	general_tariff_2 = { #Aggressive
+	group = general_tariff
+		feudal_opinion = 0
+		city_opinion = -20
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_tariff_0
+				revoke_law = general_tariff_1
+				revoke_law = general_tariff_2
+				revoke_law = general_tariff_3
+			}
+		}
+		city_vassal_tax_modifier		= 0.40
+	}	
+	general_tariff_3 = { #Extortion
+	group = general_tariff
+		feudal_opinion = 0
+		city_opinion = -40
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_tariff_0
+				revoke_law = general_tariff_1
+				revoke_law = general_tariff_2
+				revoke_law = general_tariff_3
+			}
+		}
+		city_vassal_tax_modifier		= 0.60
+	}
+#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death [GOLD VS APPROVAL]
+#Burgage Rates - We own a number of estates in town, and rent them out regularly [GOLD VS -EVENT]
+#Guild Rights - Approval of Cities/Merchant Guilds + ? [GUARD VS APPROVAL]
+#Local Courts - [GOLD VS -EVENTS]
+#Guard Payment - [GUARD VS GOLD -EVENT]
+#Brothels - Banning of Brothels gives approval from Chantry, negatives and negative events from others [APPROVAL VS APPROVAL]
 
 
 ###### LEVIES ######
 
 #For now, basic levies for all but church
 
-
 	# FEUDAL VASSAL LEVY SIZE LAWS
 	##############################
-	
 	feudal_contract_0 = {
 		group = feudal_contract
 		feudal_opinion = 10
@@ -64,7 +322,6 @@ laws = {
 		
 		castle_vassal_max_levy = -0.4
 	}
-	
 	feudal_contract_1 = {
 		group = feudal_contract
 		feudal_opinion = 5
@@ -94,7 +351,6 @@ laws = {
 		}
 		castle_vassal_max_levy = -0.3
 	}
-	
 	feudal_contract_2 = {
 		group = feudal_contract
 		feudal_opinion = 0
@@ -126,7 +382,6 @@ laws = {
 		
 		castle_vassal_max_levy = -0.2
 	}
-	
 	feudal_contract_3 = {
 		group = feudal_contract
 		feudal_opinion = -5
@@ -155,7 +410,6 @@ laws = {
 	
 	# CITY VASSAL LEVY SIZE LAWS
 	##############################
-	
 	city_contract_0 = {
 		group = city_contract
 		city_opinion = 10
@@ -185,7 +439,6 @@ laws = {
 		
 		city_vassal_max_levy = -0.5
 	}
-
 	city_contract_1 = {
 		group = city_contract
 		city_opinion = 0
@@ -216,7 +469,6 @@ laws = {
 		
 		city_vassal_max_levy = -0.35
 	}
-	
 	city_contract_2 = {
 		group = city_contract
 		city_opinion = -10
@@ -245,7 +497,6 @@ laws = {
 		}
 		city_vassal_max_levy = -0.2
 	}
-	
 	city_contract_3 = {
 		group = city_contract
 		city_opinion = -20
@@ -275,4 +526,5 @@ laws = {
 		
 		city_vassal_max_levy = -0.05
 	}
-	
+
+}
