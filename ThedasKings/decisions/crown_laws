@@ -3,12 +3,12 @@
 de_jure_laws = {
 
 ####### Crown Style ######
-	crown_0 = { #Orlesian	Primogeniture, King has no Limits but Skill
+	crown_0 = { #Antivan		King has barely any Power
 		show_as_title = yes
 		group = crown
 		default = yes
 		
-		feudal_opinion = -5
+		feudal_opinion = 15
 		
 		allow = {
 			holder_scope = { is_republic = no }
@@ -32,23 +32,21 @@ de_jure_laws = {
 				revoke_law = crown_3
 				revoke_law = crown_4
 			}
-			set_appoint_generals = yes
-			set_the_kings_peace = yes
+			set_appoint_generals = no
+			set_the_kings_peace = no
 			set_the_kings_full_peace = no
-			set_protected_inheritance = yes
-			set_allow_title_revokation = yes
-			set_allow_free_infidel_revokation = yes
+			set_protected_inheritance = no
+			set_allow_title_revokation = no
+			set_allow_free_infidel_revokation = no
 		}
-		city_vassal_min_levy = 0.6
-		castle_vassal_min_levy = 0.6
-		temple_vassal_min_levy = 0.6
+		city_vassal_min_levy = 0.0
+		castle_vassal_min_levy = 0.0
+		temple_vassal_min_levy = 0.0
 	}
-	crown_1 = { #Tevinter		King is voted in, but Restricted only by Skill
+	crown_1 = { #Marcher		Petty King, merely the largest of the Nobles
 		show_as_title = yes
 		group = crown
 		default = yes
-		
-		feudal_opinion = -10
 	
 		allow = {
 			holder_scope = { is_republic = no }
@@ -79,9 +77,9 @@ de_jure_laws = {
 			set_allow_title_revokation = yes
 			set_allow_free_infidel_revokation = no
 		}
-		city_vassal_min_levy = 0.4
-		castle_vassal_min_levy = 0.4
-		temple_vassal_min_levy = 0.4
+		city_vassal_min_levy = 0.0
+		castle_vassal_min_levy = 0.0
+		temple_vassal_min_levy = 0.0
 	}
 	crown_2 = { #Fereldan	All have Equal Rights, King Elected from Dynasty
 		show_as_title = yes
@@ -121,14 +119,16 @@ de_jure_laws = {
 		castle_vassal_min_levy = 0.4
 		temple_vassal_min_levy = 0.4
 	}
-	crown_3 = { #Marcher		Petty King, merely the largest of the Nobles
+	crown_3 = { #Tevinter		King is voted in, but Restricted only by Skill
 		show_as_title = yes
 		group = crown
 		default = yes
+		
+		feudal_opinion = -10
 	
 		allow = {
 			holder_scope = { is_republic = no }
-			OR = { has_law = crown_4 has_law = crown_2 }
+			OR = { has_law = crown_2 has_law = crown_4 }
 		}
 
 		revoke_allowed = {
@@ -155,16 +155,16 @@ de_jure_laws = {
 			set_allow_title_revokation = yes
 			set_allow_free_infidel_revokation = no
 		}
-		city_vassal_min_levy = 0.0
-		castle_vassal_min_levy = 0.0
-		temple_vassal_min_levy = 0.0
+		city_vassal_min_levy = 0.4
+		castle_vassal_min_levy = 0.4
+		temple_vassal_min_levy = 0.4
 	}
-	crown_4 = { #Antivan		King has barely any Power
+	crown_4 = { #Orlesian	Primogeniture, King has no Limits but Skill
 		show_as_title = yes
 		group = crown
 		default = yes
 		
-		feudal_opinion = 15
+		feudal_opinion = -5
 		
 		allow = {
 			holder_scope = { is_republic = no }
@@ -188,23 +188,22 @@ de_jure_laws = {
 				revoke_law = crown_3
 				revoke_law = crown_4
 			}
-			set_appoint_generals = no
-			set_the_kings_peace = no
+			set_appoint_generals = yes
+			set_the_kings_peace = yes
 			set_the_kings_full_peace = no
-			set_protected_inheritance = no
-			set_allow_title_revokation = no
-			set_allow_free_infidel_revokation = no
+			set_protected_inheritance = yes
+			set_allow_title_revokation = yes
+			set_allow_free_infidel_revokation = yes
 		}
-		city_vassal_min_levy = 0.0
-		castle_vassal_min_levy = 0.0
-		temple_vassal_min_levy = 0.0
+		city_vassal_min_levy = 0.6
+		castle_vassal_min_levy = 0.6
+		temple_vassal_min_levy = 0.6
 	}
 
 ####### CHANTRY AUTHORITY ######
 	chantry_0 = { #Minimal
 		show_as_title = yes
 		group = chantry
-		default = yes
 		
 		rel_head_opinion = -50
 		
@@ -239,7 +238,6 @@ de_jure_laws = {
 	chantry_1 = { #Weak
 		show_as_title = yes
 		group = chantry
-		default = yes
 		
 		rel_head_opinion = -25
 		
@@ -280,7 +278,6 @@ de_jure_laws = {
 	chantry_2 = { #Moderate
 		show_as_title = yes
 		group = chantry
-		default = yes
 		
 		rel_head_opinion = 0
 		
@@ -321,7 +318,6 @@ de_jure_laws = {
 	chantry_3 = { #Strong
 		show_as_title = yes
 		group = chantry
-		default = yes
 		
 		rel_head_opinion = 25
 		
@@ -362,7 +358,6 @@ de_jure_laws = {
 	chantry_4 = { #Extraordinary
 		show_as_title = yes
 		group = chantry
-		default = yes
 		
 		rel_head_opinion = 50
 		
@@ -399,7 +394,6 @@ de_jure_laws = {
 	faith_0 = { #Minimal
 		show_as_title = yes
 		group = faith
-		default = yes
 		
 		rel_head_opinion = -50
 		
@@ -409,7 +403,7 @@ de_jure_laws = {
 						OR = { religion = andrastian_chantry religion = imperial_chantry }
 					}
 				}
-				has_law = faith_0
+				has_law = faith_1
 			}
 
 		revoke_allowed = {
@@ -437,7 +431,6 @@ de_jure_laws = {
 	faith_1 = { #Weak
 		show_as_title = yes
 		group = faith
-		default = yes
 		
 		rel_head_opinion = -25
 		
@@ -480,7 +473,6 @@ de_jure_laws = {
 	faith_2 = { #Moderate
 		show_as_title = yes
 		group = faith
-		default = yes
 		
 		rel_head_opinion = 0
 		
@@ -523,7 +515,6 @@ de_jure_laws = {
 	faith_3 = { #Strong
 		show_as_title = yes
 		group = faith
-		default = yes
 		
 		rel_head_opinion = 25
 		
@@ -566,7 +557,6 @@ de_jure_laws = {
 	faith_4 = { #Extraordinary
 		show_as_title = yes
 		group = faith
-		default = yes
 		
 		rel_head_opinion = 50
 		
@@ -603,13 +593,133 @@ de_jure_laws = {
 	}
 
 ###### MAGE STATUS ######
-	mage_0 = { #Magiocracy
+	mage_0 = { #Maleficarum		Killed upon discovery, birth
 		show_as_title = yes
 		group = mage
 		default = yes
 		
 		allow = {
 			has_law = mage_1
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+	mage_1 = { #Imprisoned		Forcibly incarcerated, made tranquil or conscripted
+		show_as_title = yes
+		group = mage
+		default = yes
+		
+		allow = {
+			OR = {
+				has_law = mage_2
+				has_law = mage_0
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+	mage_2 = { #Circle of Magi		May live only in a safe, separate location
+		show_as_title = yes
+		group = mage
+		default = yes
+		
+		allow = {
+			holder_scope = {
+				OR = { religion = andrastian_chantry religion = imperial_chantry }
+			OR = {
+				has_law = mage_1
+				has_law = mage_3
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+			}
+		ai_will_do = {
+			factor = 0
+			}
+		ai_will_revoke = {
+			factor = 0
+			}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+	mage_3 = { #Liberated		They may live where and how they choose
+		show_as_title = yes
+		group = mage
+		default = yes
+		
+		allow = {
+			OR = {
+				has_law = mage_4
+				has_law = mage_2
+				}
+		}
+		revoke_allowed = {
+			always = no
+			}
+		ai_will_do = {
+			factor = 0
+			}
+		ai_will_revoke = {
+			factor = 0
+			}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = mage_0
+				revoke_law = mage_1
+				revoke_law = mage_2
+				revoke_law = mage_3
+				revoke_law = mage_4
+			}
+		}
+	}
+	mage_4 = { #Magiocracy		Mages control the hierarchy of the state alone
+		show_as_title = yes
+		group = mage
+		default = yes
+		
+		allow = {
+			has_law = mage_3
 			holder_scope = {
 				is_republic = no
 				custom_tooltip = {
@@ -658,136 +768,10 @@ de_jure_laws = {
 		}
 	}
 	
-	mage_1 = { #Liberated
-		show_as_title = yes
-		group = mage
-		default = yes
-		
-		allow = {
-			OR = {
-				has_law = mage_0
-				has_law = mage_2
-				}
-		}
-		revoke_allowed = {
-			always = no
-			}
-		ai_will_do = {
-			factor = 0
-			}
-		ai_will_revoke = {
-			factor = 0
-			}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = mage_0
-				revoke_law = mage_1
-				revoke_law = mage_2
-				revoke_law = mage_3
-				revoke_law = mage_4
-			}
-		}
-	}
-
-	mage_2 = { #Circle of Magi
-		show_as_title = yes
-		group = mage
-		default = yes
-		
-		allow = {
-			holder_scope = {
-				OR = { religion = andrastian_chantry religion = imperial_chantry }
-			OR = {
-				has_law = mage_1
-				has_law = mage_3
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-			}
-		ai_will_do = {
-			factor = 0
-			}
-		ai_will_revoke = {
-			factor = 0
-			}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = mage_0
-				revoke_law = mage_1
-				revoke_law = mage_2
-				revoke_law = mage_3
-				revoke_law = mage_4
-			}
-		}
-	}
-
-	mage_3 = { #Imprisoned
-		show_as_title = yes
-		group = mage
-		default = yes
-		
-		allow = {
-			OR = {
-				has_law = mage_2
-				has_law = mage_4
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = mage_0
-				revoke_law = mage_1
-				revoke_law = mage_2
-				revoke_law = mage_3
-				revoke_law = mage_4
-			}
-		}
-	}
-	
-	mage_4 = { #Maleficarum
-		show_as_title = yes
-		group = mage
-		default = yes
-		
-		allow = {
-			has_law = mage_3
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = mage_0
-				revoke_law = mage_1
-				revoke_law = mage_2
-				revoke_law = mage_3
-				revoke_law = mage_4
-			}
-		}
-	}
-
-****** Circle Autonomy *****
-
-	circle_0 = { #Independant
+###### CIRCLE AUTONOMY ######
+	circle_0 = { #Independant		Free to roam from their tower, act as they will
 		show_as_title = yes
 		group = circle
-		default = yes
 		
 		allow = {
 			has_law = mage_2
@@ -812,11 +796,9 @@ de_jure_laws = {
 			}
 		}
 	}
-	
-	circle_1 = { #Unregulated
+	circle_1 = { #Unregulated		Allowed to quietly bend the laws and restrictions
 		show_as_title = yes
 		group = circle
-		default = yes
 		
 		allow = {
 			has_law = mage_2
@@ -844,11 +826,9 @@ de_jure_laws = {
 			}
 		}
 	}
-	
-	circle_2 = { #Restricted
+	circle_2 = { #Restricted		Watched and policed appropriately
 		show_as_title = yes
 		group = circle
-		default = yes
 		
 		allow = {
 			has_law = mage_2
@@ -876,11 +856,9 @@ de_jure_laws = {
 			}
 		}
 	}
-	
-	circle_3 = { #Policed
+	circle_3 = { #Policed			Considered a dangerous minority, heavily restricted
 		show_as_title = yes
 		group = circle
-		default = yes
 		
 		allow = {
 			has_law = mage_2
@@ -908,11 +886,9 @@ de_jure_laws = {
 			}
 		}
 	}
-	
-	circle_4 = { #Servitude
+	circle_4 = { #Servitude		A tool for exploiting magic, little more than slaves
 		show_as_title = yes
 		group = circle
-		default = yes
 		
 		allow = {
 			has_law = mage_2
@@ -939,19 +915,288 @@ de_jure_laws = {
 	}
 
 ###### SLAVERY ######
+	slavery_0 = { #Illegal			All men are free, by law
+		show_as_title = yes
+		group = slavery
+		default = yes
+		
+		allow = {
+			has_law = slavery_1
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = slavery_0
+				revoke_law = slavery_1
+				revoke_law = slavery_2
+				revoke_law = slavery_3
+				revoke_law = slavery_4
+			}
+		}
+	}
+	slavery_1 = { #Servitude		Slavery of Humans, Elves, through contract with them
+		show_as_title = yes
+		group = slavery
+		default = yes
+		
+		allow = {
+			has_law = slavery_0
+			has_law = slavery_2
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = slavery_0
+				revoke_law = slavery_1
+				revoke_law = slavery_2
+				revoke_law = slavery_3
+				revoke_law = slavery_4
+			}
+		}
+	}
+	slavery_2 = { #Elven			Enslavement of the Elves
+		show_as_title = yes
+		group = slavery
+		default = yes
+		
+		allow = {
+			has_law = slavery_1
+			has_law = slavery_3
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = slavery_0
+				revoke_law = slavery_1
+				revoke_law = slavery_2
+				revoke_law = slavery_3
+				revoke_law = slavery_4
+			}
+		}
+	}
+	slavery_3 = { #Tevinter		Enslavement of all but Dwarves, who are too important
+		show_as_title = yes
+		group = slavery
+		default = yes
+		
+		allow = {
+			has_law = slavery_2
+			has_law = slavery_4
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = slavery_0
+				revoke_law = slavery_1
+				revoke_law = slavery_2
+				revoke_law = slavery_3
+				revoke_law = slavery_4
+			}
+		}
+	}
+	slavery_4 = { #Universal		All men can be bought, by law
+		show_as_title = yes
+		group = slavery
+		default = yes
+		
+		allow = {
+			has_law = slavery_3
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = slavery_0
+				revoke_law = slavery_1
+				revoke_law = slavery_2
+				revoke_law = slavery_3
+				revoke_law = slavery_4
+			}
+		}
+	}
 
-#Universal
-#Tevinter
-#Elven
-#Servitude
-#Illegal
-	
 ###### ALIENAGE ######
-
-#None
-#Protected
-#Contained
-#Exploited
-#Enslaved
+	alienage_0 = { #Liberated 		Merely a community hub for City Elves
+		show_as_title = yes
+		group = alienage
+		
+		allow = {
+			has_law = alienage_1
+			#Alienage Modifier Indicator
+			#Human Kingdom
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = alienage_0
+				revoke_law = alienage_1
+				revoke_law = alienage_2
+				revoke_law = alienage_3
+				revoke_law = alienage_4
+			}
+		}
+	}
+	alienage_1 = { #Protected		Elves are given Royal Protection
+		show_as_title = yes
+		group = alienage
+		
+		allow = {
+			has_law = alienage_0
+			has_law = alienage_2
+			#Alienage Modifier Indicator
+			#Human Kingdom
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = alienage_0
+				revoke_law = alienage_1
+				revoke_law = alienage_2
+				revoke_law = alienage_3
+				revoke_law = alienage_4
+			}
+		}
+	}
+	alienage_2 = { #Contained		Legally equal but generally downtrodden
+		show_as_title = yes
+		group = alienage
+		
+		allow = {
+			has_law = alienage_0
+			has_law = alienage_2
+			#Alienage Modifier Indicator
+			#Human Kingdom
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = alienage_0
+				revoke_law = alienage_1
+				revoke_law = alienage_2
+				revoke_law = alienage_3
+				revoke_law = alienage_4
+			}
+		}
+	}
+	alienage_3 = { #Exploited		Heavily restricted, considered a free labour force
+		show_as_title = yes
+		group = alienage
+		
+		allow = {
+			has_law = alienage_4
+			has_law = alienage_2
+			#Alienage Modifier Indicator
+			#Human Kingdom
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = alienage_0
+				revoke_law = alienage_1
+				revoke_law = alienage_2
+				revoke_law = alienage_3
+				revoke_law = alienage_4
+			}
+		}
+	}
+	alienage_4 = { #Enslaved		Routinely 'Harvested' by state approved Guilds
+		show_as_title = yes
+		group = alienage
+		
+		allow = {
+			has_law = alienage_3
+			#Alienage Modifier Indicator
+			#Human Kingdom
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = alienage_0
+				revoke_law = alienage_1
+				revoke_law = alienage_2
+				revoke_law = alienage_3
+				revoke_law = alienage_4
+			}
+		}
+	}
 
 }
