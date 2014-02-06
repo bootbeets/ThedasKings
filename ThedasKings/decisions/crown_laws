@@ -46,7 +46,6 @@ de_jure_laws = {
 	crown_1 = { #Marcher		Petty King, merely the largest of the Nobles
 		show_as_title = yes
 		group = crown
-		default = yes
 	
 		allow = {
 			holder_scope = { is_republic = no }
@@ -84,7 +83,6 @@ de_jure_laws = {
 	crown_2 = { #Fereldan	All have Equal Rights, King Elected from Dynasty
 		show_as_title = yes
 		group = crown
-		default = yes
 	
 		allow = {
 			holder_scope = { is_republic = no }
@@ -122,7 +120,6 @@ de_jure_laws = {
 	crown_3 = { #Tevinter		King is voted in, but Restricted only by Skill
 		show_as_title = yes
 		group = crown
-		default = yes
 		
 		feudal_opinion = -10
 	
@@ -162,7 +159,6 @@ de_jure_laws = {
 	crown_4 = { #Orlesian	Primogeniture, King has no Limits but Skill
 		show_as_title = yes
 		group = crown
-		default = yes
 		
 		feudal_opinion = -5
 		
@@ -623,7 +619,6 @@ de_jure_laws = {
 	mage_1 = { #Imprisoned		Forcibly incarcerated, made tranquil or conscripted
 		show_as_title = yes
 		group = mage
-		default = yes
 		
 		allow = {
 			OR = {
@@ -653,7 +648,6 @@ de_jure_laws = {
 	mage_2 = { #Circle of Magi		May live only in a safe, separate location
 		show_as_title = yes
 		group = mage
-		default = yes
 		
 		allow = {
 			holder_scope = {
@@ -686,7 +680,6 @@ de_jure_laws = {
 	mage_3 = { #Liberated		They may live where and how they choose
 		show_as_title = yes
 		group = mage
-		default = yes
 		
 		allow = {
 			OR = {
@@ -716,7 +709,6 @@ de_jure_laws = {
 	mage_4 = { #Magiocracy		Mages control the hierarchy of the state alone
 		show_as_title = yes
 		group = mage
-		default = yes
 		
 		allow = {
 			has_law = mage_3
@@ -829,6 +821,7 @@ de_jure_laws = {
 	circle_2 = { #Restricted		Watched and policed appropriately
 		show_as_title = yes
 		group = circle
+		default = yes
 		
 		allow = {
 			has_law = mage_2
@@ -918,7 +911,7 @@ de_jure_laws = {
 	slavery_0 = { #Illegal			All men are free, by law
 		show_as_title = yes
 		group = slavery
-		default = yes
+
 		
 		allow = {
 			has_law = slavery_1
@@ -973,7 +966,6 @@ de_jure_laws = {
 	slavery_2 = { #Elven			Enslavement of the Elves
 		show_as_title = yes
 		group = slavery
-		default = yes
 		
 		allow = {
 			has_law = slavery_1
@@ -1001,7 +993,6 @@ de_jure_laws = {
 	slavery_3 = { #Tevinter		Enslavement of all but Dwarves, who are too important
 		show_as_title = yes
 		group = slavery
-		default = yes
 		
 		allow = {
 			has_law = slavery_2
@@ -1029,7 +1020,6 @@ de_jure_laws = {
 	slavery_4 = { #Universal		All men can be bought, by law
 		show_as_title = yes
 		group = slavery
-		default = yes
 		
 		allow = {
 			has_law = slavery_3
@@ -1115,6 +1105,7 @@ de_jure_laws = {
 	alienage_2 = { #Contained		Legally equal but generally downtrodden
 		show_as_title = yes
 		group = alienage
+		default = yes
 		
 		allow = {
 			has_law = alienage_0
