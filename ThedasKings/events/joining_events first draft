@@ -59,7 +59,6 @@ character_event =
 # character must find some darkspawn blood
 character_event = {
 	id = joining_ritual.2
-	is_triggered_only = yes
 	desc = "EVTDESCjoining_ritual.2"
 
 	is_triggered_only = yes
