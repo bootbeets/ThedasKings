@@ -1,0 +1,105 @@
+namespace = the_joining_ritual
+#dluck's Grey Warden 'the joining' event chain - first draft
+
+#####################
+#
+# joining_ritual.1
+# joining_ritual.2
+#
+#
+####################
+# DEATH OUTCOMES
+#
+#
+#
+#
+####################
+# SURVIVED OUTCOMES
+#
+#
+#
+######################
+
+
+character_event =
+	id = joining_ritual.1
+	desc = "EVTDESCjoining_ritual.1"
+	picture = "GFX_joining_ritual
+	border = "GFX_event_normal_frame_religion"
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		has_character_flag = join_grey_wardens
+
+
+	
+
+
+option = { # I will undertake the ritual
+	name = "EVTOPTAjoining_ritual.1"
+	ai_chance = { 
+		factor = 80
+		modifier = {
+			factor = 3
+			trait = strong
+		}
+		modifier = {
+			factor = 3
+			trait = brave
+		} 
+
+
+
+}
+	prestige = 200
+	
+
+	}
+
+	option = { # what is this? . . .
+
+
+
+
+
+
+# determine if character survived the joining
+character_event = {
+	id = joining_ritual.2
+	is_triggered_only = yes
+	desc = "EVTDESCjoining_ritual.2"
+
+}
+
+
+
+
+
+# character dies during the joining
+character_event = {
+	id = joining_ritual.3
+
+}
+
+
+
+# character survives the joining
+character_event = {
+	id = joining_ritual.4
+	desc = "EVTDESCjoining_ritual.1"
+	picture = "GFX_joining_ritual
+	border = "GFX_event_normal_frame_religion"
+
+	is_triggered_only = yes
+
+
+
+
+
+
+}
+
+
+
+	
