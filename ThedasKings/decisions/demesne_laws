@@ -30,6 +30,7 @@ laws = {
 				revoke_law = general_taxation_1
 				revoke_law = general_taxation_2
 				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
 			}
 		}
 		
@@ -62,6 +63,7 @@ laws = {
 				revoke_law = general_taxation_1
 				revoke_law = general_taxation_2
 				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
 			}
 		}
 		
@@ -95,6 +97,7 @@ laws = {
 				revoke_law = general_taxation_1
 				revoke_law = general_taxation_2
 				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
 			}
 		}
 		
@@ -127,6 +130,7 @@ laws = {
 				revoke_law = general_taxation_1
 				revoke_law = general_taxation_2
 				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
 			}
 		}
 		
@@ -159,6 +163,7 @@ laws = {
 				revoke_law = general_taxation_1
 				revoke_law = general_taxation_2
 				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
 			}
 		}
 		
@@ -166,11 +171,70 @@ laws = {
 		city_vassal_tax_modifier		= 0.80
 	}
 
+### ROYAL LAWS
+#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death [GOLD VS APPROVAL]
+
 ### DUCAL LAWS
 #Collection Rights - Hire private Tax Collectors to supplement your own (tax income vs unpopularity) [GOLD VS APPROVAL -EVENT]
+	private_collectors_0 = { #Not Employed
+		group = private_collectors
+
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = private_collectors_0
+				revoke_law = private_collectors_1
+			}
+		}
+	}
+	private_collectors_1 = { #Employed
+		group = private_collectors
+		feudal_opinion = -40
+		city_opinion = -40
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = private_collectors_0
+				revoke_law = private_collectors_1
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.50
+		city_vassal_tax_modifier		= 0.50
+	}
 
 ### RURAL COUNT LAWS
-#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death  [GOLD VS APPROVAL]
 #Imperial Hwy Toll - A system of getting gold in exchange for local unpopularity [GOLD VS APPROVAL]
 #River Toll - A system of getting gold in exchange for neighbourly unpopularity [GOLD VS NEIGHBOUR APPROVAL]
 #Scutage - Exchanging Levies for gold [GOLD VS LEVIES]
@@ -341,7 +405,6 @@ laws = {
 		}
 		city_vassal_tax_modifier		= 0.60
 	}
-#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death [GOLD VS APPROVAL]
 #Burgage Rates - We own a number of estates in town, and rent them out regularly [GOLD VS -EVENT]
 #Guild Rights - Approval of Cities/Merchant Guilds + ? [GUARD VS APPROVAL]
 #Local Courts - [GOLD VS -EVENTS]
