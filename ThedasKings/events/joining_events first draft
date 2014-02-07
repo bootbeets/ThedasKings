@@ -1,4 +1,4 @@
-namespace = the_joining_ritual
+namespace = joining_ritual
 #dluck's Grey Warden 'the joining' event chain - first draft
 
 #####################
@@ -29,51 +29,47 @@ character_event =
 
 	is_triggered_only = yes
 	
-	trigger = { 
-		has_character_flag = join_grey_wardens
+	# Trigger
 
+
+	# MTTH
+
+
+	# Immediate Effects
 
 	
-
-
-option = { # I will undertake the ritual
+	
+	# Option A
+	option = { 	# I will undertake the ritual
 	name = "EVTOPTAjoining_ritual.1"
 	ai_chance = { 
 		factor = 80
-		modifier = {
-			factor = 3
-			trait = strong
 		}
 		modifier = {
 			factor = 3
 			trait = brave
-		} 
+		}
 
-
-
-}
-	prestige = 200
+	set character_flag = { undergo_joining }
+	character_event = { id = joining_ritual.2 } }
 	
-
-	}
-
-	option = { # what is this? . . .
+}
 
 
-
-
-
-
-# determine if character survived the joining
+# character must find some darkspawn blood
 character_event = {
 	id = joining_ritual.2
 	is_triggered_only = yes
 	desc = "EVTDESCjoining_ritual.2"
 
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAjoining_ritual.2
+		set_character_flag = hunting_darkspawn
+	}
+
 }
-
-
-
 
 
 # character dies during the joining
@@ -81,7 +77,6 @@ character_event = {
 	id = joining_ritual.3
 
 }
-
 
 
 # character survives the joining
@@ -96,9 +91,106 @@ character_event = {
 
 
 
-
-
 }
+
+
+# character encounters some darkspawn
+
+character_event = {
+	id = joining_ritual.5
+	desc = "EVTDESCjoining_ritual.5"
+
+	trigger = {
+		has_character_flag = hunting_darkspawn
+	}
+
+	mean_time_to_happen = {
+	months = 1
+	}
+
+	option = {	# attack the darkspawn!
+		name = "EVTOPTAjoining.ritual.5
+		character_event = { id = joining_ritual.6 }
+	}
+
+	option = {     # there are too many...
+		name = "EVTOPTBjoining_ritual.5
+		add_trait = craven
+	}
+}
+
+
+# darkspawn killed, blood taken
+
+character_event = {
+	id = joining_ritual.6
+	desc = "EVTDESCjoining_ritual.6"
+	
+	is_triggered_only = yes
+	
+	option = {	# take the blood back to the warden commander
+		name = "EVTOPTAjoining_ritual.6
+		
+		set character_flag = darkspawn_blood
+	}
+
+
+# wounded in battle, darkspawn kill and blood taken . . .
+
+# die in battle against the darkspawn . . .
+
+
+# learn the truth of the ritual. . .
+
+character_event = {
+	id = joining_ritual.7
+	desc = "EVTDESCjoining_ritual.7"
+
+	trigger = {
+		has_character_flag = darkspawn_blood
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	# I am willing...
+		name = "EVTOPTAjoining_ritual.7
+		character_event = { id = joining_ritual.8 }
+	}
+
+	option = {      # what is this madness?
+		name = "EVTOPTBjoining_ritual.7
+		character_event = { id = joining_ritual.9 } 			
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+# after discovering the truth, the character refuses the joining
+. . .
+		
+
+
+
 
 
 
