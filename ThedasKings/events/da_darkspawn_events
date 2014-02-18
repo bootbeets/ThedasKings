@@ -1,0 +1,142 @@
+*** CHALKFACE ***
+
+CLEARLY A DRAFT, WILL NOT WORK INGAME AT ALL!
+1. is event number (1.) means GOTO that event
+- means remove, + means add
+
+namespace = Darkspawn
+
+
+DARKSPAWN RAID DEAL WITH = (
+
+1. Darkspawn raids are burning villages on the outskirts of our demense, and the freeholders are calling
+for you to defend them.
+
+			I will deal with them.	 75% (2.) 25% (3.)
+			Send the Marshal to deal with them! 75% (18.) 25% (19.)
+			Find me some sellswords to clean them out. (10.)
+			This is not my problem, close the gates and wait out the storm. -Raid +Host !END!
+
+
+2. With some losses, the darkspawn raiders have been cut down. The peasants praise your valour at arms!
+
+			Excellent!	+25 prestige, Opinion Boosting Modifier, -Raid !END!
+
+
+3. Black darts fly through the sky above you, and the retainer beside you collapses as a wicked blade
+lances through her shoulder. The darkspawn are in much greater numbers than was reported, and the battle
+goes poorly.
+
+	bzrkr/wrth	DEATH DEATH DEAAATTHHHHH!!!	50%: (Death) 25%: (4.) 15%: (5.) 10% (6.) 
+			Rally to me, RALLY TO ME!	75%: (Death) 5%: (5.) 20%: (6.)
+			RUN FOR YOUR LIVES!		25%: (Death) 70%: (7.)
+	mage		Unleash Hell.			25%: (Death) 75%: (8.)
+
+
+4. The world turns red as you smash your way through the darkspawn forces, unaware of anything else around
+you. The hammering of blows and the desperate thudding of your heart is all that can be heard, even the
+thunder of battle fading away. Suddenly before you stands the Emissary, staff raised and perhaps even
+a hint of fear in it's eyes. Your violent tide washes the creature aside, and before long you stand alone
+upon a field of blood and gore. Victory, for a moment, before the effect of the Emissaries dying spell
+finally takes its toll and you collapse to the ground.
+
+	Dying in an Orgy of destruction. The Dwarves would be proud. (Death: 'Died Fighting Darkspawn')
+									(-Raid) !END!
+
+
+5. Despite the horrendous odds, your leadership allows your remaining retinue to rally and hold their
+ground. As their numbers finally thin, one of your men emerges with the head of the Emissary lifted aloft,
+and the Darkspawn are broken. You are too exhausted to do more than order a pursuit, but your men find
+strength enough to cheer your name. The battle is won.
+
+	A well fought victory.	(Remove Coward, 75% Brave, +25 Prestige) Remove Raid !END!
+
+
+6. The line disintegrates around you, and your men are soon in full rout from the raiders. Soon you are
+racing alongside them, desperate to make your escape. The raiders have won a victory, and their cries
+send shivers through your spine even as they fade far behind the remnants of your host.
+
+	Such a disaster!	(-25 prestige) Remove Raid, add Host.
+
+
+7. All is lost, all is lost! You charge back towards camp, as your men form a rough rear guard against
+the encroaching enemy. Mounting your horse, you flee without regard for your men and reach the safety of
+your castle before news of the massacre makes it back.
+
+	It was horrible, I had no choice but to run!	(50% Coward, -25 prestige) Remove Raid, add Host.
+
+
+8. Pausing but a moment to concentrate, you summon all the magical energies you can and unleash them upon
+the advancing darkspawn. The shrieks of suprise can be heard even above the thunder of battle, as you begin
+arcing fire over the heads of your guard. Their Emissary rises to the challenge, responding to your show
+with a display of lighning, but your duel is brief. Within minutes, a rain of molten rock and the
+annihilation of their leader sends the raiding party into full retreat.
+
+	Blight there would not be, if all were magi like me... (25 prestige, reveal secret magi) Remove Raid.
+
+
+10. Bann calls for merc aid vs horde.
+
+	Yes.	(Lots of reasons.) 11.
+	No.	(Other reasons.) 12. +temp modifier 'already checked for darkspawn raid event'
+
+
+11. The sellswords have arrived, led by [Company Leader Name], and are ready to march out and deal with the
+raiders immediately. They are asking for half the fee before advance, and half upon completion.
+	
+	Good! Send them out immediately. 90% (13.) 10% (14.) modified (-cash%)
+	Wait, how much did they want? (15.)
+
+
+12. HIDDEN EVENT - DO PREVIOUS CHECK AGAIN, MINUS 'YOU CHECKED US' MODIFIER ONES
+
+	OKAY. (10.)
+	NONE FOUND? (16.)
+
+
+13. Reports from the battle are good! It seems that our coin has won us a victory, and the mercenaries have
+cleared our land of the Darkspawn. They are happy to leave our lands immediately upon receiving payment.
+
+	See to it, they have earnt their coin! (-cash%) -Raid !END!
+	Actually... no. I am not paying. (15.) -Raid
+	Maker no! We can't afford this! (17.) -Raid
+
+
+14. Terrible news, the mercenary company was butchered!
+
+	What a waste of my coin! (-Raid +Horde) !END!
+
+
+15. Looking out over the small camp just ouside your walls, you listen as the Mercenary Leader slams [his]
+fist angrily on the table and demands the payment [he] was promised. "If you do not pay us", [he] snarls, "we
+will have to use our own ways of taking what is owed from your lands. And we can be much worse than any
+Darkspawn raider!"
+
+	Fine. We'll pay him anyway. (-cash%)
+	No is no, we are not paying your rediculous fee! (+unpaid mercenaries) (+Unreliable) !END!
+
+
+16. We couldn't find anyone to hire, we'll have to deal with this ourselves!
+
+	I will deal with them.	 75% (2.) 25% (3.)
+	Send the Marshal to deal with them! 75% (18.) 25% (19.)
+	This is not my problem, close the gates and wait out the storm. -Raid +Host !END!
+
+
+17. I have no idea what this event would do. Come back to this!
+
+	Wow, okay. Lazy. !END!
+
+
+18. Our Marshal returns victorious, laying before your feet the head of the pack leader.
+
+	Fantastic! Lavish him with honours! (Marshal +50 prestige) -raid !END!
+	Good work that man.  (Marshal +25 prestige) -raid !END!
+
+
+19. Terrible news has arrived my lord! Your Marshal lies dead, and the darkspawn raiding party is growing
+in size off their victory.
+
+	Damn! (Marshal dies: message 'Died fighting Darkspawn')  -Raid + Host !end!
+
+)

@@ -72,4 +72,167 @@ dynasty_decisions = {
 		}
 	}
 
+	exile_bastard = {
+		potential = {
+			trait = bastard
+			is_child_of = FROM
+			is_liege_or_above = FROM
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			ROOT = {
+				if = {
+					limit = {
+						num_of_friends = 0
+						NOT = { 
+							num_of_friends = 1
+						}
+					}
+					banish = yes
+				}
+			}
+			ROOT = {
+				if = {
+					limit = {
+						num of friends = 1
+					}
+				move_character = random_friend
+				}
+			}
+			ROOT = {
+				opinion = {
+					who = FROM
+					modifier = opinion_hate
+					years = 10
+				}
+			}
+			FROM = {
+				spouse = {
+					if = {
+						limit = {
+							NOT = {
+								any_child = {
+									character = ROOT
+								}	
+							}
+						}
+						opinion = {
+							who = FROM
+							modifier = opinion_grateful
+							months = 36
+						}
+					}
+				}
+			}
+			ROOT = {
+				any_friend = {
+					opinion = {
+						who = FROM
+						modifier = opinion_mad_as_hell
+						years = 5
+					}
+				}
+				spouse = {
+					if = {
+						limit = {
+							any_child = {
+								character = ROOT
+							}
+						}
+					}
+					opinion = {
+						who = FROM
+						modifier = opinion_mad_as_hell
+						years = 10
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0.3
+		}
+	}
+	
+#	turn_in_mage_kid = {
+#		potential = {
+#			trait = magi
+#			is_child_of = FROM
+#			is_liege_or_above = FROM
+#		}
+#		allow = {
+#			always = yes
+#		}
+#		effect = {
+#			ROOT = {
+#				if = {
+#					limit = {
+#						any_realm_province = {
+#							has_province_modifier = circle_of_magi
+#						}
+#						realm = {
+#							has_law = mage_2
+#						}
+#					}
+#					move_character = {
+#						random_realm_lord = {
+#							trait = grand_enchanter
+#					}
+#				}
+#			}
+#									
+#			ROOT = {
+#				opinion = {
+#					who = FROM
+#					modifier = #ESTRANGED
+#				}
+#			}
+#			FROM = {
+#				spouse = {
+#					if = {
+#						limit = {
+#							NOT = {
+#								any_child = {
+#									character = ROOT
+#								}
+#							}
+#						}
+#						opinion = {
+#							who = FROM
+#							modifier = opinion_grateful
+#							months = 36
+#						}
+#					}
+#				}
+#			}
+#			ROOT = {
+#				any_friend = {
+#					opinion = {
+#						who = FROM
+#						modifier = opinion_mad_as_hell
+#						years = 5
+#					}
+#				}
+#				spouse = {
+#					if = {
+#						limit = {
+#							any_child = {
+#								character = ROOT
+#							}
+#						}
+#					}
+#					opinion = {
+#						who = FROM
+#						modifier = opinion_mad_as_hell
+#						years = 10
+#					}
+#				}
+#			}
+#		}
+#	}
+
 }

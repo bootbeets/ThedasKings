@@ -1,10 +1,1233 @@
-# Demesne type (de facto) laws (set for the PRIMARY title in a demesne but affects the whole demesne)
+## Demesne type (de facto) laws (set for the PRIMARY title in a demesne but affects the whole demesne)
 
 laws = {
 
-	# FEUDAL VASSAL LEVY SIZE LAWS
-	##############################
+### FOR ALL###
+#Tax Rate - Money from All Land Holders within Realm, Barony & Estates, sans Chantry Related [GOLD VS APPROVAL]
+	general_taxation_0 = { #Minimal
+		group = general_taxation
+		feudal_opinion = 0
+		city_opinion = 0
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_taxation_0
+				revoke_law = general_taxation_1
+				revoke_law = general_taxation_2
+				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.00
+		city_vassal_tax_modifier		= 0.10
+	}
+	general_taxation_1 = { #Low
+		group = general_taxation
+		feudal_opinion = -10
+		city_opinion = -10
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_taxation_0
+				revoke_law = general_taxation_1
+				revoke_law = general_taxation_2
+				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.10
+		city_vassal_tax_modifier		= 0.20
+	}
+	general_taxation_2 = { #Medium
+		group = general_taxation
+		feudal_opinion = -20
+		city_opinion = -20
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_taxation_0
+				revoke_law = general_taxation_1
+				revoke_law = general_taxation_2
+				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.20
+		city_vassal_tax_modifier		= 0.30
+	}
+	general_taxation_3 = { #High
+		group = general_taxation
+		feudal_opinion = -30
+		city_opinion = -30
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_taxation_0
+				revoke_law = general_taxation_1
+				revoke_law = general_taxation_2
+				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.30
+		city_vassal_tax_modifier		= 0.40
+	}
+	general_taxation_4 = { #Extortion
+		group = general_taxation
+		feudal_opinion = -50
+		city_opinion = -50
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_taxation_0
+				revoke_law = general_taxation_1
+				revoke_law = general_taxation_2
+				revoke_law = general_taxation_3
+				revoke_law = general_taxation_4
+			}
+		}
+		
+		castle_vassal_tax_modifier	= 0.60
+		city_vassal_tax_modifier		= 0.80
+	}
+
+### ROYAL LAWS
+#Inheritance Tax - A minimum amount + % Income taken a few days after onaction death [GOLD VS APPROVAL]
+	inheritance_tax_0 = { #NONE
+		group = inheritance_tax
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = inheritance_tax_0
+				revoke_law = inheritance_tax_1
+			}
+		}
+	}
+	inheritance_tax_1 = { #YES
+		group = inheritance_tax
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = inheritance_tax_0
+				revoke_law = inheritance_tax_1
+			}
+		}
+	}
+
+### DUCAL LAWS
+#Collection Rights - Hire private Tax Collectors to supplement your own (tax income vs unpopularity) [GOLD VS APPROVAL -EVENT]
+	private_collectors_0 = { #Not Employed
+		group = private_collectors
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = private_collectors_0
+				revoke_law = private_collectors_1
+			}
+		}
+	}
+	private_collectors_1 = { #Employed
+		group = private_collectors
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = { #Events! EXTRA MONEY THROUGH EVENTS
+			hidden_tooltip = {
+				revoke_law = private_collectors_0
+				revoke_law = private_collectors_1
+			}
+		}
+	}
+
+### RURAL COUNT LAWS
+#Imperial Hwy Toll - A system of getting gold in exchange for local unpopularity [GOLD VS APPROVAL]
+	hwy_toll_0 = { #Off
+		group = hwy_toll
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = private_collectors_0
+				revoke_law = private_collectors_1
+			}
+		}
+	}
+	hwy_toll_1 = { #On
+		group = hwy_toll
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = hwy_toll_0
+				revoke_law = hwy_toll_1
+			}
+		}
+	}
+#River Toll - A system of getting gold in exchange for neighbourly unpopularity [GOLD VS NEIGHBOUR APPROVAL]
+	river_toll_0 = { #Off
+		group = river_toll
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = river_toll_0
+				revoke_law = river_toll_1
+			}
+		}
+	}
+	river_toll_1 = { #On
+	group = river_toll
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = river_toll_0
+				revoke_law = river_toll_1
+			}
+		}
+	}
+#Scutage - Exchanging Levies for gold [GOLD VS LEVIES]
+	scutage_0 = { #Abolished
+		group = scutage
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = scutage_0
+				revoke_law = scutage_1
+				revoke_law = scutage_2
+				revoke_law = scutage_3
+			}
+		}
+	}
+	scutage_1 = { #Upon Special Request
+		group = scutage
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = scutage_0
+				revoke_law = scutage_1
+				revoke_law = scutage_2
+				revoke_law = scutage_3
+			}
+		}
+	}
+	scutage_2 = { #For all Minor Landowners without issue
+		group = scutage
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = scutage_0
+				revoke_law = scutage_1
+				revoke_law = scutage_2
+				revoke_law = scutage_3
+			}
+		}
+	}
+	scutage_3 = { #For all Minor Landowners
+		group = scutage
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = scutage_0
+				revoke_law = scutage_1
+				revoke_law = scutage_2
+				revoke_law = scutage_3
+			}
+		}
+	}
+#Road Patrols - [GUARD VS GOLD -EVENT]
+	road_patrols_0 = { #Negligence
+		group = road_patrols
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = road_patrols_0
+				revoke_law = road_patrols_1
+				revoke_law = road_patrols_2
+				revoke_law = road_patrols_3
+				revoke_law = road_patrols_4
+			}
+		}
+	}
+	road_patrols_1 = { #Irregular Patrols
+		group = road_patrols
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = road_patrols_0
+				revoke_law = road_patrols_1
+				revoke_law = road_patrols_2
+				revoke_law = road_patrols_3
+				revoke_law = road_patrols_4
+			}
+		}
+	}
+	road_patrols_2 = { #Regular upon Major Roads only
+		group = road_patrols
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = road_patrols_0
+				revoke_law = road_patrols_1
+				revoke_law = road_patrols_2
+				revoke_law = road_patrols_3
+				revoke_law = road_patrols_4
+			}
+		}
+	}
+	road_patrols_3 = { #One Patrol per Route
+		group = road_patrols
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = road_patrols_0
+				revoke_law = road_patrols_1
+				revoke_law = road_patrols_2
+				revoke_law = road_patrols_3
+				revoke_law = road_patrols_4
+			}
+		}
+	}
+	road_patrols_4 = { #Regular Outposts
+		group = road_patrols
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = road_patrols_0
+				revoke_law = road_patrols_1
+				revoke_law = road_patrols_2
+				revoke_law = road_patrols_3
+				revoke_law = road_patrols_4
+			}
+		}
+	}
+
+### CITY COUNT LAWS
+#Tariff Rate - Money from Cities/Merchant Guilds + Large Deals between Players and Merchants [GOLD +EVENT VS APPROVAL]
+	general_tariff_0 = { #Abolished
+	group = general_tariff
+		city_opinion = 20
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_tariff_0
+				revoke_law = general_tariff_1
+				revoke_law = general_tariff_2
+				revoke_law = general_tariff_3
+			}
+		}
+		city_vassal_tax_modifier		= 0.00
+	}
+	general_tariff_1 = { #Negligible
+	group = general_tariff
+		city_opinion = 10
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_tariff_0
+				revoke_law = general_tariff_1
+				revoke_law = general_tariff_2
+				revoke_law = general_tariff_3
+			}
+		}
+		city_vassal_tax_modifier		= 0.10
+	}
+	general_tariff_2 = { #Accepted
+	group = general_tariff
+		city_opinion = 0
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_tariff_0
+				revoke_law = general_tariff_1
+				revoke_law = general_tariff_2
+				revoke_law = general_tariff_3
+			}
+		}
+		city_vassal_tax_modifier		= 0.20
+	}
+	general_tariff_3 = { #Aggressive
+	group = general_tariff
+		feudal_opinion = -5
+		city_opinion = -20
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_tariff_0
+				revoke_law = general_tariff_1
+				revoke_law = general_tariff_2
+				revoke_law = general_tariff_3
+			}
+		}
+		city_vassal_tax_modifier		= 0.40
+	}	
+	general_tariff_4 = { #Extortion
+	group = general_tariff
+		feudal_opinion = -10
+		city_opinion = -40
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = general_tariff_0
+				revoke_law = general_tariff_1
+				revoke_law = general_tariff_2
+				revoke_law = general_tariff_3
+			}
+		}
+		city_vassal_tax_modifier		= 0.60
+	}
+#Burgage Rates - We own a number of estates in town, and rent them out regularly to visitors [GOLD VS -EVENT]
+	burgage_rates_0 = { #Dei Grata
+		group = burgage_rates
+		default = yes
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = burgage_rates_0
+				revoke_law = burgage_rates_1
+				revoke_law = burgage_rates_2
+				revoke_law = burgage_rates_3
+			}
+		}
+	}
+	burgage_rates_1 = { #Low Rates
+		group = burgage_rates
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = burgage_rates_0
+				revoke_law = burgage_rates_1
+				revoke_law = burgage_rates_2
+				revoke_law = burgage_rates_3
+			}
+		}
+	}
+	burgage_rates_2 = { #Medium Rates
+		group = burgage_rates
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = burgage_rates_0
+				revoke_law = burgage_rates_1
+				revoke_law = burgage_rates_2
+				revoke_law = burgage_rates_3
+			}
+		}
+	}
+	burgage_rates_3 = { #High Rates
+		group = burgage_rates
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = burgage_rates_0
+				revoke_law = burgage_rates_1
+				revoke_law = burgage_rates_2
+				revoke_law = burgage_rates_3
+			}
+		}
+	}
+#Guild Rights - Approval of Cities/Merchant Guilds + ? [GUARD VS APPROVAL]
+	guild_rights_0 = { #Right to Operate
+		group = guild_rights
+		default = yes
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = guild_rights_0
+				revoke_law = guild_rights_1
+				revoke_law = guild_rights_2
+			}
+		}
+	}
+	guild_rights_1 = { #Right to Conduct Monopoly
+		group = guild_rights
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = guild_rights_0
+				revoke_law = guild_rights_1
+				revoke_law = guild_rights_2
+			}
+		}
+	}
+	guild_rights_2 = { #Right of Self Judiciary
+		group = guild_rights
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = guild_rights_0
+				revoke_law = guild_rights_1
+				revoke_law = guild_rights_2
+			}
+		}
+	}
+#Guard Payment - [GUARD VS GOLD -EVENT]
+	guard_pay_0 = { #Meals Paid
+	group = guard_pay
+		default = yes
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = guard_pay_0
+				revoke_law = guard_pay_1
+				revoke_law = guard_pay_2
+				revoke_law = guard_pay_3
+				revoke_law = guard_pay_4
+			}
+		}
+	}
+	guard_pay_1 = { #Unreliable Stipend
+	group = guard_pay
 	
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = guard_pay_0
+				revoke_law = guard_pay_1
+				revoke_law = guard_pay_2
+				revoke_law = guard_pay_3
+				revoke_law = guard_pay_4
+			}
+		}
+	}
+	guard_pay_2 = { #Regular Pay			Small but Regular Payment
+	group = guard_pay
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = guard_pay_0
+				revoke_law = guard_pay_1
+				revoke_law = guard_pay_2
+				revoke_law = guard_pay_3
+				revoke_law = guard_pay_4
+			}
+		}
+	}
+	guard_pay_3 = { #Decent Pay			Decent Pay, Second hand Equipment.
+	group = guard_pay
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = guard_pay_0
+				revoke_law = guard_pay_1
+				revoke_law = guard_pay_2
+				revoke_law = guard_pay_3
+				revoke_law = guard_pay_4
+			}
+		}
+	}
+	guard_pay_4 = { #Judicial Free Reign		Judicial Free Reign, Generous Pay & State Paid Equipment. Terrible Hours.
+	group = guard_pay
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = guard_pay_0
+				revoke_law = guard_pay_1
+				revoke_law = guard_pay_2
+				revoke_law = guard_pay_3
+				revoke_law = guard_pay_4
+			}
+		}
+	}
+#Brothels - Banning of Brothels gives approval from Chantry, negatives and negative events from others [APPROVAL VS APPROVAL]
+	brothel_0 = { #Permitted
+	group = brothel
+		
+		default = yes
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = brothel_0
+				revoke_law = brothel_1
+			}
+		}
+	}
+	brothel_1 = { #Banned
+	group = brothel
+		CHURCH_OPINION = 0.10
+		city_opinion = -0.30
+		
+		potential = {
+			OR = {
+				NOT = { tier = baron }
+				holder_scope = { is_patrician = yes }
+			}
+			holder_scope = { 
+				any_demesne_province = { has_province_flag = "is_city" }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 0
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = brothel_0
+				revoke_law = brothel_1
+			}
+		}
+	}
+
+###### LEVIES ######
+#For now, basic levies for all but church
+
+	# FEUDAL VASSAL LEVY SIZE LAWS
+##############################
 	feudal_contract_0 = {
 		group = feudal_contract
 		feudal_opinion = 10
@@ -35,7 +1258,6 @@ laws = {
 		
 		castle_vassal_max_levy = -0.4
 	}
-	
 	feudal_contract_1 = {
 		group = feudal_contract
 		feudal_opinion = 5
@@ -65,7 +1287,6 @@ laws = {
 		}
 		castle_vassal_max_levy = -0.3
 	}
-	
 	feudal_contract_2 = {
 		group = feudal_contract
 		feudal_opinion = 0
@@ -97,7 +1318,6 @@ laws = {
 		
 		castle_vassal_max_levy = -0.2
 	}
-	
 	feudal_contract_3 = {
 		group = feudal_contract
 		feudal_opinion = -5
@@ -124,135 +1344,8 @@ laws = {
 		}
 	}
 	
-	
-	# FEUDAL VASSAL TAX SIZE LAWS
-	##############################
-	
-	feudal_tax_0 = {
-		group = feudal_tax
-		feudal_opinion = 0
-		default = yes
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 1
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = feudal_tax_0
-				revoke_law = feudal_tax_1
-				revoke_law = feudal_tax_2
-				revoke_law = feudal_tax_3
-			}
-		}
-		castle_vassal_tax_modifier = 0.0
-	}
-
-	feudal_tax_1 = {
-		group = feudal_tax
-		feudal_opinion = -10
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = feudal_tax_0
-				revoke_law = feudal_tax_1
-				revoke_law = feudal_tax_2
-				revoke_law = feudal_tax_3
-			}
-		}
-		
-		castle_vassal_tax_modifier = 0.1
-		
-	}
-	
-	feudal_tax_2 = {
-		group = feudal_tax
-		feudal_opinion = -20
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = feudal_tax_0
-				revoke_law = feudal_tax_1
-				revoke_law = feudal_tax_2
-				revoke_law = feudal_tax_3
-			}
-		}
-		castle_vassal_tax_modifier = 0.2
-	}
-	
-	feudal_tax_3 = {
-		group = feudal_tax
-		feudal_opinion = -30
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = feudal_tax_0
-				revoke_law = feudal_tax_1
-				revoke_law = feudal_tax_2
-				revoke_law = feudal_tax_3
-			}
-		}
-		
-		castle_vassal_tax_modifier = 0.3
-	}
-	
 	# CITY VASSAL LEVY SIZE LAWS
-	##############################
-	
+##############################
 	city_contract_0 = {
 		group = city_contract
 		city_opinion = 10
@@ -282,7 +1375,6 @@ laws = {
 		
 		city_vassal_max_levy = -0.5
 	}
-
 	city_contract_1 = {
 		group = city_contract
 		city_opinion = 0
@@ -313,7 +1405,6 @@ laws = {
 		
 		city_vassal_max_levy = -0.35
 	}
-	
 	city_contract_2 = {
 		group = city_contract
 		city_opinion = -10
@@ -342,7 +1433,6 @@ laws = {
 		}
 		city_vassal_max_levy = -0.2
 	}
-	
 	city_contract_3 = {
 		group = city_contract
 		city_opinion = -20
@@ -372,630 +1462,5 @@ laws = {
 		
 		city_vassal_max_levy = -0.05
 	}
-	
-	
-	# CITY VASSAL TAX SIZE LAWS
-	##############################
-	
-	city_tax_0 = {
-		group = city_tax
-		city_opinion = 10
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = city_tax_0
-				revoke_law = city_tax_1
-				revoke_law = city_tax_2
-				revoke_law = city_tax_3
-			}
-		}
-		
-		city_vassal_tax_modifier = 0.15
-	}
 
-	city_tax_1 = {
-		group = city_tax
-		city_opinion = 0
-		default = yes
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 1
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = city_tax_0
-				revoke_law = city_tax_1
-				revoke_law = city_tax_2
-				revoke_law = city_tax_3
-			}
-		}
-		
-		city_vassal_tax_modifier = 0.25
-	}
-	
-	city_tax_2 = {
-		group = city_tax
-		city_opinion = -10
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = city_tax_0
-				revoke_law = city_tax_1
-				revoke_law = city_tax_2
-				revoke_law = city_tax_3
-			}
-		}
-		city_vassal_tax_modifier = 0.35
-	}
-	
-	city_tax_3 = {
-		group = city_tax
-		city_opinion = -20
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = city_tax_0
-				revoke_law = city_tax_1
-				revoke_law = city_tax_2
-				revoke_law = city_tax_3
-			}
-		}
-		
-		city_vassal_tax_modifier = 0.45
-	}
-	
-	# TEMPLE VASSAL LEVY SIZE LAWS
-	##############################
-	
-	temple_contract_0 = {
-		group = temple_contract
-		temple_opinion = 10
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = temple_contract_0
-				revoke_law = temple_contract_1
-				revoke_law = temple_contract_2
-				revoke_law = temple_contract_3
-			}
-		}
-		
-		temple_vassal_max_levy = -0.5
-		
-	}
-
-	temple_contract_1 = {
-		group = temple_contract
-		temple_opinion = 0
-		default = yes
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 1
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = temple_contract_0
-				revoke_law = temple_contract_1
-				revoke_law = temple_contract_2
-				revoke_law = temple_contract_3
-			}
-		}
-		temple_vassal_max_levy = -0.4
-	}
-	
-	temple_contract_2 = {
-		group = temple_contract
-		temple_opinion = -10
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = temple_contract_0
-				revoke_law = temple_contract_1
-				revoke_law = temple_contract_2
-				revoke_law = temple_contract_3
-			}
-		}
-		temple_vassal_max_levy = -0.3
-	}
-	
-	temple_contract_3 = {
-		group = temple_contract
-		temple_opinion = -20
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = temple_contract_0
-				revoke_law = temple_contract_1
-				revoke_law = temple_contract_2
-				revoke_law = temple_contract_3
-			}
-		}
-		temple_vassal_max_levy = -0.2
-	}
-	
-	
-	
-	# TEMPLE VASSAL TAX SIZE LAWS
-	##############################
-	
-	temple_tax_0 = {
-		group = temple_tax
-		temple_opinion = 20
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = temple_tax_0
-				revoke_law = temple_tax_1
-				revoke_law = temple_tax_2
-				revoke_law = temple_tax_3
-			}
-		}
-		
-		temple_vassal_tax_modifier = 0.0
-		
-	}
-
-	temple_tax_1 = {
-		group = temple_tax
-		temple_opinion = 0
-		default = yes
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 1
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = temple_tax_0
-				revoke_law = temple_tax_1
-				revoke_law = temple_tax_2
-				revoke_law = temple_tax_3
-			}
-		}
-		temple_vassal_tax_modifier = 0.35
-	}
-	
-	temple_tax_2 = {
-		group = temple_tax
-		temple_opinion = -10
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = temple_tax_0
-				revoke_law = temple_tax_1
-				revoke_law = temple_tax_2
-				revoke_law = temple_tax_3
-			}
-		}
-		temple_vassal_tax_modifier = 0.45
-	}
-	
-	temple_tax_3 = {
-		group = temple_tax
-		temple_opinion = -20
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = temple_tax_0
-				revoke_law = temple_tax_1
-				revoke_law = temple_tax_2
-				revoke_law = temple_tax_3
-			}
-		}
-		temple_vassal_tax_modifier = 0.55
-	}
-	
-	
-	##############################
-	# MUSLIM FEUDAL LAWS
-	##############################
-	
-	# IQTA VASSAL LEVY SIZE LAWS
-	##############################
-	
-	iqta_contract_0 = {
-		group = iqta_contract
-		feudal_opinion = 10
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = iqta_contract_0
-				revoke_law = iqta_contract_1
-				revoke_law = iqta_contract_2
-				revoke_law = iqta_contract_3
-			}
-		}
-		
-		castle_vassal_max_levy = -0.4
-	}
-	
-	iqta_contract_1 = {
-		group = iqta_contract
-		feudal_opinion = 5
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = iqta_contract_0
-				revoke_law = iqta_contract_1
-				revoke_law = iqta_contract_2
-				revoke_law = iqta_contract_3
-			}
-		}
-		castle_vassal_max_levy = -0.3
-	}
-	
-	iqta_contract_2 = {
-		group = iqta_contract
-		feudal_opinion = 0
-		default = yes
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 1
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = iqta_contract_0
-				revoke_law = iqta_contract_1
-				revoke_law = iqta_contract_2
-				revoke_law = iqta_contract_3
-			}
-		}
-		
-		castle_vassal_max_levy = -0.2
-	}
-	
-	iqta_contract_3 = {
-		group = iqta_contract
-		feudal_opinion = -5
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			revoke_law = iqta_contract_0
-			revoke_law = iqta_contract_1
-			revoke_law = iqta_contract_2
-		}
-	}
-	
-	
-	# FEUDAL VASSAL TAX SIZE LAWS
-	##############################
-	
-	iqta_tax_0 = {
-		group = iqta_tax
-		feudal_opinion = 10
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = iqta_tax_0
-				revoke_law = iqta_tax_1
-				revoke_law = iqta_tax_2
-				revoke_law = iqta_tax_3
-			}
-		}
-		castle_vassal_tax_modifier = 0.0
-	}
-
-	iqta_tax_1 = {
-		group = iqta_tax
-		default = yes
-		feudal_opinion = -0
-		
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 1
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = iqta_tax_0
-				revoke_law = iqta_tax_1
-				revoke_law = iqta_tax_2
-				revoke_law = iqta_tax_3
-			}
-		}
-		
-		castle_vassal_tax_modifier = 0.1
-	}
-	
-	iqta_tax_2 = {
-		group = iqta_tax
-		feudal_opinion = -10
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = iqta_tax_0
-				revoke_law = iqta_tax_1
-				revoke_law = iqta_tax_2
-				revoke_law = iqta_tax_3
-			}
-		}
-		castle_vassal_tax_modifier = 0.2
-	}
-	
-	iqta_tax_3 = {
-		group = iqta_tax
-		feudal_opinion = -20
-		potential = {
-			OR = {
-				NOT = { tier = baron }
-				holder_scope = { is_patrician = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = iqta_tax_0
-				revoke_law = iqta_tax_1
-				revoke_law = iqta_tax_2
-				revoke_law = iqta_tax_3
-			}
-		}
-		
-		castle_vassal_tax_modifier = 0.3
-	}
 }
