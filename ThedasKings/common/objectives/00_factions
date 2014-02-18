@@ -35,6 +35,26 @@ faction_character_crown = {
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -382,6 +402,26 @@ faction_character_prestige = {
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -716,6 +756,7 @@ faction_character_prestige = {
 # Independence
 faction_independence = {
 	type = character
+	exclusive = yes
 	
 	# Plotter scope
 	potential = {
@@ -731,6 +772,34 @@ faction_independence = {
 			ai = yes
 			is_feudal = yes
 			higher_tier_than = COUNT
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+		}
 		}
 		
 		liege = {
@@ -1391,6 +1460,26 @@ faction_claimant = {
 			}
 		}
 		primary_title = { higher_tier_than = BARON }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+		}
 		
 		OR = {
 			# Is not affected by a Crown Law title
@@ -2393,6 +2482,26 @@ faction_interest_lobbied = {
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -2726,7 +2835,7 @@ faction_interest_lobbied = {
 
 #Support Foreign Leader
 faction_interest_foreign = {
-	type = liege_titles_w_claimant # 'new_character' is a Claimant, or, if the title is Elective, anyone eligible for election
+	type = character # 'new_character' is a Claimant, or, if the title is Elective, anyone eligible for election
 	exclusive = yes # Can only lead or be in one faction of this type
 	
 	potential = {
@@ -2740,6 +2849,26 @@ faction_interest_foreign = {
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_character_crown
+					faction_character_prestige
+					faction_claimant
+					faction_interest_foreign
+					faction_interest_lobbied
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -3073,7 +3202,7 @@ faction_interest_foreign = {
 
 #Pro Magi
 faction_pro_magi = {
-type = character
+	type = liege_titles
 	exclusive = yes
 	
 	potential = {
@@ -3087,6 +3216,34 @@ type = character
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -3420,7 +3577,7 @@ type = character
 
 #Anti Magi
 faction_anti_magi = {
-type = character
+	type = liege_titles
 	exclusive = yes
 	
 	potential = {
@@ -3434,6 +3591,34 @@ type = character
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -3767,7 +3952,7 @@ type = character
 
 #Pro Chantry
 faction_pro_chantry = {
-type = character
+	type = liege_titles
 	exclusive = yes
 	
 	potential = {
@@ -3781,6 +3966,34 @@ type = character
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+				NOT = {
+			in_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -4114,7 +4327,7 @@ type = character
 
 #Anti Chantry
 faction_anti_chantry = {
-type = character
+	type = liege_titles
 	exclusive = yes
 	
 	potential = {
@@ -4128,6 +4341,34 @@ type = character
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+				NOT = {
+			in_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -4461,7 +4702,7 @@ type = character
 
 #Pro Slavery
 faction_pro_slavery = {
-type = character
+	type = liege_titles
 	exclusive = yes
 	
 	potential = {
@@ -4475,6 +4716,34 @@ type = character
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -4808,7 +5077,7 @@ type = character
 
 #Anti Slavery
 faction_anti_slavery = {
-type = character
+	type = liege_titles
 	exclusive = yes
 	
 	potential = {
@@ -4822,6 +5091,34 @@ type = character
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -5155,7 +5452,7 @@ type = character
 
 #Pro Elf
 faction_pro_elf = {
-type = character
+	type = liege_titles
 	exclusive = yes
 	
 	potential = {
@@ -5169,6 +5466,34 @@ type = character
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+		}
 	}
 
 	# Target scope
@@ -5186,7 +5511,7 @@ type = character
 				}
 			}
 		}
-		
+				
 		OR = {
 			culture = FROM
 			holder_scope = {
@@ -5502,7 +5827,7 @@ type = character
 
 #Anti Elf
 faction_anti_elf = {
-type = character
+	type = liege_titles
 	exclusive = yes
 	
 	potential = {
@@ -5516,6 +5841,34 @@ type = character
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
+		NOT = {
+			in_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+			leads_faction = {
+				OR = {
+					faction_anti_elf
+					faction_pro_elf
+					faction_anti_magi
+					faction_pro_magi
+					faction_anti_slavery
+					faction_pro_slavery
+					faction_anti_chantry
+					faction_pro_chantry
+					faction_independence
+				}
+			}
+		}
 	}
 
 	# Target scope
