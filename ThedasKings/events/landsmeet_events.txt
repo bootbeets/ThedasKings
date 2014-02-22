@@ -1,0 +1,88 @@
+#### Chalkface ####
+
+#LANDSMEET EVENTS
+
+namespace = landsmeet
+
+#IF Prestigious, give 'Prestigious'
+character_event = {
+	id = landsmeet.1
+	desc = "You have become one of the most prestigious figures in the realm!" #TEMP put in Local
+	picture = GFX_evt_son_asking_father #Temporary
+	
+	min_age = 21
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		prestige = 2000
+		NOT = { 
+			has_character_flag = { 
+				name = prestigious_in_realm
+			}
+		}
+	}
+	
+	option = {
+		name = "Vunderbar!" #EVT LOCAL "Fantastic News!"
+		set_character_flag = { name = prestigious_in_realm duration = -1}
+	}
+}
+
+#IF 'Prestigious', fire event for Faction formation
+character_event = { 
+	id = landsmeet.2
+	desc = "Due to your position as one of the most powerful men in the realm... ect" #TEMP naturally
+	picture = GFX_evt_son_asking_father #Temporary
+	
+	min_age = 21
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		has_character_flag = {
+			name = prestigious_in_realm
+		}
+		NOT = {
+			or = {
+				faction_leader = yes
+				has_global_flag = { name = faction_tutorial_complete }
+				has_character_flag = { name = landsmeet_2_informed }
+			}
+		}
+	}
+	
+	option = {
+		name = "Vunderbar!"#EVT LOCAL "Wonderful news!"
+		hidden_tooltip = {
+			set_character_flag = { name = landsmeet_2_informed duration = 120 }
+		}
+	}
+	option = {
+		name = "Vunderbar!"#EVT LOCAL "Yes, yes, I understand how this works."
+		hidden_tooltip = {
+			set_character_flag = { name = faction_tutorial_complete }
+		}
+	}	
+}
+
+#IF 'Faction Leader' but not faction_leader, give trait 'Former Faction Leader'
+character_event = {
+	id = landsmeet.3
+		
+	hide_FROM = yes
+	
+	immediate = {
+		if = {
+			trait = realm_faction_leader
+			NOT = { faction_leader }
+		}
+	}
+	
+	option = {
+		name = "Vunderbar!"
+		trait = former_realm_faction_leader
+	}
+}
+
+
