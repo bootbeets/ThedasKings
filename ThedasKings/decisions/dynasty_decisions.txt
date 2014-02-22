@@ -98,7 +98,9 @@ dynasty_decisions = {
 					limit = {
 						num_of_friends = 1
 					}
-				move_character = random_friend
+				}
+				random_friend = {
+					move_character = ROOT
 				}
 			}
 			ROOT = {

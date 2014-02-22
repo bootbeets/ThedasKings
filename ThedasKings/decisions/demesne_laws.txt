@@ -1194,7 +1194,7 @@ laws = {
 	}
 	brothel_1 = { #Banned
 	group = brothel
-		CHURCH_OPINION = 0.10
+		temple_all_opinion = 0.10
 		city_opinion = -0.30
 		
 		potential = {
