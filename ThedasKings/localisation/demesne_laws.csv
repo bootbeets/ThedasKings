@@ -8,14 +8,14 @@ inheritance_tax;Inheritance Tax;;;;;;;;;;;;;x
 inheritance_tax_0;No Tax;;;;;;;;;;;;;x
 inheritance_tax_1;Taxed;;;;;;;;;;;;;x
 private_collectors;Private Tax Collectors;;;;;;;;;;;;;x
-private_collectors_0;Not Employed;;;;;;;;;;;;;x
+private_collectors_0;None;;;;;;;;;;;;;x
 private_collectors_1;Employed;;;;;;;;;;;;;x
 hwy_toll;Hwy Tolls;;;;;;;;;;;;;x
 hwy_toll_0;No Toll;;;;;;;;;;;;;x
-hwy_toll_1;Toll Imposed;;;;;;;;;;;;;x
+hwy_toll_1;Toll;;;;;;;;;;;;;x
 river_toll;River Toll;;;;;;;;;;;;;x
 river_toll_0;No Toll;;;;;;;;;;;;;x
-river_toll_1;Toll Imposed;;;;;;;;;;;;;x
+river_toll_1;Toll;;;;;;;;;;;;;x
 scutage;Scutage Legality;;;;;;;;;;;;;x
 scutage_0;Abolished;;;;;;;;;;;;;x
 scutage_1;Special Cases;;;;;;;;;;;;;x
