@@ -9,7 +9,7 @@ Major:
 - Aurelax Verifier Sweep Ongoing
 
 Known Crashes:
-Crashes on Religion Tab for Chantry, other religions unknown. May be lack of Divine & College.
+Crashes on Religion Tab for Chantry. However: ngppgn knows the solution, so not a major problem.
 
 -----------------------------------------------------------------
 
