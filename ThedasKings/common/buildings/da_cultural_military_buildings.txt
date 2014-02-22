@@ -6,7 +6,7 @@ castle = {
 ########################## ALAMARRI GROUP ##########################
 ###Alamarri Mabari###
 	ca_culture_alamarri_mabari_1 = {
-		desc = ca_culture_alamarri_tribe_1
+		desc = ca_culture_alamarri_tribe_desc_1
 		potential = {
 			FROM = {
 				OR = {
@@ -28,7 +28,7 @@ castle = {
 		
 		extra_tech_building_start = 0.8
 	}
-	ca_culture_alamarri_mabari_2 = {
+	ca_culture_alamarri_mabari_desc_2 = {
 		desc = ca_culture_alamarri_tribe_2
 		potential = {
 			FROM = {
@@ -52,7 +52,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_alamarri_mabari_3 = {
-		desc = ca_culture_alamarri_tribe_3
+		desc = ca_culture_alamarri_tribe_desc_3
 		potential = {
 			FROM = {
 				OR = {
@@ -75,7 +75,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_alamarri_mabari_4 = {
-		desc = ca_culture_alamarri_tribe_4
+		desc = ca_culture_alamarri_tribe_desc_4
 		potential = {
 			FROM = {
 				OR = {
@@ -99,7 +99,7 @@ castle = {
 	}
 ###Fereldan Mabari###
 	ca_culture_fereldan_mabari_1 = {
-		desc = ca_culture_fereldan_mabari_1
+		desc = ca_culture_fereldan_mabari_desc_1
 		potential = {
 			FROM = {
 				OR = {
@@ -118,7 +118,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_fereldan_mabari_2 = {
-		desc = ca_culture_fereldan_mabari_2
+		desc = ca_culture_fereldan_mabari_desc_2
 		potential = {
 			FROM = {
 				OR = {
@@ -137,7 +137,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_fereldan_mabari_3 = {
-		desc = ca_culture_fereldan_mabari_3
+		desc = ca_culture_fereldan_mabari_desc_3
 		potential = {
 			FROM = {
 				OR = {
@@ -156,7 +156,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_fereldan_mabari_4 = {
-		desc = ca_culture_fereldan_mabari_4
+		desc = ca_culture_fereldan_mabari_desc_4
 		potential = {
 			FROM = {
 				OR = {
@@ -176,7 +176,7 @@ castle = {
 	}
 ###Fereldan Regional Knight-Lites###
 	ca_culture_fereldan_knights_1 = {
-		desc = ca_culture_fereldan_knights_1
+		desc = ca_culture_fereldan_knights_desc_1
 		potential = {
 			FROM = {
 				OR = {
@@ -194,7 +194,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_fereldan_knights_2 = {
-		desc = ca_culture_fereldan_knights_2
+		desc = ca_culture_fereldan_knights_desc_2
 		potential = {
 			FROM = {
 				OR = {
@@ -212,7 +212,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_fereldan_knights_3 = {
-		desc = ca_culture_fereldan_knights_3
+		desc = ca_culture_fereldan_knights_desc_3
 		potential = {
 			FROM = {
 				OR = {
@@ -230,7 +230,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_fereldan_knights_4 = {
-		desc = ca_culture_fereldan_knights_4
+		desc = ca_culture_fereldan_knights_desc_4
 		potential = {
 			FROM = {
 				OR = {
@@ -250,7 +250,7 @@ castle = {
 ########################## ORLESIAN EMPIRE ##########################
 # Heavy Infantry Chevalier Wannabes
 	ca_culture_orlesian_mini_chevalier_1 = {
-		desc = ca_culture_orlesian_mini_chevalier_1
+		desc = ca_culture_orlesian_mini_chevalier_desc_1
 		potential = {
 			FROM = {
 				OR = {
@@ -268,7 +268,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_orlesian_mini_chevalier_2 = {
-		desc = ca_culture_orlesian_mini_chevalier_2
+		desc = ca_culture_orlesian_mini_chevalier_desc_2
 		potential = {
 			FROM = {
 				OR = {
@@ -286,7 +286,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_orlesian_mini_chevalier_3 = {
-		desc = ca_culture_orlesian_mini_chevalier_3
+		desc = ca_culture_orlesian_mini_chevalier_desc_3
 		potential = {
 			FROM = {
 				OR = {
@@ -304,7 +304,7 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_orlesian_mini_chevalier_4 = {
-		desc = ca_culture_orlesian_mini_chevalier_4
+		desc = ca_culture_orlesian_mini_chevalier_desc_4
 		potential = {
 			FROM = {
 				OR = {
@@ -323,7 +323,7 @@ castle = {
 	}
 # Heartlander Pike Auxiliary
 ca_culture_orlesian_pike_auxiliary_1 = {
-		desc = ca_culture_orlesian_pike_auxiliary_1
+		desc = ca_culture_orlesian_pike_auxiliary_desc_1
 		potential = {
 			FROM = {
 				OR = {
@@ -341,7 +341,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_orlesian_pike_auxiliary_2 = {
-		desc = ca_culture_orlesian_pike_auxiliary_2
+		desc = ca_culture_orlesian_pike_auxiliary_desc_2
 		potential = {
 			FROM = {
 				OR = {
@@ -359,7 +359,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_orlesian_pike_auxiliary_3 = {
-		desc = ca_culture_orlesian_pike_auxiliary_3
+		desc = ca_culture_orlesian_pike_auxiliary_desc_3
 		potential = {
 			FROM = {
 				OR = {
@@ -377,7 +377,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_orlesian_pike_auxiliary_4 = {
-		desc = ca_culture_orlesian_pike_auxiliary_4
+		desc = ca_culture_orlesian_pike_auxiliary_desc_4
 		potential = {
 			FROM = {
 				OR = {
@@ -397,7 +397,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 ########################## FREE MARCHER ##########################
 # Professional Pike & Bow Formations
 	ca_culture_free_marcher_pikenbow_1 = {
-		desc = ca_culture_free_marcher_pikenbow_1
+		desc = ca_culture_free_marcher_pikenbow_desc_1
 		potential = {
 			FROM = {
 				OR = {
@@ -417,8 +417,8 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		
 		extra_tech_building_start = 0.8
 	}
-	ca_culture_orlesian_pike_auxiliary_2 = {
-		desc = ca_culture_free_marcher_pikenbow_2
+	ca_culture_free_marcher_pikenbow_2 = {
+		desc = ca_culture_free_marcher_pikenbow_desc_2
 		potential = {
 			FROM = {
 				OR = {
@@ -439,7 +439,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_free_marcher_pikenbow_3 = {
-		desc = ca_culture_free_marcher_pikenbow_3
+		desc = ca_culture_free_marcher_pikenbow_desc_3
 		potential = {
 			FROM = {
 				OR = {
@@ -460,7 +460,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		extra_tech_building_start = 0.8
 	}
 	ca_culture_free_marcher_pikenbow_4 = {
-		desc = ca_culture_free_marcher_pikenbow_4
+		desc = ca_culture_free_marcher_pikenbow_desc_4
 		potential = {
 			FROM = {
 				OR = {
