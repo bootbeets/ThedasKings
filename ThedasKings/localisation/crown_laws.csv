@@ -1,0 +1,42 @@
+crown;Crown Style;;;;;;;;;;;;;x
+crown_0;Antivan;;;;;;;;;;;;;x
+crown_1;Marcher;;;;;;;;;;;;;x
+crown_2;Fereldan;;;;;;;;;;;;;x
+crown_3;Tevinter;;;;;;;;;;;;;x
+crown_4;Orlesian;;;;;;;;;;;;;x
+chantry;Chantry Authority;;;;;;;;;;;;;x
+chantry_0;Minimal;;;;;;;;;;;;;x
+chantry_1;Weak;;;;;;;;;;;;;x
+chantry_2;Moderate;;;;;;;;;;;;;x
+chantry_3;Strong;;;;;;;;;;;;;x
+chantry_4;Integral;;;;;;;;;;;;;x
+faith;Priest Strength;;;;;;;;;;;;;x
+faith_0;Minimal;;;;;;;;;;;;;x
+faith_1;Weak;;;;;;;;;;;;;x
+faith_2;Moderate;;;;;;;;;;;;;x
+faith_3;Strong;;;;;;;;;;;;;x
+faith_4;Integral;;;;;;;;;;;;;x
+mage;Mage Liberty;;;;;;;;;;;;;x
+mage_0;Maleficarum;;;;;;;;;;;;;x
+mage_1;Custody;;;;;;;;;;;;;x
+mage_2;Circle;;;;;;;;;;;;;x
+mage_3;Liberated;;;;;;;;;;;;;x
+mage_4;Magiocracy;;;;;;;;;;;;;x
+circle;Circle Rights;;;;;;;;;;;;;x
+circle_0;Independent;;;;;;;;;;;;;x
+circle_1;Unregulated;;;;;;;;;;;;;x
+circle_2;Restricted;;;;;;;;;;;;;x
+circle_3;Policed;;;;;;;;;;;;;x
+circle_4;Servitude;;;;;;;;;;;;;x
+slavery;Slavery;;;;;;;;;;;;;x
+slavery_0;Illegal;;;;;;;;;;;;;x
+slavery_1;Servitude;;;;;;;;;;;;;x
+slavery_2;Elven;;;;;;;;;;;;;x
+slavery_3;Tevinter;;;;;;;;;;;;;x
+slavery_4;Universal;;;;;;;;;;;;;x
+alienage;Alienage Status;;;;;;;;;;;;;x
+alienage_0;Liberated;;;;;;;;;;;;;x
+alienage_1;Protected;;;;;;;;;;;;;x
+alienage_2;Contained;;;;;;;;;;;;;x
+alienage_3;Exploited;;;;;;;;;;;;;x
+alienage_4;Enslaved;;;;;;;;;;;;;x

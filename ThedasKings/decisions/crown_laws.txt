@@ -343,7 +343,7 @@ de_jure_laws = {
 			set_investiture = head
 		}
 	}
-	chantry_4 = { #Extraordinary
+	chantry_4 = { #Integral
 		show_as_title = yes
 		group = chantry
 		
@@ -532,7 +532,7 @@ de_jure_laws = {
 			set_investiture = head
 		}
 	}
-	faith_4 = { #Extraordinary
+	faith_4 = { #Integral
 		show_as_title = yes
 		group = faith
 		
@@ -596,7 +596,7 @@ de_jure_laws = {
 			}
 		}
 	}
-	mage_1 = { #Imprisoned		Forcibly incarcerated, made tranquil or conscripted
+	mage_1 = { #Custody		Forcibly incarcerated, made tranquil or conscripted
 		show_as_title = yes
 		group = mage
 		
@@ -741,7 +741,7 @@ de_jure_laws = {
 	}
 	
 ###### CIRCLE AUTONOMY ######
-	circle_0 = { #Independant		Free to roam from their tower, act as they will
+	circle_0 = { #Independent		Free to roam from their tower, act as they will
 		show_as_title = yes
 		group = circle
 		

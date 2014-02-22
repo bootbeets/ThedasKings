@@ -1,0 +1,53 @@
+general_taxation;Local Tax Rate;;;;;;;;;;;;;x
+general_taxation_0;Minimal;;;;;;;;;;;;;x
+general_taxation_1;Low;;;;;;;;;;;;;x
+general_taxation_2;Medium;;;;;;;;;;;;;x
+general_taxation_3;High;;;;;;;;;;;;;x
+general_taxation_4;Extortion;;;;;;;;;;;;;x
+inheritance_tax;Inheritance Tax;;;;;;;;;;;;;x
+inheritance_tax_0;No Tax;;;;;;;;;;;;;x
+inheritance_tax_1;Taxed;;;;;;;;;;;;;x
+private_collectors;Private Tax Collectors;;;;;;;;;;;;;x
+private_collectors_0;Not Employed;;;;;;;;;;;;;x
+private_collectors_1;Employed;;;;;;;;;;;;;x
+hwy_toll;Hwy Tolls;;;;;;;;;;;;;x
+hwy_toll_0;No Toll;;;;;;;;;;;;;x
+hwy_toll_1;Toll Imposed;;;;;;;;;;;;;x
+river_toll;River Toll;;;;;;;;;;;;;x
+river_toll_0;No Toll;;;;;;;;;;;;;x
+river_toll_1;Toll Imposed;;;;;;;;;;;;;x
+scutage;Scutage Legality;;;;;;;;;;;;;x
+scutage_0;Abolished;;;;;;;;;;;;;x
+scutage_1;Special Cases;;;;;;;;;;;;;x
+scutage_2;Those Without Issue;;;;;;;;;;;;;x
+scutage_3;All Minor Landowners;;;;;;;;;;;;;x
+road_patrols;Local Guard Patrols;;;;;;;;;;;;;x
+road_patrols_0;Negligence;;;;;;;;;;;;;x
+road_patrols_1;Irregular Patrols;;;;;;;;;;;;;x
+road_patrols_2;Regular upon Major Roads;;;;;;;;;;;;;x
+road_patrols_3;One Patrol per Route;;;;;;;;;;;;;x
+road_patrols_4;Regular Outposts;;;;;;;;;;;;;x
+general_tariff;City Tariff Rate;;;;;;;;;;;;;x
+general_tariff_0;Abolished;;;;;;;;;;;;;x
+general_tariff_1;Negligable;;;;;;;;;;;;;x
+general_tariff_2;Accepted;;;;;;;;;;;;;x
+general_tariff_3;Aggressive;;;;;;;;;;;;;x
+general_tariff_4;Extortion;;;;;;;;;;;;;x
+burgage_rates;Burgage Rent Rates;;;;;;;;;;;;;x
+burgage_rates_0;Dei Grata;;;;;;;;;;;;;x
+burgage_rates_1;Cheap;;;;;;;;;;;;;x
+burgage_rates_2;Average;;;;;;;;;;;;;x
+burgage_rates_3;High;;;;;;;;;;;;;x
+guild_rights;Guild Rights;;;;;;;;;;;;;x
+guild_rights_0;Right of Operation;;;;;;;;;;;;;x
+guild_rights_1;Right of Monopoly;;;;;;;;;;;;;x
+guild_rights_2;Right of Self Adjudication;;;;;;;;;;;;;x
+guard_pay;City Guard Investment;;;;;;;;;;;;;x
+guard_pay_0;Meals Paid;;;;;;;;;;;;;x
+guard_pay_1;Unreliable Stipend;;;;;;;;;;;;;x
+guard_pay_2;Regular Pay;;;;;;;;;;;;;x
+guard_pay_3;Decent Pay;;;;;;;;;;;;;x
+guard_pay_4;Terrible Hours;;;;;;;;;;;;;x
+brothel;The Brothels;;;;;;;;;;;;;x
+brothel_0;Open;;;;;;;;;;;;;x
+brothel_1;Banned;;;;;;;;;;;;;x
