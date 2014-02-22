@@ -1,0 +1,24 @@
+Most recent update at the top.
+
+WORK DONE TOWARDS v.0.02
+Major:
+- Files changed to .txt so the game can actually read them (damn you github).
+
+- Factions Complete sans events + AI
+- Localisation Overhaul to Laws & Buildings
+- Aurelax Verifier Sweep Ongoing
+
+Known Crashes:
+Crashes on Religion Tab for Chantry, other religions unknown. May be lack of Divine & College.
+
+-----------------------------------------------------------------
+
+v.0.01 - Feb. 22nd 2014: "February 2014" "What has been done so far."
+- Cultural Military buildings complete.
+- Factions completely rewritten.
+- Religion & Culture files + Localisation obviously complete.
+- Rewriting Education system and Traits.
+- All files rewritten to allow gender equality.
+- Completely rewritten Crown and Demesne laws.
+- Small interface improvement, lots of Localisation work.
+- 1st Draft province map is 70% complete, along with 'finished' height and topology maps.
