@@ -102,9 +102,7 @@ castle = {
 		desc = ca_culture_fereldan_mabari_desc_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = fereldan
-				}
+				culture = fereldan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -121,9 +119,7 @@ castle = {
 		desc = ca_culture_fereldan_mabari_desc_2
 		potential = {
 			FROM = {
-				OR = {
-					culture = fereldan
-				}
+				culture = fereldan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -140,9 +136,7 @@ castle = {
 		desc = ca_culture_fereldan_mabari_desc_3
 		potential = {
 			FROM = {
-				OR = {
-					culture = fereldan
-				}
+				culture = fereldan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
@@ -159,9 +153,7 @@ castle = {
 		desc = ca_culture_fereldan_mabari_desc_4
 		potential = {
 			FROM = {
-				OR = {
-					culture = fereldan
-				}
+				culture = fereldan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
@@ -179,9 +171,7 @@ castle = {
 		desc = ca_culture_fereldan_knights_desc_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = fereldan
-				}
+				culture = fereldan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -197,9 +187,7 @@ castle = {
 		desc = ca_culture_fereldan_knights_desc_2
 		potential = {
 			FROM = {
-				OR = {
-					culture = fereldan
-				}
+				culture = fereldan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
@@ -215,9 +203,7 @@ castle = {
 		desc = ca_culture_fereldan_knights_desc_3
 		potential = {
 			FROM = {
-				OR = {
-					culture = fereldan
-				}
+				culture = fereldan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
@@ -233,9 +219,7 @@ castle = {
 		desc = ca_culture_fereldan_knights_desc_4
 		potential = {
 			FROM = {
-				OR = {
-					culture = fereldan
-				}
+				culture = fereldan
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 4 }
@@ -253,9 +237,7 @@ castle = {
 		desc = ca_culture_orlesian_mini_chevalier_desc_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = orlesian
-				}
+				culture = orlesian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -271,9 +253,7 @@ castle = {
 		desc = ca_culture_orlesian_mini_chevalier_desc_2
 		potential = {
 			FROM = {
-				OR = {
-					culture = orlesian
-				}
+				culture = orlesian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -289,9 +269,7 @@ castle = {
 		desc = ca_culture_orlesian_mini_chevalier_desc_3
 		potential = {
 			FROM = {
-				OR = {
-					culture = orlesian
-				}
+				culture = orlesian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
@@ -307,9 +285,7 @@ castle = {
 		desc = ca_culture_orlesian_mini_chevalier_desc_4
 		potential = {
 			FROM = {
-				OR = {
-					culture = orlesian
-				}
+				culture = orlesian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
@@ -326,9 +302,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		desc = ca_culture_orlesian_pike_auxiliary_desc_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = orlesian
-				}
+				culture = orlesian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -344,9 +318,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		desc = ca_culture_orlesian_pike_auxiliary_desc_2
 		potential = {
 			FROM = {
-				OR = {
-					culture = orlesian
-				}
+				culture = orlesian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -362,9 +334,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		desc = ca_culture_orlesian_pike_auxiliary_desc_3
 		potential = {
 			FROM = {
-				OR = {
-					culture = orlesian
-				}
+				culture = orlesian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
@@ -380,9 +350,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		desc = ca_culture_orlesian_pike_auxiliary_desc_4
 		potential = {
 			FROM = {
-				OR = {
-					culture = orlesian
-				}
+				culture = orlesian
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
@@ -400,9 +368,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		desc = ca_culture_free_marcher_pikenbow_desc_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = free_marcher
-				}
+				culture_group = free_marcher
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -421,9 +387,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		desc = ca_culture_free_marcher_pikenbow_desc_2
 		potential = {
 			FROM = {
-				OR = {
-					culture = free_marcher
-				}
+				culture_group = free_marcher
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
@@ -442,9 +406,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		desc = ca_culture_free_marcher_pikenbow_desc_3
 		potential = {
 			FROM = {
-				OR = {
-					culture = free_marcher
-				}
+				culture_group = free_marcher
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
@@ -463,9 +425,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 		desc = ca_culture_free_marcher_pikenbow_desc_4
 		potential = {
 			FROM = {
-				OR = {
-					culture_group = free_marcher
-				}
+				culture_group = free_marcher
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
@@ -514,7 +474,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
-		upgrades_from = { ca_culture_rialto_li_1 }
+		upgrades_from = ca_culture_rialto_li_1
 		build_cost = 300
 		build_time = 1095
 		light_infantry = 100
@@ -535,7 +495,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-		upgrades_from = { ca_culture_rialto_li_2 }
+		upgrades_from = ca_culture_rialto_li_2
 		build_cost = 400
 		build_time = 2190
 		light_infantry = 150
@@ -556,7 +516,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
-		upgrades_from = { ca_culture_rialto_li_3 }
+		upgrades_from = ca_culture_rialto_li_3
 		build_cost = 600
 		build_time = 2190
 		light_infantry = 200
@@ -598,7 +558,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
-		upgrades_from = { ca_culture_rialto_cross_1 }
+		upgrades_from = ca_culture_rialto_cross_1
 		build_cost = 300
 		build_time = 1095
 		archers = 100
@@ -618,7 +578,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-		upgrades_from = { ca_culture_rialto_cross_2 }
+		upgrades_from = ca_culture_rialto_cross_2
 		build_cost = 400
 		build_time = 2190
 		archers = 150
@@ -638,7 +598,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
-		upgrades_from = { ca_culture_rialto_cross_3 }
+		upgrades_from = ca_culture_rialto_cross_3
 		build_cost = 600
 		build_time = 2190
 		archers = 200
@@ -675,7 +635,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
-		upgrades_from = { ca_culture_anders_1 }
+		upgrades_from = ca_culture_anders_1
 		build_cost = 300
 		build_time = 1095
 		light_infantry = 100
@@ -693,7 +653,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-		upgrades_from = { ca_culture_anders_2 }
+		upgrades_from = ca_culture_anders_2
 		build_cost = 400
 		build_time = 2190
 		light_infantry = 150
@@ -711,7 +671,7 @@ ca_culture_orlesian_pike_auxiliary_1 = {
 			}
 		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
-		upgrades_from = { ca_culture_anders_3 }
+		upgrades_from = ca_culture_anders_3
 		build_cost = 600
 		build_time = 2190
 		light_infantry = 200

@@ -858,7 +858,7 @@ imperial = {
 }
 
 ancient_tevinter = {
-	graphical_culture = { byzantinegfx }
+	graphical_culture = byzantinegfx
 	
 	neromenian = {
 		graphical_culture = byzantinegfx
