@@ -5,7 +5,7 @@ crown_0_desc;The Antivan Monarchy is considered the weakest power in Thedas. By 
 crown_1;Marcher;;;;;;;;;;;;;x
 crown_1_desc;The Free Marches are a ragtag group of city states and dynasties fighting for short term dominance first, and the glory of their city second. Ruled by Kings, Teyrns, Viscomtes and whatever else tradition demands, rulers of the Marches are always the most powerful noble houses around. These Dynasties cultivate longevity by amassing wide dynasties of talented individuals, and steadily killing off the ones who would complicate the flow of power, right under the nose of the vultures that watch intently from the streets. Marcher politics is a test of patience and intrigue, with the lesser houses always preparing, always ready to swoop in at the right moment and butcher everyone between them and the throne.;;;;;;;;;;;;;x
 crown_2;Fereldan;;;;;;;;;;;;;x
-crown_2_desc;The Landsmeet is an ancient Tradition of Ferelden that has it's origins in the acknowledgement of both Crown and Nobility that one cannot survive without the co-operation of the other. Here the state aims for a pure balance between the two sides. The Monarchy is a precious thing, but the particular figure whom is on the throne is not, and they must earn the respect of the nobility in order to be placed in power and to continue to weild it effectively. The nobles for their part still bicker amongst themselves, but they struggle to assemble blocks of power to guide their views into the debating halls, rather than stabbing each other in the dark.;;;;;;;;;;;;;x
+crown_2_desc;The Landsmeet is an ancient Tradition of Ferelden that has it's origins in the acknowledgement of both Crown and Nobility that one cannot survive without the co-operation of the other. Here the state aims for a pure balance between the two sides. The Monarchy is a precious thing, but the particular figure whom is on the throne is not, and they must earn the respect of the nobility in order to be placed in power and to continue to wield it effectively. The nobles for their part still bicker amongst themselves, but they struggle to assemble blocks of power to guide their views into the debating halls, rather than stabbing each other in the dark.;;;;;;;;;;;;;x
 crown_3;Tevinter;;;;;;;;;;;;;x
 crown_3_desc;In Tevinter, the Archon wields ultimate power. The Senate is a council, a soundboard to see who might object to what law being passed and why, and most importantly the method of picking a successor. All are capable of being selected for the position regardless of dynasty or claim, although with so many Magisters vying for a single spot, it helps to be powerful, influential and charismatic. The nobles will wage a war as much about prestige as it is about a genocidal rampage through the competition, all in order to prove they are the obvious candidate for the spot. After all, once you finally reach the position of Archon the only limit you have is how much you can get away with without being killed in your sleep, a concern only to familiar to the veterans of Senate Politics.;;;;;;;;;;;;;x
 crown_4;Orlesian;;;;;;;;;;;;;x
@@ -21,25 +21,43 @@ chantry_2_desc;The traditional balance of power. The Divine watches, carefully, 
 chantry_3;Strong;;;;;;;;;;;;;x
 chantry_3_desc;Many look to the Divine and the Grand Cleric rather than to their secular lords for judgement, and the rights of the Chantry are cemented in law.;;;;;;;;;;;;;x
 chantry_4;Integral;;;;;;;;;;;;;x
-chantry_4_desc;The devotion of the flock and their secular rulers is such that they willingly kneel to the Divines guidance. The power wielded by her arms is given preferential treatment, the Templars in particular are unleashed from their reigns to expand their purview and power across the entire realm as their commander may see fit. However, such a level of oversight might not even be desired by the Divine, depending on whether she views herself as a Shepherd or an Exemplar.;;;;;;;;;;;;;x
-faith;Priest Strength;;;;;;;;;;;;;x
+chantry_4_desc;The devotion of the flock and their secular rulers is such that they willingly kneel to the Divines guidance. The power wielded by her arms is given preferential treatment, the Templars in particular are unleashed from their reigns to expand their purview and power across the entire realm as their commander may see fit. However, such a level of oversight might not even be desired by the Divine, depending on whether she views herself as a Shepherd or an Exemplar for her flock.;;;;;;;;;;;;;x
+faith;Priest Authority;;;;;;;;;;;;;x
+faith_desc;
 faith_0;Minimal;;;;;;;;;;;;;x
+faith_0_desc;
 faith_1;Weak;;;;;;;;;;;;;x
+faith_1_desc;
 faith_2;Moderate;;;;;;;;;;;;;x
+faith_2_desc;
 faith_3;Strong;;;;;;;;;;;;;x
+desc_3_desc;
 faith_4;Integral;;;;;;;;;;;;;x
+faith_4_desc;
 mage;Mage Liberty;;;;;;;;;;;;;x
-mage_0;Maleficarum;;;;;;;;;;;;;x
+mage_desc;Magic is the lifeblood of all living beings, but few have any ability to control and master it. Those with the power are the Magi, cursed with the potential for fantastic power that often grants them little more than a short ostracised life of fear and the imminent risk of discovery or execution. The general populace will always fear and despise the Mages, but how the rulers of Thedas deal with these individuals is a far more varied.;;;;;;;;;;;;;x
+mage_0;Maleficar;;;;;;;;;;;;;x
+mage_0_desc;Maleficar, from the Tevinter word 'depraved', is the designation of all who practice magical arts in the realm. They cannot be trusted with even an ounce of power, their nature being inherently destructive to all others, and thus they have to be consigned to death. Perhaps it is a sad decision, perhaps satisfying, but all with magical power will, upon discovery, be hunted and killed - regardless of age, status or nature. The risk of abomination is too high for the state to ignore.;;;;;;;;;;;;;x
 mage_1;Custody;;;;;;;;;;;;;x
+mage_1_desc;What can a state do to contain Mages, without the Circle? It is a rather expensive problem to have, containing a slice of the population (all of them dangerous) away from the others without any support from the Chantry itself. A very expensive problem indeed. In some states, the Mages lie in cells of stone and never see the light of day, killed only if they try to escape. Others treat Mages as heavily destructive weapons, leaving or throwing them into opposing forces and praying the frightened magi unleashes all hell in the enemy ranks. This is usually a one use application. Regardless this is usually very unsatisfying solution to the Mage problem for the nobility, and will push their status to the forefront of discussion in the Landsmeet.;;;;;;;;;;;;;x
 mage_2;Circle;;;;;;;;;;;;;x
-mage_3;Liberated;;;;;;;;;;;;;x
-mage_4;Magiocracy;;;;;;;;;;;;;x
+mage_2_desc;The Circle of Magi is was the solution reached as long ago as the Divine Age (1:00 - 1:99) by unnamed advisor of Divine Ambrosia II. Mages responsible for maintaining the eternal flames of Val Royeux rebelled and were removed under Templar Guard outside the city into an abandoned fortress, where they happily governed their own affairs and the Chantry could be content that the Templars kept watch for abominations. This model has spread all across Thedas, and for as long as the Chantry remains in power it is likely to be the standard method of Magi control in almost every human realm on the continent. Its effectiveness is doubted, however, by both the Magi and the Templars, leading to tensions that could potentially demolish the system should either side press the issue too far.;;;;;;;;;;;;;x
+mage_3;Free;;;;;;;;;;;;;x
+mage_3_desc;A unique situation in the history of Thedas, the Mages are given complete freedom and treated legally just like their mundane neighbours. Naturally, this states can cause a large number of problems: The rank and file of Thedas are still terrified of Mages, never more so than when they could be living quietly next door with a demon in their heads. Mages being more gifted than most will also have many advantages in rising to power through the hierarchy of state, leading to a possibly inevitable concentration of Magic users at the top echelons of power. However, perhaps these issues are more than worth it? Perhaps the greatest gift that a Mage can be given, her most fervent desire, is the freedom to live her life as she sees fit?;;;;;;;;;;;;;x
+mage_4;Dominant;;;;;;;;;;;;;x
+mage_4_desc;Legends tell us that the men of Tevinter were given their gifts from the Old Gods themselves, who whispered the secrets of magic into unknown ears and thus began the Kingdoms of Ancient Tevinter, as ruled by the Dreamers. It has been many millenia since those mythical times, but the rule of the Magi still has it's potency. Although the rise of the Chantry restricted their power in Tevinter for some time, in modern days the Empire has returned Mages to pole position, fashioning from that ancient realm a new Magiocracy. To live as a Mage in such a realm may not be too far from life in other places. The Magi straddle the line between Noble and Peasant just like their neighbours, and those born out of a true blooded noble family can find themselves hunted and poverty stricken. But those born into power and money find themselves with unlimited potential at their fingertips, racing through a system that encourages them to explore, grow and flaunt their power amongst their peers.;;;;;;;;;;;;;x
 circle;Circle Rights;;;;;;;;;;;;;x
-circle_0;Independent;;;;;;;;;;;;;x
-circle_1;Unregulated;;;;;;;;;;;;;x
-circle_2;Restricted;;;;;;;;;;;;;x
+circle_desc;mage_2_desc;The Circle of Magi is was the solution reached as long ago as the Divine Age (1:00 - 1:99) by unnamed advisor of Divine Ambrosia II. Mages responsible for maintaining the eternal flames of Val Royeux rebelled and were removed under Templar Guard outside the city into an abandoned fortress, where they happily governed their own affairs and the Chantry could be content that the Templars kept watch for abominations. This model has spread all across Thedas, and for as long as the Chantry remains in power it is likely to be the standard method of Magi control in almost every human realm on the continent. Its effectiveness is doubted, however, by both the Magi and the Templars, leading to tensions that could potentially demolish the system should either side press the issue too far.;;;;;;;;;;;;;x
+circle_0;Free;;;;;;;;;;;;;x
+circle_0_desc;In some cultures the restriction of the Mages is an unnatural thing, tearing holes in their popular tradition in the name of 'safety'. In some political climates, the Mages prove themselves trustworthy enough to maintain their own, free from the watch of the Templars. After all, who else but the Circle of Magi would truly understand the implications of their rebellion? In this state, the Circle is free to act as it chooses, and so long as it keeps an eye on it's residents they are free to travel and work far from the tower.;;;;;;;;;;;;;x
+circle_1;High;;;;;;;;;;;;;x
+circle_1_desc;The Mages are given a huge amount of leniency by the state, and the Templars are forced to back off from their overzealous attention. Whilst the Mages are certainly still watched, they are considered to be innocent until proven guilty by the state, and will be protected by the Crown against the excesses of Chantry Authority.;;;;;;;;;;;;;x
+circle_2;Standard;;;;;;;;;;;;;x
+circle_2_desc;A more traditional form of Templar and Circle balance. The Templars watch from their barracks, and stand vigilant in the hallways. The Magi conduct their studies, scrounge whatever private lives they can maintain in secret and complain about their lot in life. This is the system that has maintained itself for centuries, surviving rebellious thoughts and changes in policy, and resulting in only a handful of necessary Annulment actions by the Templar Order.;;;;;;;;;;;;;x
 circle_3;Policed;;;;;;;;;;;;;x
-circle_4;Servitude;;;;;;;;;;;;;x
+circle_3_desc;Guilty is every Mage who sits in the Circle, kept in one place to quickly root out dissenters and to prevent them from fighting guerilla war against society. This is what the Templar sees in this system. The Mages are kept under very close watch, and are given not an inch of freedom in law - executions are a daily affair here.;;;;;;;;;;;;;x
+circle_4;Enslaved;;;;;;;;;;;;;x
+circle_4_desc;The realm policy of enslavement has been extended to the Circle, and the Mages within are treated little more than valuable cattle. Tagged and branded, the poor souls who visit this tower are destined for sale, labour or a brief like as a weaponised firecracker. Far from a community of contented Magi, the tower is bis run entirely by merchants under the purview of the Crown as a storage facility, as Templars stand guard to ensure that none of the cargo manges to complete their likely attempts at escape.;;;;;;;;;;;;;x
 slavery;Slavery;;;;;;;;;;;;;x
 slavery_0;Illegal;;;;;;;;;;;;;x
 slavery_1;Servitude;;;;;;;;;;;;;x
@@ -47,8 +65,8 @@ slavery_2;Elven;;;;;;;;;;;;;x
 slavery_3;Tevinter;;;;;;;;;;;;;x
 slavery_4;Universal;;;;;;;;;;;;;x
 alienage;Alienage Status;;;;;;;;;;;;;x
-alienage_0;Liberated;;;;;;;;;;;;;x
-alienage_1;Protected;;;;;;;;;;;;;x
+alienage_0;Free;;;;;;;;;;;;;x
+alienage_1;Favoured;;;;;;;;;;;;;x
 alienage_2;Contained;;;;;;;;;;;;;x
 alienage_3;Exploited;;;;;;;;;;;;;x
 alienage_4;Enslaved;;;;;;;;;;;;;x
