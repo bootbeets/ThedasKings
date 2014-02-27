@@ -30,31 +30,21 @@ faction_character_crown = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-		}
+		NOT = {	in_faction = faction_character_crown }
+		NOT = {	in_faction = faction_character_prestige }
+		NOT = {	in_faction = faction_claimant }
+		NOT = {	in_faction = faction_interest_foreign }
+		NOT = {	in_faction = faction_interest_lobbied }
+		NOT = {	leads_faction = faction_character_crown }
+		NOT = {	leads_faction = faction_character_prestige }
+		NOT = {	leads_faction = faction_claimant }
+		NOT = {	leads_faction = faction_interest_foreign }
+		NOT = {	leads_faction = faction_interest_lobbied }
 	}
 
 	# Target scope
@@ -236,10 +226,6 @@ faction_character_crown = {
 			}
 		}
 		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
-		}
 		
 		modifier = {
 			factor = 0
@@ -397,31 +383,21 @@ faction_character_prestige = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-		}
+		NOT = {	in_faction = faction_character_crown }
+		NOT = {	in_faction = faction_character_prestige }
+		NOT = {	in_faction = faction_claimant }
+		NOT = {	in_faction = faction_interest_foreign }
+		NOT = {	in_faction = faction_interest_lobbied }
+		NOT = {	leads_faction = faction_character_crown }
+		NOT = {	leads_faction = faction_character_prestige }
+		NOT = {	leads_faction = faction_claimant }
+		NOT = {	leads_faction = faction_interest_foreign }
+		NOT = {	leads_faction = faction_interest_lobbied }
 	}
 
 	# Target scope
@@ -603,10 +579,6 @@ faction_character_prestige = {
 			}
 		}
 		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
-		}
 		
 		modifier = {
 			factor = 0
@@ -772,34 +744,24 @@ faction_independence = {
 			ai = yes
 			is_feudal = yes
 			higher_tier_than = COUNT
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-		}
+		NOT = {	in_faction = faction_anti_elf }
+		NOT = {	in_faction = faction_pro_elf }
+		NOT = {	in_faction = faction_anti_magi }
+		NOT = {	in_faction = faction_pro_magi }
+		NOT = {	in_faction = faction_anti_slavery }
+		NOT = {	in_faction = faction_pro_slavery }
+		NOT = {	in_faction = faction_anti_chantry }
+		NOT = {	in_faction = faction_pro_chantry }
+		NOT = {	in_faction = faction_independence }
+		NOT = {	leads_faction = faction_anti_elf }
+		NOT = {	leads_faction = faction_pro_elf }
+		NOT = {	leads_faction = faction_anti_magi }
+		NOT = {	leads_faction = faction_pro_magi }
+		NOT = {	leads_faction = faction_anti_slavery }
+		NOT = {	leads_faction = faction_pro_slavery }
+		NOT = {	leads_faction = faction_anti_chantry }
+		NOT = {	leads_faction = faction_pro_chantry }
+		NOT = {	leads_faction = faction_independence }
 		}
 		
 		liege = {
@@ -1460,26 +1422,16 @@ faction_claimant = {
 			}
 		}
 		primary_title = { higher_tier_than = BARON }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-		}
+		NOT = {	in_faction = faction_character_crown }
+		NOT = {	in_faction = faction_character_prestige }
+		NOT = {	in_faction = faction_claimant }
+		NOT = {	in_faction = faction_interest_foreign }
+		NOT = {	in_faction = faction_interest_lobbied }
+		NOT = {	leads_faction = faction_character_crown }
+		NOT = {	leads_faction = faction_character_prestige }
+		NOT = {	leads_faction = faction_claimant }
+		NOT = {	leads_faction = faction_interest_foreign }
+		NOT = {	leads_faction = faction_interest_lobbied }
 		
 		OR = {
 			# Is not affected by a Crown Law title
@@ -1504,7 +1456,7 @@ faction_claimant = {
 			crownlaw_title = {
 				NOT = {
 					OR = {
-						has_law = centralization_2
+						has_law = circle_2
 						has_law = centralization_3
 						has_law = centralization_4
 					}
@@ -1712,33 +1664,6 @@ faction_claimant = {
 			NOT = { new_character = { culture = FROM } }
 		}
 		
-		# If there is an antiking faction, prioritize that
-		modifier = {
-			factor = 0
-			FROM = {
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				top_liege = {
-					FROM = {
-						liege = {
-							character = PREVPREV
-						}
-					}
-					religion = FROM
-					rightful_religious_head_scope = {
-						OR = {
-							has_claim = k_papal_state
-							has_claim = d_fraticelli
-						}
-					}
-					any_realm_lord = {
-						in_faction = faction_antiking
-					}
-				}
-			}
-		}
 		
 		modifier = {
 			factor = 0
@@ -2131,31 +2056,6 @@ faction_claimant = {
 			}
 		}
 		
-		# If there is an antiking faction, prioritize that
-		modifier = {
-			factor = 0
-			OR = {
-				religion = catholic
-				religion = fraticelli
-			}
-			top_liege = {
-				ROOT = {
-					liege = {
-						character = PREVPREV
-					}
-				}
-				religion = ROOT
-				rightful_religious_head_scope = {
-					OR = {
-						has_claim = k_papal_state
-						has_claim = d_fraticelli
-					}
-				}
-				any_realm_lord = {
-					in_faction = faction_antiking
-				}
-			}
-		}
 		
 		modifier = {
 			factor = 0
@@ -2477,36 +2377,25 @@ faction_interest_lobbied = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-		}
+		NOT = {	in_faction = faction_character_crown }
+		NOT = {	in_faction = faction_character_prestige }
+		NOT = {	in_faction = faction_claimant }
+		NOT = {	in_faction = faction_interest_foreign }
+		NOT = {	in_faction = faction_interest_lobbied }
+		NOT = {	leads_faction = faction_character_crown }
+		NOT = {	leads_faction = faction_character_prestige }
+		NOT = {	leads_faction = faction_claimant }
+		NOT = {	leads_faction = faction_interest_foreign }
+		NOT = {	leads_faction = faction_interest_lobbied }
 	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -2683,10 +2572,6 @@ faction_interest_lobbied = {
 			}
 		}
 		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
-		}
 		
 		modifier = {
 			factor = 0
@@ -2844,36 +2729,25 @@ faction_interest_foreign = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_character_crown
-					faction_character_prestige
-					faction_claimant
-					faction_interest_foreign
-					faction_interest_lobbied
-				}
-			}
-		}
+		NOT = {	in_faction = faction_character_crown }
+		NOT = {	in_faction = faction_character_prestige }
+		NOT = {	in_faction = faction_claimant }
+		NOT = {	in_faction = faction_interest_foreign }
+		NOT = {	in_faction = faction_interest_lobbied }
+		NOT = {	leads_faction = faction_character_crown }
+		NOT = {	leads_faction = faction_character_prestige }
+		NOT = {	leads_faction = faction_claimant }
+		NOT = {	leads_faction = faction_interest_foreign }
+		NOT = {	leads_faction = faction_interest_lobbied }
 	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -3048,11 +2922,6 @@ faction_interest_foreign = {
 					character = ROOT
 				}
 			}
-		}
-		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
 		}
 		
 		modifier = {
@@ -3211,44 +3080,33 @@ faction_pro_magi = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-		}
+		NOT = {	in_faction = faction_anti_elf }
+		NOT = {	in_faction = faction_pro_elf }
+		NOT = {	in_faction = faction_anti_magi }
+		NOT = {	in_faction = faction_pro_magi }
+		NOT = {	in_faction = faction_anti_slavery }
+		NOT = {	in_faction = faction_pro_slavery }
+		NOT = {	in_faction = faction_anti_chantry }
+		NOT = {	in_faction = faction_pro_chantry }
+		NOT = {	in_faction = faction_independence }
+		NOT = {	leads_faction = faction_anti_elf }
+		NOT = {	leads_faction = faction_pro_elf }
+		NOT = {	leads_faction = faction_anti_magi }
+		NOT = {	leads_faction = faction_pro_magi }
+		NOT = {	leads_faction = faction_anti_slavery }
+		NOT = {	leads_faction = faction_pro_slavery }
+		NOT = {	leads_faction = faction_anti_chantry }
+		NOT = {	leads_faction = faction_pro_chantry }
+		NOT = {	leads_faction = faction_independence }
 	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -3423,11 +3281,6 @@ faction_pro_magi = {
 					character = ROOT
 				}
 			}
-		}
-		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
 		}
 		
 		modifier = {
@@ -3586,44 +3439,33 @@ faction_anti_magi = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-		}
+		NOT = {	in_faction = faction_anti_elf }
+		NOT = {	in_faction = faction_pro_elf }
+		NOT = {	in_faction = faction_anti_magi }
+		NOT = {	in_faction = faction_pro_magi }
+		NOT = {	in_faction = faction_anti_slavery }
+		NOT = {	in_faction = faction_pro_slavery }
+		NOT = {	in_faction = faction_anti_chantry }
+		NOT = {	in_faction = faction_pro_chantry }
+		NOT = {	in_faction = faction_independence }
+		NOT = {	leads_faction = faction_anti_elf }
+		NOT = {	leads_faction = faction_pro_elf }
+		NOT = {	leads_faction = faction_anti_magi }
+		NOT = {	leads_faction = faction_pro_magi }
+		NOT = {	leads_faction = faction_anti_slavery }
+		NOT = {	leads_faction = faction_pro_slavery }
+		NOT = {	leads_faction = faction_anti_chantry }
+		NOT = {	leads_faction = faction_pro_chantry }
+		NOT = {	leads_faction = faction_independence }
 	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -3798,11 +3640,6 @@ faction_anti_magi = {
 					character = ROOT
 				}
 			}
-		}
-		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
 		}
 		
 		modifier = {
@@ -3961,44 +3798,33 @@ faction_pro_chantry = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-				NOT = {
-			in_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-		}
+		NOT = {	in_faction = faction_anti_elf }
+		NOT = {	in_faction = faction_pro_elf }
+		NOT = {	in_faction = faction_anti_magi }
+		NOT = {	in_faction = faction_pro_magi }
+		NOT = {	in_faction = faction_anti_slavery }
+		NOT = {	in_faction = faction_pro_slavery }
+		NOT = {	in_faction = faction_anti_chantry }
+		NOT = {	in_faction = faction_pro_chantry }
+		NOT = {	in_faction = faction_independence }
+		NOT = {	leads_faction = faction_anti_elf }
+		NOT = {	leads_faction = faction_pro_elf }
+		NOT = {	leads_faction = faction_anti_magi }
+		NOT = {	leads_faction = faction_pro_magi }
+		NOT = {	leads_faction = faction_anti_slavery }
+		NOT = {	leads_faction = faction_pro_slavery }
+		NOT = {	leads_faction = faction_anti_chantry }
+		NOT = {	leads_faction = faction_pro_chantry }
+		NOT = {	leads_faction = faction_independence }
 	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -4173,11 +3999,6 @@ faction_pro_chantry = {
 					character = ROOT
 				}
 			}
-		}
-		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
 		}
 		
 		modifier = {
@@ -4336,44 +4157,33 @@ faction_anti_chantry = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-				NOT = {
-			in_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-		}
+		NOT = {	in_faction = faction_anti_elf }
+		NOT = {	in_faction = faction_pro_elf }
+		NOT = {	in_faction = faction_anti_magi }
+		NOT = {	in_faction = faction_pro_magi }
+		NOT = {	in_faction = faction_anti_slavery }
+		NOT = {	in_faction = faction_pro_slavery }
+		NOT = {	in_faction = faction_anti_chantry }
+		NOT = {	in_faction = faction_pro_chantry }
+		NOT = {	in_faction = faction_independence }
+		NOT = {	leads_faction = faction_anti_elf }
+		NOT = {	leads_faction = faction_pro_elf }
+		NOT = {	leads_faction = faction_anti_magi }
+		NOT = {	leads_faction = faction_pro_magi }
+		NOT = {	leads_faction = faction_anti_slavery }
+		NOT = {	leads_faction = faction_pro_slavery }
+		NOT = {	leads_faction = faction_anti_chantry }
+		NOT = {	leads_faction = faction_pro_chantry }
+		NOT = {	leads_faction = faction_independence }
 	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -4550,11 +4360,7 @@ faction_anti_chantry = {
 			}
 		}
 		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
-		}
-		
+
 		modifier = {
 			factor = 0
 			
@@ -4711,44 +4517,33 @@ faction_pro_slavery = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-		}
+		NOT = {	in_faction = faction_anti_elf }
+		NOT = {	in_faction = faction_pro_elf }
+		NOT = {	in_faction = faction_anti_magi }
+		NOT = {	in_faction = faction_pro_magi }
+		NOT = {	in_faction = faction_anti_slavery }
+		NOT = {	in_faction = faction_pro_slavery }
+		NOT = {	in_faction = faction_anti_chantry }
+		NOT = {	in_faction = faction_pro_chantry }
+		NOT = {	in_faction = faction_independence }
+		NOT = {	leads_faction = faction_anti_elf }
+		NOT = {	leads_faction = faction_pro_elf }
+		NOT = {	leads_faction = faction_anti_magi }
+		NOT = {	leads_faction = faction_pro_magi }
+		NOT = {	leads_faction = faction_anti_slavery }
+		NOT = {	leads_faction = faction_pro_slavery }
+		NOT = {	leads_faction = faction_anti_chantry }
+		NOT = {	leads_faction = faction_pro_chantry }
+		NOT = {	leads_faction = faction_independence }
 	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -4925,11 +4720,7 @@ faction_pro_slavery = {
 			}
 		}
 		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
-		}
-		
+
 		modifier = {
 			factor = 0
 			
@@ -5086,44 +4877,33 @@ faction_anti_slavery = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-		}
+		NOT = {	in_faction = faction_anti_elf }
+		NOT = {	in_faction = faction_pro_elf }
+		NOT = {	in_faction = faction_anti_magi }
+		NOT = {	in_faction = faction_pro_magi }
+		NOT = {	in_faction = faction_anti_slavery }
+		NOT = {	in_faction = faction_pro_slavery }
+		NOT = {	in_faction = faction_anti_chantry }
+		NOT = {	in_faction = faction_pro_chantry }
+		NOT = {	in_faction = faction_independence }
+		NOT = {	leads_faction = faction_anti_elf }
+		NOT = {	leads_faction = faction_pro_elf }
+		NOT = {	leads_faction = faction_anti_magi }
+		NOT = {	leads_faction = faction_pro_magi }
+		NOT = {	leads_faction = faction_anti_slavery }
+		NOT = {	leads_faction = faction_pro_slavery }
+		NOT = {	leads_faction = faction_anti_chantry }
+		NOT = {	leads_faction = faction_pro_chantry }
+		NOT = {	leads_faction = faction_independence }
 	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -5298,11 +5078,6 @@ faction_anti_slavery = {
 					character = ROOT
 				}
 			}
-		}
-		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
 		}
 		
 		modifier = {
@@ -5461,44 +5236,33 @@ faction_pro_elf = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-		}
+		NOT = {	in_faction = faction_anti_elf }
+		NOT = {	in_faction = faction_pro_elf }
+		NOT = {	in_faction = faction_anti_magi }
+		NOT = {	in_faction = faction_pro_magi }
+		NOT = {	in_faction = faction_anti_slavery }
+		NOT = {	in_faction = faction_pro_slavery }
+		NOT = {	in_faction = faction_anti_chantry }
+		NOT = {	in_faction = faction_pro_chantry }
+		NOT = {	in_faction = faction_independence }
+		NOT = {	leads_faction = faction_anti_elf }
+		NOT = {	leads_faction = faction_pro_elf }
+		NOT = {	leads_faction = faction_anti_magi }
+		NOT = {	leads_faction = faction_pro_magi }
+		NOT = {	leads_faction = faction_anti_slavery }
+		NOT = {	leads_faction = faction_pro_slavery }
+		NOT = {	leads_faction = faction_anti_chantry }
+		NOT = {	leads_faction = faction_pro_chantry }
+		NOT = {	leads_faction = faction_independence }
 	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -5674,12 +5438,7 @@ faction_pro_elf = {
 				}
 			}
 		}
-		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
-		}
-		
+	
 		modifier = {
 			factor = 0
 			
@@ -5836,44 +5595,33 @@ faction_anti_elf = {
 		is_landed = yes
 		is_adult = yes
 		or = {
-			religion = andrastrian_chantry
+			religion = andrastian_chantry
 			religion = imperial_chantry
 		}
 		NOT = { trait = incapable }
 		primary_title = { higher_tier_than = baron }
-		NOT = {
-			in_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
-			leads_faction = {
-				OR = {
-					faction_anti_elf
-					faction_pro_elf
-					faction_anti_magi
-					faction_pro_magi
-					faction_anti_slavery
-					faction_pro_slavery
-					faction_anti_chantry
-					faction_pro_chantry
-					faction_independence
-				}
-			}
+		NOT = {	in_faction = faction_anti_elf }
+		NOT = {	in_faction = faction_pro_elf }
+		NOT = {	in_faction = faction_anti_magi }
+		NOT = {	in_faction = faction_pro_magi }
+		NOT = {	in_faction = faction_anti_slavery }
+		NOT = {	in_faction = faction_pro_slavery }
+		NOT = {	in_faction = faction_anti_chantry }
+		NOT = {	in_faction = faction_pro_chantry }
+		NOT = {	in_faction = faction_independence }
+		NOT = {	leads_faction = faction_anti_elf }
+		NOT = {	leads_faction = faction_pro_elf }
+		NOT = {	leads_faction = faction_anti_magi }
+		NOT = {	leads_faction = faction_pro_magi }
+		NOT = {	leads_faction = faction_anti_slavery }
+		NOT = {	leads_faction = faction_pro_slavery }
+		NOT = {	leads_faction = faction_anti_chantry }
+		NOT = {	leads_faction = faction_pro_chantry }
+		NOT = {	leads_faction = faction_independence }
 		}
-	}
 
 	# Target scope
 	allow = {
-		top_liege = yes
 		higher_tier_than = duke
 		is_primary_holder_title = yes
 
@@ -6049,12 +5797,7 @@ faction_anti_elf = {
 				}
 			}
 		}
-		
-		modifier = {
-			factor = 0
-			has_character_modifier = faction_antiking_ultimatum_timer
-		}
-		
+
 		modifier = {
 			factor = 0
 			
