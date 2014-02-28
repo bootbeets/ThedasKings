@@ -1,0 +1,37 @@
+Magi System
+
+Wynne: What you said before, Morrigan... about the Circle of Magi being a leash... do you truly believe that?
+Morrigan: Only a fool would think otherwise.
+Wynne: You would prefer a world where young mages were slain by the ignorant for their talent? Taught to fear their abilities?
+Morrigan: That is what the Circle teaches. You fear your abilities, instead of reveling in them.
+Wynne: Believing ourselves to be superior over other men is what led to the Imperium... and the darkspawn.
+Morrigan: (scoffs) I cannot believe you give credence to such drivel.
+Wynne: Those who do not heed the lessons of history are doomed to repeat them.
+Morrigan: Then you need look no further than the elves for an example of what occurs when you allow others to hold your leash.
+
+
+Magic is a difficult thing to impliment properly. Most playable characters are going to be Chantry, and thus only see
+mages rarely, or as Abominations in their lands, or even as stolen family members due to a genetic quirk. However in
+Tevinter and potentially everywhere else as well, Mages have the potential to become landowners under the right situations.
+Ergo, they need playable characteristics. They need to simultaniously be powerful, dangerous and to a certain extent a
+danger to themselves, too.
+
+Therefore, mages are going to have the following solid advantages:
+
+  Access to Mage only events that provide shortcuts to greater power or skill, through the fade.
+  More devestating opportunities to hurt people during plots.
+  Instinctive power during combat events.
+  The potential to learn forbidden magics which are balanced only by the danger.
+  Their abilities being an inheritable trait, giving them a large chance of having their children also be mages.
+  
+Whereas they will also have some massive problems:
+
+  Temptation. It's always there, in events, in decisions, always giving you the option to just give in.
+  Events that punish you if you resist temptation without being willful.
+  There are always people who hate Mages, and depending on your realm, you may be hunted, watched or simply cut down.
+  If you fail in casting spells, you are vulnerable to the deziens of the fade. Little room for mistakes.
+  
+Mages are not randomly generated except in a Magiocracy or via the Circle, the only other way to become one is through
+luck and a lax system. It is possible to hide your mage status, but this is never a certain measure - the Templars are
+always watching.
+

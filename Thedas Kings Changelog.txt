@@ -7,6 +7,7 @@ Major:
 - Factions Complete sans events + AI
 - Localisation Overhaul to Laws & Buildings
 - Aurelax Verifier Sweep Ongoing
+- Landsmeet System Improvements w Traits
 
 Known Crashes:
 Crashes on Religion Tab for Chantry. However: ngppgn knows the solution, so not a major problem.
