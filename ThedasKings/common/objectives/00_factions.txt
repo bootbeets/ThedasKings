@@ -382,6 +382,7 @@ faction_character_prestige = {
 		independent = no
 		is_landed = yes
 		is_adult = yes
+		has_character_flag = prestigious_in_realm
 		or = {
 			religion = andrastian_chantry
 			religion = imperial_chantry
@@ -401,27 +402,9 @@ faction_character_prestige = {
 	}
 
 	# Target scope
-	allow = {
-		top_liege = yes
-		higher_tier_than = duke
-		is_primary_holder_title = yes
-
-		holder_scope = {
-			independent = yes
-			NOT = {
-				reverse_has_opinion_modifier = {
-					who = FROM
-					modifier = opinion_coerced_into_leaving_faction
-				}
-			}
-		}
-		
-		OR = {
-			culture = FROM
-			holder_scope = {
-				culture = FROM
-			}
-		}
+	allow = { 
+#		FROM = yes  Target Himself
+		has_character_flag = prestigious_in_realm
 	}
 	
 	# AI creation weight
