@@ -4,7 +4,7 @@
 
 namespace = landsmeet
 
-#IF Prestigious, give 'Prestigious'
+#IF 2k prestige, give 'prestigious flag', allow form prestige faction
 character_event = {
 	id = landsmeet.1
 	desc = "You have become one of the most prestigious figures in the realm!" #TEMP put in Local
@@ -13,76 +13,180 @@ character_event = {
 	min_age = 21
 	capable_only = yes
 	prisoner = no
+	ai = no
+	
+	weight_multiplier = {
+		days = 1
+	}
 	
 	trigger = {
 		prestige = 2000
-		NOT = { 
-			has_character_flag = { 
-				name = prestigious_in_realm
+		NOT = { has_character_modifier = landsmeet_faction_denied }
+		NOT = {
+			has_character_flag = prestigious_in_realm
+		}
+		OR = { 
+			NOT = {	higher_tier_than = duke }
+			NOT = {
+				if = {
+					top_liege = { emperor = yes }
+					NOT = { higher_tier_than = king }
+				}
 			}
 		}
 	}
-	
+
 	option = {
-		name = "Vunderbar!" #EVT LOCAL "Fantastic News!"
-		set_character_flag = { name = prestigious_in_realm duration = -1}
+		name = "Fantastic!" #EVT LOCAL "Fantastic News!"
+		custom_tooltip = { 
+			name = "You may now create a faction at court, and gather together your supporters. (-2000 Prestige)"
+			set_character_flag = prestigious_in_realm
+		}
+		hidden_tooltip = {
+			prestige = -2000
+		}
+	}
+	option = {
+		name = "Oh I'm nobody, really."
+		custom_tooltip = {
+			name = "Your ambitions in the Landsmeet are shelved. Perhaps you may be more interested in five years time?"
+			add_character_modifier = { name = landsmeet_faction_denied duration = 120 }
+		}
 	}
 }
 
-#IF 'Prestigious', fire event for Faction formation
-character_event = { 
+#If AI. Give prestigious if <3 in realm in Kingdom, or <4 if Empire.
+character_event = {
 	id = landsmeet.2
 	desc = "Due to your position as one of the most powerful men in the realm... ect" #TEMP naturally
 	picture = GFX_evt_son_asking_father #Temporary
 	
+	hide_window = yes
+	
 	min_age = 21
 	capable_only = yes
 	prisoner = no
+	ai = yes
 	
 	trigger = {
-		has_character_flag = {
-			name = prestigious_in_realm
-		}
+		prestige = 2000
 		NOT = {
-			or = {
-				faction_leader = yes
-				has_global_flag = { name = faction_tutorial_complete }
-				has_character_flag = { name = landsmeet_2_informed }
+			has_character_flag = prestigious_in_realm
+		}
+		OR = { 
+			NOT = {	higher_tier_than = duke }
+			NOT = {
+				if = {
+					top_liege = { emperor = yes }
+					NOT = { higher_tier_than = king }
+				}
+			}
+		}	
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+
+	immediate = {
+		any_realm_character = {
+			change_variable = {
+				which = local_prestigious
+				value = 1.0 
+				if = {
+					has_character_flag = prestigious_in_realm
+					same_realm = ROOT
+				}
 			}
 		}
 	}
-	
+
 	option = {
-		name = "Vunderbar!"#EVT LOCAL "Wonderful news!"
-		hidden_tooltip = {
-			set_character_flag = { name = landsmeet_2_informed duration = 120 }
+		name = "PRESTIGE UP!"
+		set_character_flag = prestigious_in_realm
+		set_variable { which = local_prestigious value = 0 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				if = {
+					check_variable = { which = local_prestigious value = 3 }
+					top_liege = { king = yes }
+				}
+			}
+			modifier = {
+				factor = 0
+				if = {
+					check_variable = { which = local_prestigious value = 4 }
+					top_liege = { emperor = yes }
+				}
+			}
 		}
 	}
+
 	option = {
-		name = "Vunderbar!"#EVT LOCAL "Yes, yes, I understand how this works."
-		hidden_tooltip = {
-			set_character_flag = { name = faction_tutorial_complete }
+		name = "Aww!"
+		add_character_modifier = { name = landsmeet_faction_denied duration = 6 }
+		set_variable { which = local_prestigious value = 0 }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 1
+				if = {
+					check_variable = { which = local_prestigious value = 3 }
+					top_liege = { king = yes }
+				}
+			}
+			modifier = {
+				factor = 1
+				if = {
+					check_variable = { which = local_prestigious value = 4 }
+					top_liege = { emperor = yes }
+				}
+			}
 		}
 	}	
 }
 
-#IF 'Faction Leader' but not faction_leader, give trait 'Former Faction Leader'
+#IF 'Faction Leader' but not leads_faction, give trait 'Former Faction Leader'
 character_event = {
 	id = landsmeet.3
 		
-	hide_FROM = yes
+	hide_window = yes
 	
-	immediate = {
-		if = {
-			trait = realm_faction_leader
-			NOT = { faction_leader }
-		}
+	weight_multiplier = {
+		days = 1
 	}
 	
-	option = {
-		name = "Vunderbar!"
-		trait = former_realm_faction_leader
+	trigger = {
+		trait = realm_faction_leader
+		leads_faction = no
+	}
+	
+	immediate = {
+		remove_trait = realm_faction_leader
+		add_trait = former_realm_faction_leader
 	}
 }
 
+#If leads_faction then realm_faction_leader
+character_event = {
+	id = landsmeet.4
+		
+	hide_window = yes
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		NOT = { trait = realm_faction_leader }
+		leads_faction = yes
+	}
+	
+	immediate = {
+		add_trait = realm_faction_leader
+		remove_trait = former_realm_faction_leader
+	}
+}
 
