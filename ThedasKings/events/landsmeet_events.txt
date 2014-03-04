@@ -7,7 +7,8 @@ namespace = landsmeet
 #IF 2k prestige, give 'prestigious flag', allow form prestige faction
 character_event = {
 	id = landsmeet.1
-	desc = "You have become one of the most prestigious figures in the realm!" #TEMP put in Local
+	title = EVT_TITLE_LANDSMEET_001
+	desc = EVT_DESC_LANDSMEET_001 #"You have become one of the most prestigious figures in the realm!"
 	picture = GFX_evt_son_asking_father #Temporary
 	
 	min_age = 21
@@ -35,7 +36,7 @@ character_event = {
 	}
 
 	option = {
-		name = "Fantastic!" #EVT LOCAL "Fantastic News!"
+		name = EVT_OPTION_LANDSMEET_001_1 #"Fantastic!"
 		custom_tooltip = { 
 			text = "You may now create a faction at court, and gather together your supporters. "
 			prestige = -1500
@@ -170,3 +171,5 @@ character_event = {
 		remove_trait = former_realm_faction_leader
 	}
 }
+
+#
