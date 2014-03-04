@@ -21,17 +21,15 @@ character_event = {
 	
 	trigger = {
 		prestige = 2000
-		NOT = { has_character_modifier = landsmeet_faction_denied }
-		NOT = {
-			has_character_flag = prestigious_in_realm
-		}
-		OR = { 
-			NOT = {	higher_tier_than = duke }
-			NOT = {
-				if = {
-					top_liege = { emperor = yes }
-					NOT = { higher_tier_than = king }
-				}
+		NOT = {	has_character_flag = prestigious_in_realm }
+		OR = {
+			Root = { 
+				NOT = { higher_tier_than = king }
+				top_liege = { higher_tier_than = king }
+			}
+			Root = { 
+				NOT = { higher_tier_than = duke }
+				top_liege = {  higher_tier_than = duke }
 			}
 		}
 	}
@@ -39,18 +37,9 @@ character_event = {
 	option = {
 		name = "Fantastic!" #EVT LOCAL "Fantastic News!"
 		custom_tooltip = { 
-			name = "You may now create a faction at court, and gather together your supporters. (-2000 Prestige)"
+			text = "You may now create a faction at court, and gather together your supporters. "
+			prestige = -1500
 			set_character_flag = prestigious_in_realm
-		}
-		hidden_tooltip = {
-			prestige = -2000
-		}
-	}
-	option = {
-		name = "Oh I'm nobody, really."
-		custom_tooltip = {
-			name = "Your ambitions in the Landsmeet are shelved. Perhaps you may be more interested in five years time?"
-			add_character_modifier = { name = landsmeet_faction_denied duration = 120 }
 		}
 	}
 }
@@ -61,8 +50,6 @@ character_event = {
 	desc = "Due to your position as one of the most powerful men in the realm... ect" #TEMP naturally
 	picture = GFX_evt_son_asking_father #Temporary
 	
-	hide_window = yes
-	
 	min_age = 21
 	capable_only = yes
 	prisoner = no
@@ -70,18 +57,17 @@ character_event = {
 	
 	trigger = {
 		prestige = 2000
-		NOT = {
-			has_character_flag = prestigious_in_realm
-		}
-		OR = { 
-			NOT = {	higher_tier_than = duke }
-			NOT = {
-				if = {
-					top_liege = { emperor = yes }
-					NOT = { higher_tier_than = king }
-				}
+		NOT = {	has_character_flag = prestigious_in_realm }
+		OR = {
+			Root = { 
+				NOT = { higher_tier_than = king }
+				top_liege = { higher_tier_than = king }
 			}
-		}	
+			Root = { 
+				NOT = { higher_tier_than = duke }
+				top_liege = {  higher_tier_than = duke }
+			}
+		}
 	}
 	
 	weight_multiplier = {
@@ -89,63 +75,58 @@ character_event = {
 	}
 
 	immediate = {
-		any_realm_character = {
+		if = {
+			any_realm_character = { 
+				has_character_flag = prestigious_in_realm
+			}
 			change_variable = {
 				which = local_prestigious
 				value = 1.0 
-				if = {
-					has_character_flag = prestigious_in_realm
-					same_realm = ROOT
-				}
 			}
 		}
 	}
 
 	option = {
-		name = "PRESTIGE UP!"
+		name = "Ok"
 		set_character_flag = prestigious_in_realm
-		set_variable { which = local_prestigious value = 0 }
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0
-				if = {
+		set_variable = { which = local_prestigious value = 0 }
+		ai_chance = { factor = 50 }
+		trigger = {
+			OR = {
+				root = {
 					check_variable = { which = local_prestigious value = 3 }
-					top_liege = { king = yes }
+					top_liege = { higher_tier_than = duke lower_tier_than = emperor }
 				}
-			}
-			modifier = {
-				factor = 0
-				if = {
+				root = {
 					check_variable = { which = local_prestigious value = 4 }
-					top_liege = { emperor = yes }
+					top_liege = { higher_tier_than = king }
 				}
 			}
 		}
 	}
 
 	option = {
-		name = "Aww!"
+		name = "Ok"
 		add_character_modifier = { name = landsmeet_faction_denied duration = 6 }
-		set_variable { which = local_prestigious value = 0 }
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 1
-				if = {
-					check_variable = { which = local_prestigious value = 3 }
-					top_liege = { king = yes }
+		set_variable = { which = local_prestigious value = 0 }
+		ai_chance = { factor = 50 }
+		trigger = {
+			OR = { 
+				NOT = {
+					root = {
+						check_variable = { which = local_prestigious value = 3 }
+						top_liege = { higher_tier_than = duke lower_tier_than = emperor }
+					}
 				}
-			}
-			modifier = {
-				factor = 1
-				if = {
-					check_variable = { which = local_prestigious value = 4 }
-					top_liege = { emperor = yes }
+				NOT = {
+					root = {
+						check_variable = { which = local_prestigious value = 4 }
+						top_liege = { higher_tier_than = king }
+					}
 				}
 			}
 		}
-	}	
+	}
 }
 
 #IF 'Faction Leader' but not leads_faction, give trait 'Former Faction Leader'
@@ -160,7 +141,7 @@ character_event = {
 	
 	trigger = {
 		trait = realm_faction_leader
-		leads_faction = no
+		NOT = { leads_faction = yes }
 	}
 	
 	immediate = {
@@ -189,4 +170,3 @@ character_event = {
 		remove_trait = former_realm_faction_leader
 	}
 }
-
