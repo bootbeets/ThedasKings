@@ -1,3 +1,15 @@
+faith;Shaman Respect;;;;;;;;;;;;;x
+faith_desc;Not everyone in Thedas bows to the whims of the Maker. Before Andraste Marched to the Valerian fields, humans across the entire continent worshipped either the Old Gods or their local lords of Sky and Sea. These cultures survive in the corners of the modern world, maintaining their shamanistic ways as they always have, and guard them aggressively. The further the tribesmen turn from their old gods, the warmer the light of the Maker becomes.;;;;;;;;;;;;;x
+faith_0;Minimal;;;;;;;;;;;;;x
+faith_0_desc;Statues lie in ruins, fetishes discarded on the ground in once sacred sites. The leaders of this tribe have all but forsaken their gods, and many are now listening to the missionaries that always seek to enter their lands. Perhaps this was inevitable? How can the silent thundering of Korth the Mountain-Father compete with the deathening Chant of Light, sung from a thousand Chantries by a million devoted?;;;;;;;;;;;;;x
+faith_1;Weak;;;;;;;;;;;;;x
+faith_1_desc;The Shamans are unheard amongst many leaders, and their predictions of doom cause little concern. Doubt has seeped into the minds of many that the Gods might not be who they say they are, which the Shamans blame on the trickster members of their respective Pantheons.;;;;;;;;;;;;;x
+faith_2;Moderate;;;;;;;;;;;;;x
+faith_2_desc;The Faith is strong, a part of everyday life if only for cultural tradition. Totems are maintained, the dead are buried, and spirits are listened to. The people are proud, and the children taught correctly - those scions of the Maker are scorned at every turn.;;;;;;;;;;;;;x
+faith_3;Strong;;;;;;;;;;;;;x
+desc_3_desc;People believe, and the tribe prospers because of it. The Shamans talk of new honours and people listen excitedly, promising to assist in the construction of new statues or to hunt for new sacrifices. Their lives bustle with pious attention, and the warriors annoint their weapons reguarly in hopes for the favour of their Pantheon.;;;;;;;;;;;;;x
+faith_4;Integral;;;;;;;;;;;;;x
+faith_4_desc;Chanters, Templars, they are all forbidden from the rough highlands. Those few unwelcome who dare approach the sacred sites are simply hunted down and killed, lest they cause damage. The Gods smile down upon the tribe, and bless it's foundations.;;;;;;;;;;;;;x
 general_taxation;Local Tax Rate;;;;;;;;;;;;;x
 general_taxation_0;Minimal;;;;;;;;;;;;;x
 general_taxation_1;Low;;;;;;;;;;;;;x
