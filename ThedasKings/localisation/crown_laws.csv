@@ -22,18 +22,6 @@ chantry_3;Strong;;;;;;;;;;;;;x
 chantry_3_desc;Many look to the Divine and the Grand Cleric rather than to their secular lords for judgement, and the rights of the Chantry are cemented in law.;;;;;;;;;;;;;x
 chantry_4;Integral;;;;;;;;;;;;;x
 chantry_4_desc;The devotion of the flock and their secular rulers is such that they willingly kneel to the Divines guidance. The power wielded by her arms is given preferential treatment, the Templars in particular are unleashed from their reigns to expand their purview and power across the entire realm as their commander may see fit. However, such a level of oversight might not even be desired by the Divine, depending on whether she views herself as a Shepherd or an Exemplar for her flock.;;;;;;;;;;;;;x
-faith;Priest Authority;;;;;;;;;;;;;x
-faith_desc;
-faith_0;Minimal;;;;;;;;;;;;;x
-faith_0_desc;
-faith_1;Weak;;;;;;;;;;;;;x
-faith_1_desc;
-faith_2;Moderate;;;;;;;;;;;;;x
-faith_2_desc;
-faith_3;Strong;;;;;;;;;;;;;x
-desc_3_desc;
-faith_4;Integral;;;;;;;;;;;;;x
-faith_4_desc;
 mage;Mage Liberty;;;;;;;;;;;;;x
 mage_desc;Magic is the lifeblood of all living beings, but few have any ability to control and master it. Those with the power are the Magi, cursed with the potential for fantastic power that often grants them little more than a short ostracised life of fear and the imminent risk of discovery or execution. The general populace will always fear and despise the Mages, but how the rulers of Thedas deal with these individuals is a far more varied.;;;;;;;;;;;;;x
 mage_0;Maleficar;;;;;;;;;;;;;x
