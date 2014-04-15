@@ -61,7 +61,7 @@ magi_blood_mage = {
 }
 	
 chantry_templar = {
-	morale = 10
+	morale = 6
 	maintenance = 5
 	phase_skirmish_attack = 0.25
 	phase_melee_attack = 8
@@ -82,4 +82,40 @@ darkspawn_ogre = {
 	phase_melee_defense = 15
 	phase_pursue_defense = 0.25
 	base_type = heavy_infantry
+}
+
+surface_dwarf_mercenary = {
+	morale = 6
+	maintenance = 5
+	phase_skirmish_attack = 0.25
+	phase_melee_attack = 6
+	phase_pursue_attack = 1
+	phase_skirmish_defense = 7
+	phase_melee_defense = 12
+	phase_pursue_defense = 1
+	base_type = heavy_infantry
+}
+
+elven_mercenary = {
+	morale = 4
+	maintenance = 5
+	phase_skirmish_attack = 5
+	phase_melee_attack = 3
+	phase_pursue_attack = 3
+	phase_skirmish_defense = 3
+	phase_melee_defense = 3
+	phase_pursue_defense = 5
+	base_type = archers
+}
+
+mabari = {
+	morale = 4
+	maintenance = 2
+	phase_skirmish_attack = 6
+	phase_melee_attack = 6
+	phase_pursue_attack = 6
+	phase_skirmish_defense = 1
+	phase_melee_defense = 1
+	phase_pursue_defense = 3
+	base_type = light_infantry
 }
