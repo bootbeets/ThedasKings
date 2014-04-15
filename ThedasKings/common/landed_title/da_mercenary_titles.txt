@@ -1,0 +1,284 @@
+d_flint_company = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_CAPTAIN"
+  foa = "FOA_CAPTAIN"
+  
+  landless = yes
+  primary = yes
+  
+  culture = free_marcher
+  religion = chantry
+  
+  mercenary_type = flint_company_composition
+}
+
+d_coterie = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_NONE"
+  foa = "FOA_NAME"
+  
+  landless = yes
+  primary = yes
+  
+  culture = free_marcher
+  religion = chantry
+  
+  mercenary_type = coterie_composition
+}
+
+d_dog_lords = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_BANN"
+  foa = "FOA_NAME"
+  
+  landless = yes
+  primary = yes
+  
+  culture = fereldan
+  religion = chantry
+  
+  mercenary_type = dog_lords_composition
+}
+
+d_surface_carta = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = chantry }
+  
+  
+  title = "MERC_NONE"
+  foa = "FOA_NAME"
+  
+  landless = yes
+  primary = yes
+  
+  culture = surface_dwarf
+  religion = chantry
+  
+  mercenary_type = surface_carta_composition
+}
+
+d_company_of_the_magisters_bollocks = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_THANE"
+  foa = "FOA_NAME"
+  
+  landless = yes
+  primary = yes
+  
+  culture = tevinter
+  religion = chantry
+  
+  mercenary_type = tevinter_former_slave_composition
+}
+
+d_red_iron_company = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_CAPTAIN"
+  foa = "FOA_CAPTAIN"
+  
+  landless = yes
+  primary = yes
+  
+  culture = free_marcher
+  religion = chantry
+  
+  mercenary_type = red_iron_company_composition
+}
+
+d_hunter_fell_bastards = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_PRINCE"
+  foa = "FOA_PRINCE"
+  
+  landless = yes
+  primary = yes
+  
+  culture = hunter_fell
+  religion = chantry
+  
+  mercenary_type = hunter_fell_bastards_composition
+}
+d_drakesbane_company = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_CAPTAIN"
+  foa = "FOA_CAPTAIN"
+  
+  landless = yes
+  primary = yes
+  
+  culture = nevarran
+  religion = chantry
+  
+  mercenary_type = drakesbane_company_composition
+}
+
+d_the_fallen_reborn = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_KNIGHT_CAPTAIN"
+  foa = "FOA_KNIGHT_CAPTAIN"
+  
+  landless = yes
+  primary = yes
+  
+  culture = nevarran
+  religion = chantry
+  
+  mercenary_type = the_fallen_reborn_composition
+}
+
+d_free_solas_company = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_NONE"
+  foa = "FOA_NAME"
+  
+  landless = yes
+  primary = yes
+  
+  culture = tevinter
+  religion = chantry
+  
+  mercenary_type = free_solas_company_composition
+}
+
+d_blackstone_irregulars = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_NONE"
+  foa = "FOA_NAME"
+  
+  landless = yes
+  primary = yes
+  
+  culture = fereldan
+  religion = chantry
+  
+  mercenary_type = blackstone_irregulars_composition
+}
+
+d_night_elves = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_THANE"
+  foa = "FOA_NAME"
+  
+  landless = yes
+  primary = yes
+  
+  culture = city_elf
+  religion = chantry
+  
+  mercenary_type = night_elves_composition
+}
+
+d_ash_warriors = {
+  color = { 57 112 223 }
+  color2 = { 255 215 0 }
+  
+  mercenary = yes
+  
+  allow = {
+    religion = andrastian_chantry }
+  
+  
+  title = "MERC_NONE"
+  foa = "FOA_NAME"
+  
+  landless = yes
+  primary = yes
+  
+  culture = fereldan
+  religion = chantry
+  
+  mercenary_type = ash_warriors_composition
+}
