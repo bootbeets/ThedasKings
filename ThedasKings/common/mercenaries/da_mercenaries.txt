@@ -13,7 +13,7 @@ coterie_composition = { #FREE MARCHES
 	levy_size = 1
 	light_infantry = 100
 	archers = 100
-	surface_dwarf_mercenary = 50
+	surface_dwarf_mercenary = 25
 }
 
 dog_lords_composition = { # FREE MARCHES
@@ -22,17 +22,24 @@ dog_lords_composition = { # FREE MARCHES
 	mabari = 200
 }
 
-surface_coterie_composition = { #FREE MARCHES
+surface_carta_composition = { #FREE MARCHES
 	levy_size = 1
 	surface_dwarf_mercenary = 300
 }
 
-company_of_the_magisters_bollocks_composition = { #FREE MARCHES
+tevinter_former_slave_composition = { #FREE MARCHES
 	levy_size = 3
 	light_infantry = 300
 	elven_mercenaries = 50
 	archers = 50
 	magi_apostate = 10
+}
+
+red_iron_company_composition = { # FREE MARCHES
+	levy_size = 2
+	light_infantry = 400
+	heavy_infantry = 100
+	archers = 50
 }
 
 hunter_fell_bastards_composition = { #NEVARRA
@@ -75,34 +82,4 @@ ash_warriors_composition = { #FERELDEN #HOLY ORDER
 	levy_size = 2
 	light_infantry = 200
 	mabari = 200
-}
-
-raiders_of_the_waking_sea_1_compostition = { #GENERIC
-	levy_size = 1
-	light_infantry = 100
-	galleys = 2
-}
-
-raiders_of_the_waking_sea_2_compostition = { #GENERIC
-	levy_size = 1
-	light_infantry = 100
-	galleys = 2
-}
-	
-raiders_of_the_waking_sea_3_compostition = { #GENERIC
-	levy_size = 1
-	light_infantry = 100
-	galleys = 2
-}
-	
-raiders_of_the_waking_sea_4_compostition = { #GENERIC
-	levy_size = 1
-	light_infantry = 100
-	galleys = 2
-}
-
-raiders_of_the_waking_sea_5_compostition = { #GENERIC
-	levy_size = 2
-	light_infantry = 500
-	galleys = 10
 }
