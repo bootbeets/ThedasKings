@@ -644,7 +644,6 @@ title_champion = {
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
-			}
 		}
 	}
 	
@@ -669,7 +668,6 @@ title_master_of_the_blade = {
 		is_adult = yes
 		FROM = {
 			is_feudal = yes
-			}
 		}
 		NOT = { has_minor_title = title_master_of_the_bow }
 	}
@@ -730,6 +728,7 @@ title_venerable_elder = {
 
 	message = yes
 }
+
 title_lawspeaker = {
 	dignity = 0.2
 	realm_in_name = yes

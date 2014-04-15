@@ -1,0 +1,147 @@
+#### Chalkface ####
+
+castle = { }
+
+city = { }
+
+#Military Buildings
+Leatherworks
+	+1 Hardened Leather
+		+2 Reinforced Leather
+			+3 Inscribed Leather #With Runecrafter or Runemaster +1
+			+4 Drakeskin Leather #With Drakeskin Leather
+				
+#Blacksmithy
+	+1 Gray Iron
+		+2 Steel
+			+3 Veridium
+				+4 Silverite #With Silverite
+				+4 Aurum #Goldworking
+
+#Woodworkers
+	+1 Yew
+		+2 Whitewood
+			+3 Ironbark #With Runecrafter or Runemaster +1
+			+4 Sylvanwood #IF ELVISH
+			+4 Dragonthorn #IF ELVISH & DRAGONS look guise idk
+				
+#Runemaster
+
+
+
+#Resource Buildings
+			
+#Silverite
+	Silverite Camp
+		Silverite Mine
+			#Allows
+			Military Smelter
+				#Expensive, Allows Silverite Smithy
+			Silverite Jewler
+				#Gives Money
+			Elemental Runemaster
+				#Gives Attack Bonus
+			Resistance Runemaster
+				#Gives Defence to All
+
+#Deep Mushroom Cavern
+		Deep Mushroom Camp
+			#Allows
+				Stamina Draught Merchant House
+					#Dolla Dolla What What
+
+#Drakestone Deposits
+	Drakestone Camp
+		Drakestone Mine
+			#Allows
+				Apothecary
+					#Dolla Dolla What What
+
+#Orichalcum Deposits
+	Orichalcum Sieves
+		Orichalcum Pumping Station
+			#Allows
+				Exotic Runesmith
+					#Holla Holla Mega Dolla
+				
+#Crystalline Orichalcum Deposits
+	Crystalline Orichalcum Sieves
+		#Allows
+			Spirit Runesmith
+				#All the Dolla Dolla Holla
+
+#Embrium Plants
+	Embrium Groves
+		Embrium Plantation
+			#Allows
+				Apothecary
+
+#Ambrosia
+	Ambrosia Gatherers
+		#Gives mega Bux
+
+#Onyx Cavern
+	Onyx Mine
+		#Allows
+			Onyx Jewellers Guild
+				#Dolla Dolla Holla Holla
+	
+#Gold Panning
+	Gold Surface Pit
+		Gold Mine
+			#Allows
+				Drake's Blood Station
+					#Allows
+						Goldsmithy
+							#Hella Dolla Holla Holla
+							#Allows Aurum
+					
+#Silver Panning
+	Silver Suface Pit
+		Silver Mine
+			#Allows
+				Wyvern's Blood Station
+					#Allows
+						Silversmith
+							#Hella Dolla Holla Holla
+		
+#Gemstone Cavern
+	Gemstone Gathering Expeditions
+		#Allows
+			Remarkable Jewellers Guild
+			
+#Opal Cavern
+	Opal Mine
+		#Allows
+			Opal Jewellers Guild
+	
+#Jetstone Deposits
+	Jetstone Surface Pit
+		Jetstone Quarry
+			# Allows
+				Jetstone Exporter
+					#Dolla Dolla Holla Walla Dolla SHIT YO
+
+#Elephants
+	Elephant Tamer
+		#Allows
+			War Elephant Trainer
+				#MOTHER FUCKING WAR ELEPHANTS
+			
+	Ivory Hunter
+		# Allows
+			Ivory Merchant
+				#Money, I guess
+		
+#Drakes
+	Drake Hunter's Camp
+		#Allows
+			Drakeskin Armourer
+				#Allows Drakeskin Leather
+		
+#Wyverns
+	Wyvern Hunting Estates
+		#Allows
+			Wyvern Poison Herbalist
+				#LI and Archer Attack Buff
+			

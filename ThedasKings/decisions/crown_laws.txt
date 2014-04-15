@@ -226,9 +226,7 @@ de_jure_laws = {
 				revoke_law = chantry_3
 				revoke_law = chantry_4
 			}
-		}
-		effect = {
-			set_investiture = any
+			set_investiture = head
 		}
 	}
 	chantry_1 = { #Weak
@@ -265,10 +263,8 @@ de_jure_laws = {
 				revoke_law = chantry_2
 				revoke_law = chantry_3
 				revoke_law = chantry_4
-				}
 			}
-		effect = {
-			set_investiture = any
+			set_investiture = head
 		}
 	}
 	chantry_2 = { #Moderate
@@ -306,9 +302,7 @@ de_jure_laws = {
 				revoke_law = chantry_3
 				revoke_law = chantry_4
 				}
-			}
-		effect = {
-			set_investiture = papal
+			set_investiture = head
 		}
 	}
 	chantry_3 = { #Strong
@@ -346,12 +340,10 @@ de_jure_laws = {
 				revoke_law = chantry_3
 				revoke_law = chantry_4
 				}
-			}
-		effect = {
-			set_investiture = papal
+			set_investiture = head
 		}
 	}
-	chantry_4 = { #Extraordinary
+	chantry_4 = { #Integral
 		show_as_title = yes
 		group = chantry
 		
@@ -379,212 +371,8 @@ de_jure_laws = {
 				revoke_law = chantry_2
 				revoke_law = chantry_3
 				revoke_law = chantry_4
-				}
-		}
-		effect = {
-			set_investiture = papal
-		}
-	}
-
-####### NON CHANTRY RELIGIOUS AUTHORITY ######
-	faith_0 = { #Minimal
-		show_as_title = yes
-		group = faith
-		
-		rel_head_opinion = -50
-		
-		allow = {
-				not = {
-					holder_scope = {
-						OR = { religion = andrastian_chantry religion = imperial_chantry }
-					}
-				}
-				has_law = faith_1
 			}
-
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = faith_0
-				revoke_law = faith_1
-				revoke_law = faith_2
-				revoke_law = faith_3
-				revoke_law = faith_4
-			}
-		}
-		effect = {
-			set_investiture = any
-		}
-	}
-	faith_1 = { #Weak
-		show_as_title = yes
-		group = faith
-		
-		rel_head_opinion = -25
-		
-		allow = {
-			holder_scope = {
-				not = {
-					OR = {	
-					religion = andrastian_chantry
-					religion = imperial_chantry
-					}
-				}
-				OR = {
-					has_law = faith_0
-					has_law = faith_2
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-			}
-		ai_will_do = {
-			factor = 0
-			}
-		ai_will_revoke = {
-			factor = 0
-			}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = faith_0
-				revoke_law = faith_1
-				revoke_law = faith_2
-				revoke_law = faith_3
-				revoke_law = faith_4
-			}
-		}
-		effect = {
-			set_investiture = any
-		}
-	}
-	faith_2 = { #Moderate
-		show_as_title = yes
-		group = faith
-		
-		rel_head_opinion = 0
-		
-		allow = {
-			holder_scope = {
-				NOT = {	
-					OR = {	
-					religion = andrastian_chantry
-					religion = imperial_chantry
-					}
-				}
-				OR = {
-					has_law = faith_1
-					has_law = faith_3
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-			}
-		ai_will_do = {
-			factor = 0
-			}
-		ai_will_revoke = {
-			factor = 0
-			}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = faith_0
-				revoke_law = faith_1
-				revoke_law = faith_2
-				revoke_law = faith_3
-				revoke_law = faith_4
-			}
-		}
-		effect = {
-			set_investiture = papal
-		}
-	}
-	faith_3 = { #Strong
-		show_as_title = yes
-		group = faith
-		
-		rel_head_opinion = 25
-		
-		allow = {
-			holder_scope = {
-				NOT = {
-					OR = {	
-						religion = andrastian_chantry
-						religion = imperial_chantry
-					}
-				}
-				OR = {
-					has_law = faith_2
-					has_law = faith_4
-				}
-			}
-		}
-		revoke_allowed = {
-			always = no
-			}
-		ai_will_do = {
-			factor = 0
-			}
-		ai_will_revoke = {
-			factor = 0
-			}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = faith_0
-				revoke_law = faith_1
-				revoke_law = faith_2
-				revoke_law = faith_3
-				revoke_law = faith_4
-			}
-		}
-		effect = {
-			set_investiture = papal
-		}
-	}
-	faith_4 = { #Extraordinary
-		show_as_title = yes
-		group = faith
-		
-		rel_head_opinion = 50
-		
-		allow = {
-			holder_scope = {
-				not = {
-					OR = { religion = andrastian_chantry religion = imperial_chantry }
-				}
-			has_law = faith_3
-			}
-		}
-			
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		ai_will_revoke = {
-			factor = 0
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = faith_0
-				revoke_law = faith_1
-				revoke_law = faith_2
-				revoke_law = faith_3
-				revoke_law = faith_4
-			}
-		}
-		effect = {
-			set_investiture = papal
+			set_investiture = head
 		}
 	}
 
@@ -616,7 +404,7 @@ de_jure_laws = {
 			}
 		}
 	}
-	mage_1 = { #Imprisoned		Forcibly incarcerated, made tranquil or conscripted
+	mage_1 = { #Custody		Forcibly incarcerated, made tranquil or conscripted
 		show_as_title = yes
 		group = mage
 		
@@ -761,7 +549,7 @@ de_jure_laws = {
 	}
 	
 ###### CIRCLE AUTONOMY ######
-	circle_0 = { #Independant		Free to roam from their tower, act as they will
+	circle_0 = { #Independent		Free to roam from their tower, act as they will
 		show_as_title = yes
 		group = circle
 		

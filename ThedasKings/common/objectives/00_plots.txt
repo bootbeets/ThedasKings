@@ -28,8 +28,8 @@ plot_gain_title = {
 			crownlaw_title = {
 				NOT = {
 					OR = {
-						has_law = centralization_3
-						has_law = centralization_4
+						has_law = crown_3
+						has_law = crown_4
 					}
 				}
 			}
@@ -1188,8 +1188,8 @@ plot_weaken_fellow_vassal = {
 			crownlaw_title = {
 				NOT = {
 					OR = {
-						has_law = centralization_3
-						has_law = centralization_4
+						has_law = crown_3
+						has_law = crown_4
 					}
 				}
 			}

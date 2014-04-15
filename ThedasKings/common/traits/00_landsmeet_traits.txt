@@ -1,0 +1,18 @@
+#### Chalkface ####
+
+#Faction Leader
+realm_faction_leader = {
+	leader = yes
+	customiser = no
+	random = no
+	cached = yes
+
+	same_opinion = -20
+}
+
+#Former Faction Leader
+former_realm_faction_leader = {
+	leader = yes
+	customiser = no
+	random = no
+}

@@ -1,0 +1,175 @@
+#### Chalkface ####
+
+#LANDSMEET EVENTS
+
+namespace = landsmeet
+
+#IF 2k prestige, give 'prestigious flag', allow form prestige faction
+character_event = {
+	id = landsmeet.1
+	title = EVT_TITLE_LANDSMEET_001
+	desc = EVT_DESC_LANDSMEET_001 #"You have become one of the most prestigious figures in the realm!"
+	picture = GFX_evt_son_asking_father #Temporary
+	
+	min_age = 21
+	capable_only = yes
+	prisoner = no
+	ai = no
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		prestige = 2000
+		NOT = {	has_character_flag = prestigious_in_realm }
+		OR = {
+			Root = { 
+				NOT = { higher_tier_than = king }
+				top_liege = { higher_tier_than = king }
+			}
+			Root = { 
+				NOT = { higher_tier_than = duke }
+				top_liege = {  higher_tier_than = duke }
+			}
+		}
+	}
+
+	option = {
+		name = EVT_OPTION_LANDSMEET_001_1 #"Fantastic!"
+		custom_tooltip = { 
+			text = "You may now create a faction at court, and gather together your supporters. "
+			prestige = -1500
+			set_character_flag = prestigious_in_realm
+		}
+	}
+}
+
+#If AI. Give prestigious if <3 in realm in Kingdom, or <4 if Empire.
+character_event = {
+	id = landsmeet.2
+	desc = "Due to your position as one of the most powerful men in the realm... ect" #TEMP naturally
+	picture = GFX_evt_son_asking_father #Temporary
+	
+	min_age = 21
+	capable_only = yes
+	prisoner = no
+	ai = yes
+	
+	trigger = {
+		prestige = 2000
+		NOT = {	has_character_flag = prestigious_in_realm }
+		OR = {
+			Root = { 
+				NOT = { higher_tier_than = king }
+				top_liege = { higher_tier_than = king }
+			}
+			Root = { 
+				NOT = { higher_tier_than = duke }
+				top_liege = {  higher_tier_than = duke }
+			}
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+
+	immediate = {
+		if = {
+			any_realm_character = { 
+				has_character_flag = prestigious_in_realm
+			}
+			change_variable = {
+				which = local_prestigious
+				value = 1.0 
+			}
+		}
+	}
+
+	option = {
+		name = "Ok"
+		set_character_flag = prestigious_in_realm
+		set_variable = { which = local_prestigious value = 0 }
+		ai_chance = { factor = 50 }
+		trigger = {
+			OR = {
+				root = {
+					check_variable = { which = local_prestigious value = 3 }
+					top_liege = { higher_tier_than = duke lower_tier_than = emperor }
+				}
+				root = {
+					check_variable = { which = local_prestigious value = 4 }
+					top_liege = { higher_tier_than = king }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "Ok"
+		add_character_modifier = { name = landsmeet_faction_denied duration = 6 }
+		set_variable = { which = local_prestigious value = 0 }
+		ai_chance = { factor = 50 }
+		trigger = {
+			OR = { 
+				NOT = {
+					root = {
+						check_variable = { which = local_prestigious value = 3 }
+						top_liege = { higher_tier_than = duke lower_tier_than = emperor }
+					}
+				}
+				NOT = {
+					root = {
+						check_variable = { which = local_prestigious value = 4 }
+						top_liege = { higher_tier_than = king }
+					}
+				}
+			}
+		}
+	}
+}
+
+#IF 'Faction Leader' but not leads_faction, give trait 'Former Faction Leader'
+character_event = {
+	id = landsmeet.3
+		
+	hide_window = yes
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		trait = realm_faction_leader
+		NOT = { leads_faction = yes }
+	}
+	
+	immediate = {
+		remove_trait = realm_faction_leader
+		add_trait = former_realm_faction_leader
+	}
+}
+
+#If leads_faction then realm_faction_leader
+character_event = {
+	id = landsmeet.4
+		
+	hide_window = yes
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	trigger = {
+		NOT = { trait = realm_faction_leader }
+		leads_faction = yes
+	}
+	
+	immediate = {
+		add_trait = realm_faction_leader
+		remove_trait = former_realm_faction_leader
+	}
+}
+
+#
