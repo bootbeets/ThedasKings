@@ -1,0 +1,108 @@
+# Define mercenary types here now instead of in the static_composition.txt file
+# Also remember to tell the landed title to use this mercenary type instead.
+# Several titles can refer to the same type as well now.
+
+flint_company_composition = { # FREE MARCHES
+	levy_size = 2
+	light_infantry = 200
+	archers = 200
+	light_cavalry = 75
+}
+
+coterie_composition = { #FREE MARCHES
+	levy_size = 1
+	light_infantry = 100
+	archers = 100
+	surface_dwarf_mercenary = 50
+}
+
+dog_lords_composition = { # FREE MARCHES
+	levy_size = 1
+	light_infantry = 200
+	mabari = 200
+}
+
+surface_coterie_composition = { #FREE MARCHES
+	levy_size = 1
+	surface_dwarf_mercenary = 300
+}
+
+company_of_the_magisters_bollocks_composition = { #FREE MARCHES
+	levy_size = 3
+	light_infantry = 300
+	elven_mercenaries = 50
+	archers = 50
+	magi_apostate = 10
+}
+
+hunter_fell_bastards_composition = { #NEVARRA
+	levy_size = 2
+	light_infantry = 300
+	heavy_infantry = 100
+}
+
+drakesbane_company_composition = { #NEVARRA
+	levy_size = 4
+	light_infantry = 200
+	archers = 75
+}
+
+the_fallen_reborn_composition = { #NEVARRA
+	levy_size = 1
+	heavy_infantry = 150
+}
+
+free_solas_company_composition = { # NEVARRA
+	levy_size = 2
+	light_infantry = 300
+	elven_mercenary = 50
+	archers = 50
+}
+
+blackstone_irregulars_composition = { #FERELDEN
+	levy_size = 2
+	light_infantry = 300
+	mabari = 50
+	magi_apostate = 5
+}
+
+night_elves_composition = { #FERELDEN
+	levy_size = 1
+	elven_mercenary = 200
+}
+
+ash_warriors_composition = { #FERELDEN #HOLY ORDER
+	levy_size = 2
+	light_infantry = 200
+	mabari = 200
+}
+
+raiders_of_the_waking_sea_1_compostition = { #GENERIC
+	levy_size = 1
+	light_infantry = 100
+	galleys = 2
+}
+
+raiders_of_the_waking_sea_2_compostition = { #GENERIC
+	levy_size = 1
+	light_infantry = 100
+	galleys = 2
+}
+	
+raiders_of_the_waking_sea_3_compostition = { #GENERIC
+	levy_size = 1
+	light_infantry = 100
+	galleys = 2
+}
+	
+raiders_of_the_waking_sea_4_compostition = { #GENERIC
+	levy_size = 1
+	light_infantry = 100
+	galleys = 2
+}
+
+raiders_of_the_waking_sea_5_compostition = { #GENERIC
+	levy_size = 2
+	light_infantry = 500
+	galleys = 10
+}
