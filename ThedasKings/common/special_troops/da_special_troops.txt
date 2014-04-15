@@ -1,6 +1,85 @@
-#Tevinter War Elephants
-#Qunari Mercenaries
-#Mages
-#Templars
-#Ogres
-#Blood Mages
+### Chalkface###
+
+tal_vashoth_mercenary = {
+	morale = 10
+	maintenance = 10
+	phase_skirmish_attack = 1
+	phase_melee_attack = 10
+	phase_pursue_attack = 2
+	phase_skirmish_defense = 5
+	phase_melee_defence = 8
+	phase_pursue_defence = 2
+	base_type = heavy_infantry
+}
+
+war_elephants = {
+	morale = 15
+	maintenance = 20
+	phase_skirmish_attack = 0.25
+	phase_melee_attack = 25
+	phase_pursue_attack = 3
+	phase_skirmish_defense = 12
+	phase_melee_defense = 20
+	phase_pursue_defense = 4
+	base_type = heavy_cavalry
+}
+
+magi_chantry = {
+	morale = 4
+	maintenance = 10
+	phase_skirmish_attack = 25
+	phase_melee_attack = 3
+	phase_pursue_attack = 2
+	phase_skirmish_defense = 5
+	phase_melee_defense = 1
+	phase_pursue_defense = 1
+	base_type = light_infantry
+}
+
+magi_apostate = {
+	morale = 4
+	maintenance = 10
+	phase_skirmish_attack = 25
+	phase_melee_attack = 3
+	phase_pursue_attack = 2
+	phase_skirmish_defense = 5
+	phase_melee_defense = 1
+	phase_pursue_defense = 1
+	base_type = light_infantry
+}
+
+magi_blood_mage = {
+	morale = 6
+	maintenance = 10
+	phase_skirmish_attack = 30
+	phase_melee_attack = 10
+	phase_pursue_attack = 2
+	phase_skirmish_defense = 1
+	phase_melee_defense = 1
+	phase_pursue_defense = 1
+	base_type = light_infantry
+}
+	
+chantry_templar = {
+	morale = 10
+	maintenance = 5
+	phase_skirmish_attack = 0.25
+	phase_melee_attack = 8
+	phase_pursue_attack = 2
+	phase_skirmish_defense = 5
+	phase_melee_defense = 4
+	phase_pursue_defense = 2
+	base_type = heavy_infantry
+}
+
+darkspawn_ogre = {
+	morale = 10
+	maintenance = 15
+	phase_skirmish_attack = 5
+	phase_melee_attack = 20
+	phase_pursue_attack = 0.25
+	phase_skirmish_defense = 5
+	phase_melee_defense = 15
+	phase_pursue_defense = 0.25
+	base_type = heavy_infantry
+}
