@@ -127,8 +127,8 @@ trade_post = {
 	tr_silverite_1 = {
 		desc = tr_silverite_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 2
@@ -139,8 +139,8 @@ trade_post = {
 	tr_deep_mushroom_1 = {
 		desc = tr_deep_mushroom_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 1
@@ -151,8 +151,8 @@ trade_post = {
 	tr_drakestone_1 = {
 		desc = tr_drakestone_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 1
@@ -163,8 +163,8 @@ trade_post = {
 	tr_orichalcum_1 = {
 		desc = tr_orichalcum_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 1.5
@@ -175,8 +175,8 @@ trade_post = {
 	tr_c_orichalcum_1 = {
 		desc = tr_c_orichalcum_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 2
@@ -187,8 +187,8 @@ trade_post = {
 	tr_embrium_1 = {
 		desc = tr_embrium_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 1
@@ -199,8 +199,8 @@ trade_post = {
 	tr_ambrosia_1 = {
 		desc = tr_ambrosia_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 5
@@ -211,8 +211,8 @@ trade_post = {
 	tr_onyx_1 = {
 		desc = tr_onyx_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 1
@@ -223,8 +223,8 @@ trade_post = {
 	tr_gold_1 = {
 		desc = tr_gold_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 2.5
@@ -235,8 +235,8 @@ trade_post = {
 	tr_silver_1 = {
 		desc = tr_silver_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 2
@@ -247,8 +247,8 @@ trade_post = {
 	tr_gemstone_1 = {
 		desc = tr_gemstone_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 2
@@ -259,8 +259,8 @@ trade_post = {
 	tr_opal_1 = {
 		desc = tr_opal_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 1.5
@@ -271,8 +271,8 @@ trade_post = {
 	tr_jetstone_1 = {
 		desc = tr_jetstone_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 1
@@ -283,8 +283,8 @@ trade_post = {
 	tr_ivory_1 = {
 		desc = tr_ivory_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 2.5
@@ -295,8 +295,8 @@ trade_post = {
 	tr_drake_1 = {
 		desc = tr_onyx_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 1.5
@@ -307,8 +307,8 @@ trade_post = {
 	tr_wyvern_1 = {
 		desc = tr_wyvern_1_desc
 		trigger = { TECH_TRADE_PRACTICES = 0 }
-		build_cost = 100
-		build_time = 182
+		build_cost = 200
+		build_time = 365
 		ai_creation_factor = 95
 		
 		tax_income = 1.5
