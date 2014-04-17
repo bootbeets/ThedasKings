@@ -172,70 +172,75 @@ castle = {
 	da_castle_silverite_1 = { # Silverite Camp
 		desc = da_castle_silverite_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
-		build_cost = 500
-		build_time = 730
-		extra_tech_building_start = 3.0
+		upgrades_ from = da_castle_silverite_0
+		build_cost = 150
+		build_time = 360
+		extra_tech_building_start = 10.0
 		ai_creation_factor = 90
 	}
 	da_castle_silverite_2 = { #Silverite Mine
 		desc = da_castle_silverite_2_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = da_castle_silverite_1
-		build_cost = 500
-		build_time = 1095
-		extra_tech_building_start = 4.0
+		build_cost = 200
+		build_time = 1455
+		extra_tech_building_start = 10.0
 		ai_creation_factor = 89
+		tax_income = 5
 	}
 	da_castle_silverite_3 = { #Military Smelter
 		desc = da_castle_silverite_3_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = da_castle_silverite_2
 		build_cost = 200
-		build_time = 1095
-		extra_tech_building_start = 5.0
+		build_time = 360
+		extra_tech_building_start = 10.0
 		ai_creation_factor = 88
+		not_if_x_exists = [ da_castle_silverite_4 da_castle_silverite_5 da_castle_silverite_6 }
 	}
 	da_castle_silverite_4 = { #Silverite Jeweller
 		desc = da_castle_silverite_4_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
 		upgrades_from = da_castle_silverite_2
-		build_cost = 200
-		build_time = 2190
+		build_cost = 250
+		build_time = 172
 		tax_income = 5
+		not_if_x_exists = [ da_castle_silverite_3 da_castle_silverite_5 da_castle_silverite_6 }
 	}
 	da_castle_silverite_5 = { #Elemental Runecrafter
 		desc = da_castle_silverite_5_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
 		upgrades_from = da_castle_silverite_2
-		build_cost = 200
-		build_time = 2190
+		build_cost = 250
+		build_time = 360
 		light_cavalry_offensive = 0.1
 		light_infantry_offensive = 0.1
 		knights_offensive = 0.1
 		heavy_infantry_offensive = 0.1
 		pikemen_offensive = 0.1
 		archers_offensive = 0.1
+		not_if_x_exists = [ da_castle_silverite_4 da_castle_silverite_3 da_castle_silverite_6 }
 	}
 	da_castle_silverite_6 = { #Resistance Runecrafter
 		desc = da_castle_silverite_6_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
 		upgrades_from = da_castle_silverite_2
-		build_cost = 200
-		build_time = 2190
+		build_cost = 250
+		build_time = 360
 		light_cavalry_defensive = 0.1
 		heavy_infantry_defensive = 0.1
 		knights_defensive = 0.1
 		pikemen_defensive = 0.1
 		light_infantry_defensive = 0.1
 		archers_defensive = 0.1
+		not_if_x_exists = [ da_castle_silverite_4 da_castle_silverite_5 da_castle_silverite_3 }
 	}
 
 #DEEP MUSHROOM CAVERN
 	da_castle_deep_mushroom_1 = { # Deep Mushroom Camp
 		desc = da_castle_deep_mushroom_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_ from = da_castle_deep_mushroom_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -258,7 +263,7 @@ castle = {
 	da_castle_drakestone_1 = { # Drakestone Camp
 		desc = da_castle_drakestone_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_drakestone_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -291,7 +296,7 @@ castle = {
 	da_castle_orichalcum_1 = { # Orichalcum Sieves
 		desc = da_castle_orichalcum_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_orichalcum_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -323,7 +328,7 @@ castle = {
 	da_castle_crystalline_orichalcum_1 = { # Crystalline Orichalcum Sieves
 		desc = da_castle_crystalline_orichalcum_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_crystalline_orichalcum_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -344,7 +349,7 @@ castle = {
 	da_castle_embrium_1 = { # Embrium Groves
 		desc = da_castle_embrium_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_embrium_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -377,6 +382,7 @@ castle = {
 	da_castle_ambrosia_1 = { #Ambrosia Gatherers
 		desc = da_castle_ambrosia_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = da_castle_ambrosia_0
 		build_cost = 500
 		build_time = 1095
 		extra_tech_building_start = 4.0
@@ -388,7 +394,7 @@ castle = {
 	da_castle_onyx_1 = { # Onyx Mine
 		desc = da_castle_onyx_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_onyx_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -409,7 +415,7 @@ castle = {
 	da_castle_gold_1 = { #Gold Surface Pit
 		desc = da_castle_gold_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_gold_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -450,7 +456,7 @@ castle = {
 	da_castle_silver_1 = { #Silver Surface Pit
 		desc = da_castle_silver_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_silver_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -491,7 +497,7 @@ castle = {
 	da_castle_gemstone_1 = { # Gemstone Gathering Expeditions
 		desc = da_castle_gemstone_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_gemstone_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -512,7 +518,7 @@ castle = {
 	da_castle_opal_1 = { # Opal Mine Shaft
 		desc = da_castle_opal_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_opal_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -533,7 +539,7 @@ castle = {
 	da_castle_jetstone_1 = { # Jetstone Surface Pit
 		desc = da_castle_jetstone_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_jetstone_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -565,7 +571,7 @@ castle = {
 	da_castle_elephant_1 = { # Elephant Tamer
 		desc = da_castle_elephant_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_elephant_0
 		build_cost = 1000
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -584,7 +590,7 @@ castle = {
 	da_castle_ivory_1 = { #Elephant Hunter
 		desc = da_castle_ivory_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_elephant_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -605,7 +611,7 @@ castle = {
 	da_castle_drake_1 = { # Drake Hunter's Camp
 		desc = da_castle_drake_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrade_from = da_castle_drake_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
@@ -628,7 +634,7 @@ castle = {
 	da_castle_wyvern_1 = { # Opal Mine Shaft
 		desc = da_castle_wyvern_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		prerequisites = { ca_wall_2 }
+		upgrades_from = da_castle_wyvern_0
 		build_cost = 500
 		build_time = 730
 		extra_tech_building_start = 3.0
