@@ -523,7 +523,7 @@ castle = {
 		ai_creation_factor = 90
 		tax_income = 1
 	}
-	da_castle_orichalcum_2 = { #Jetstone Quarry
+	da_castle_jetstone_2 = { #Jetstone Quarry
 		desc = da_castle_jetstone_2_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		upgrades_from = da_castle_jetstone_1
