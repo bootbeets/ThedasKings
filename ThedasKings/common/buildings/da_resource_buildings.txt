@@ -214,7 +214,7 @@ castle = {
 		archers_defensive = 0.1
 	}
 
-#DEEP MUCHROOM CAVERN
+#DEEP MUSHROOM CAVERN
 	da_castle_deep_mushroom_1 = { # Deep Mushroom Camp
 		desc = da_castle_deep_mushroom_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
@@ -357,8 +357,8 @@ castle = {
 	}
 	
 #AMBROSIA SPECEMINS 
-	da_ambrosia_1 = { #Ambrosia Gatherers
-		desc = da_ambrosia_1_desc
+	da_castle_ambrosia_1 = { #Ambrosia Gatherers
+		desc = da_castle_ambrosia_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
 		build_cost = 500
 		build_time = 1095
@@ -514,7 +514,7 @@ castle = {
 	
 #JETSTONE DEPOSITS
 	da_castle_jetstone_1 = { # Jetstone Surface Pit
-		desc = da_jetstone_orichalcum_1_desc
+		desc = da_castle_jetstone_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		prerequisites = { ca_wall_2 }
 		build_cost = 500
@@ -524,9 +524,9 @@ castle = {
 		tax_income = 1
 	}
 	da_castle_orichalcum_2 = { #Jetstone Quarry
-		desc = da_jetstone_orichalcum_2_desc
+		desc = da_castle_jetstone_2_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
-		upgrades_from = da_jetstone_orichalcum_1
+		upgrades_from = da_castle_jetstone_1
 		build_cost = 500
 		build_time = 1095
 		extra_tech_building_start = 4.0
@@ -536,7 +536,7 @@ castle = {
 	da_castle_jetstone_3 = { #Jetstone Exporter
 		desc = da_castle_jetstone_3_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
-		upgrades_from = da_jetstone_orichalcum_2
+		upgrades_from = da_castle_jetstone_2
 		build_cost = 500
 		build_time = 1095
 		extra_tech_building_start = 4.0
@@ -629,3 +629,636 @@ castle = {
 		archers_offensive = 0.2
 	}
 }
+
+########################################################################################################################
+
+city = {
+
+###### MILITARY ######
+
+#LEATHERWORKS
+	da_city_leatherworks_1 = { #Hardened Leather +1
+		desc = da_city_leatherworks_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 200
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		light_infantry_defensive = 0.1
+		archers_defensive = 0.1
+	}
+	da_city_leatherworks_2 = { #Reinforced Leather +2
+		desc = da_city_leatherworks_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_leatherworks_1
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 90
+		light_infantry_defensive = 0.2
+		archers_defensive = 0.2
+	}
+	da_city_leatherworks_3 = { #Inscribed Leather +3
+		desc = da_city_leatherworks_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		prerequisites = { da_city_orichalcum_3 } 
+		upgrades_from = da_city_leatherworks_2
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 90
+		light_infantry_defensive = 0.3
+		archers_defensive = 0.3
+	}
+	da_city_leatherworks_4 = { #Drakeskin leather +4
+		desc = da_city_leatherworks_4_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		upgrades_from = da_city_leatherworks_2
+		prerequisites = { da_drake_2 } 
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 90
+		light_infantry_defensive = 0.4
+		archers_defensive = 0.4
+	}
+#BLACKSMITHY
+	da_city_blacksmithy_1 = { #Gray Iron +1
+		desc = da_city_blacksmithy_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 200
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		heavy_infantry_defensive = 0.1
+		knights_defensive = 0.1
+		heavy_infantry_offensive = 0.1
+		knights_offensive = 0.1
+	}
+	da_city_blacksmithy_2 = { #Steel +2
+		desc = da_city_blacksmithy_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_blacksmithy_1
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		heavy_infantry_defensive = 0.2
+		knights_defensive = 0.2
+		heavy_infantry_offensive = 0.2
+		knights_offensive = 0.2
+	}	
+	da_city_blacksmithy_3 = { #Veridium +3
+		desc = da_city_blacksmithy_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_blacksmithy_2
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 88
+		heavy_infantry_defensive = 0.3
+		knights_defensive = 0.3
+		heavy_infantry_offensive = 0.3
+		knights_offensive = 0.3
+	}
+	da_city_blacksmithy_4 = { #Silverite +4
+		desc = da_city_blacksmithy_4_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		prerequisites = { da_city_silverite_3 } 
+		upgrades_from = da_city_blacksmithy_3
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 87
+		heavy_infantry_defensive = 0.4
+		knights_defensive = 0.4
+		heavy_infantry_offensive = 0.4
+		knights_offensive = 0.4
+	}
+	da_city_blacksmithy_5 = { #Aurum +4
+		desc = da_city_blacksmithy_5_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		upgrades_from = da_city_blacksmithy_3
+		prerequisites = { da_city_gold_4 } 
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 87
+		heavy_infantry_defensive = 0.4
+		knights_defensive = 0.4
+		heavy_infantry_offensive = 0.4
+		knights_offensive = 0.4
+	}
+#FLETCHERS
+	da_city_fletchery_1 = { #Yew +1
+		desc = da_city_fletchery_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 200
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_fletchery_2 = { #Whitewood +2
+		desc = da_city_fletchery_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_fletchery_1
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+	}
+	da_city_fletchery_3 = { #Ironbark +3
+		desc = da_city_fletchery_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		prerequisites = { da_city_orichalcum_3 } 
+		upgrades_from = da_city_fletchery_2
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 88
+	}
+
+#######RESOURCES######
+	
+#SILVERITE DEPOSIT
+	da_city_silverite_1 = { # Silverite Camp
+		desc = da_city_silverite_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_silverite_2 = { #Silverite Mine
+		desc = da_city_silverite_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_silverite_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+	}
+	da_city_silverite_3 = { #Military Smelter
+		desc = da_city_silverite_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_silverite_2
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 88
+	}
+	da_city_silverite_4 = { #Silverite Jeweller
+		desc = da_city_silverite_4_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		upgrades_from = da_city_silverite_2
+		build_cost = 200
+		build_time = 2190
+		tax_income = 5
+	}
+	da_city_silverite_5 = { #Elemental Runecrafter
+		desc = da_city_silverite_5_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		upgrades_from = da_city_silverite_2
+		build_cost = 200
+		build_time = 2190
+		light_cavalry_offensive = 0.1
+		light_infantry_offensive = 0.1
+		knights_offensive = 0.1
+		heavy_infantry_offensive = 0.1
+		pikemen_offensive = 0.1
+		archers_offensive = 0.1
+	}
+	da_city_silverite_6 = { #Resistance Runecrafter
+		desc = da_city_silverite_6_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		upgrades_from = da_city_silverite_2
+		build_cost = 200
+		build_time = 2190
+		light_cavalry_defensive = 0.1
+		heavy_infantry_defensive = 0.1
+		knights_defensive = 0.1
+		pikemen_defensive = 0.1
+		light_infantry_defensive = 0.1
+		archers_defensive = 0.1
+	}
+
+#DEEP MUSHROOM CAVERN
+	da_city_deep_mushroom_1 = { # Deep Mushroom Camp
+		desc = da_city_deep_mushroom_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		tax_income = 1
+	}
+	da_city_deep_mushroom_2 = { #Stamina Draught Merchant House
+		desc = da_city_deep_mushroom_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_deep_mushroom_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+		martial = 1
+	}
+
+#DRAKESTONE DEPOSITS
+	da_city_drakestone_1 = { # Drakestone Camp
+		desc = da_city_drakestone_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		tax_income = 1
+	}
+	da_city_drakestone_2 = { #Drakestone Mine
+		desc = da_city_drakestone_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_drakestone_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 2
+	}
+	da_city_drakestone_3 = { #Apothecary
+		desc = da_city_drakestone_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_drakestone_2
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+		Learning = 1
+	}
+
+#ORICHALCUM DEPOSITS
+	da_city_orichalcum_1 = { # Orichalcum Sieves
+		desc = da_city_orichalcum_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		tax_income = 1
+	}
+	da_city_orichalcum_2 = { #Orichalcum Pumping Station
+		desc = da_city_orichalcum_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_orichalcum_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 2
+	}
+	da_city_orichalcum_3 = { #Runemaster
+		desc = da_city_orichalcum_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_orichalcum_2
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+	}
+	
+#CRYSTALLINE ORICHALCUM DEPOSITS
+	da_city_crystalline_orichalcum_1 = { # Crystalline Orichalcum Sieves
+		desc = da_city_crystalline_orichalcum_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_crystalline_orichalcum_2 = { #Exotic Runemaster - Special Events Tied To
+		desc = da_city_crystalline_orichalcum_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_crystalline_orichalcum_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+	}
+	
+#EMBRIUM PLANTS
+	da_city_embrium_1 = { # Embrium Groves
+		desc = da_city_embrium_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		tax_income = 1
+	}
+	da_city_embrium_2 = { #Embrium Plantation
+		desc = da_city_embrium_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_orichalcum_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 2
+	}
+	da_city_embrium_3 = { #Herbalist
+		desc = da_city_embrium_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_embrium_2
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+		learning = 1
+	}
+	
+#AMBROSIA SPECEMINS 
+	da_city_ambrosia_1 = { #Ambrosia Gatherers
+		desc = da_city_ambrosia_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 100
+		tax_income = 10
+	}
+
+#ONYX CAVERNS
+	da_city_onyx_1 = { # Onyx Mine
+		desc = da_city_onyx_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_onyx_2 = { #Onyx Jewlers Guild
+		desc = da_city_onyx_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_onyx_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 5
+	}
+	
+#GOLD PANNING
+	da_city_gold_1 = { #Gold Surface Pit
+		desc = da_city_gold_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		tax_income = 3
+	}
+	da_city_gold_2 = { #Gold Mine
+		desc = da_city_gold_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_gold_1
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax income = 6
+	}	
+	da_city_gold_3 = { #Drake's Blood Station
+		desc = da_city_gold_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_gold_2
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 88
+	}
+	da_city_gold_4 = { #Goldsmithy
+		desc = da_city_gold_4_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		upgrades_from = da_city_gold_3
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 87
+		tax_income = 15
+	}					
+	
+#SILVER PANNING
+	da_city_silver_1 = { #Silver Surface Pit
+		desc = da_city_silver_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		tax_income = 2
+	}
+	da_city_silver_2 = { #Silver Mine
+		desc = da_city_silver_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_silver_1
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax income = 4
+	}	
+	da_city_silver_3 = { #Wyvern's Blood Station
+		desc = da_city_silver_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_silver_2
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 88
+	}
+	da_city_silver_4 = { #Silversmith
+		desc = da_city_silver_4_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		upgrades_from = da_city_silver_3
+		build_cost = 500
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 87
+		tax_income = 10
+	}
+
+#GEMSTONE CAVERN
+	da_city_gemstone_1 = { # Gemstone Gathering Expeditions
+		desc = da_city_gemstone_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_gemstone_2 = { # Remarkable Jewellers Guild
+		desc = da_city_gemstone_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_gemstone_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+	}
+
+#OPAL CAVERN
+	da_city_opal_1 = { # Opal Mine Shaft
+		desc = da_city_opal_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_opal_2 = { # Opal Jewlers Guild
+		desc = da_city_opal_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_opal_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+	}
+	
+#JETSTONE DEPOSITS
+	da_city_jetstone_1 = { # Jetstone Surface Pit
+		desc = da_city_jetstone_orichalcum_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		tax_income = 1
+	}
+	da_city_orichalcum_2 = { #Jetstone Quarry
+		desc = da_city_jetstone_orichalcum_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_jetstone_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 2
+	}
+	da_city_jetstone_3 = { #Jetstone Exporter
+		desc = da_city_jetstone_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_jetstone_2
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+	}
+	
+#ELEPHANTS
+	da_city_elephant_1 = { # Elephant Tamer
+		desc = da_city_elephant_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 1000
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_elephant_2 = { #Elephant Trainer
+		desc = da_city_elephant_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_elephant_1
+		build_cost = 1000
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+	}
+	da_city_ivory_1 = { #Elephant Hunter
+		desc = da_city_ivory_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_ivory_2 = { #Ivory Merchant
+		desc = da_city_ivory_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_ivory_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+	}	
+	
+#DRAKES
+	da_city_drake_1 = { # Drake Hunter's Camp
+		desc = da_city_drake_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		archers = 25
+		heavy_infantry = 50
+	}
+	da_city_drake_2 = { # Drakeskin Worker
+		desc = da_city_drake_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_drake_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		tax_income = 3
+	}
+	
+#WYVERNS
+	da_city_wyvern_1 = { # Opal Mine Shaft
+		desc = da_city_wyvern_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 500
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_wyvern_2 = { # Poison Crafter
+		desc = da_city_wyvern_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_wyvern_1
+		build_cost = 500
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		light_infantry_offensive = 0.2
+		archers_offensive = 0.2
+	}
+}
+
