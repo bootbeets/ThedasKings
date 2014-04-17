@@ -13,6 +13,156 @@
 
 # City
 city = {
+
+###### MILITARY ######
+
+#LEATHERWORKS
+	da_city_leatherworks_1 = { #Hardened Leather +1
+		desc = da_city_leatherworks_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 200
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		light_infantry_defensive = 0.1
+		archers_defensive = 0.1
+	}
+	da_city_leatherworks_2 = { #Reinforced Leather +2
+		desc = da_city_leatherworks_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_leatherworks_1
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 90
+		light_infantry_defensive = 0.2
+		archers_defensive = 0.2
+	}
+	da_city_leatherworks_3 = { #Inscribed Leather +3
+		desc = da_city_leatherworks_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		prerequisites = { da_city_orichalcum_3 } 
+		upgrades_from = da_city_leatherworks_2
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 90
+		light_infantry_defensive = 0.3
+		archers_defensive = 0.3
+	}
+	da_city_leatherworks_4 = { #Drakeskin leather +4
+		desc = da_city_leatherworks_4_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		upgrades_from = da_city_leatherworks_2
+		prerequisites = { da_drake_2 } 
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 90
+		light_infantry_defensive = 0.4
+		archers_defensive = 0.4
+	}
+	
+#BLACKSMITHY
+	da_city_blacksmithy_1 = { #Gray Iron +1
+		desc = da_city_blacksmithy_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 200
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+		heavy_infantry_defensive = 0.1
+		knights_defensive = 0.1
+		heavy_infantry_offensive = 0.1
+		knights_offensive = 0.1
+	}
+	da_city_blacksmithy_2 = { #Steel +2
+		desc = da_city_blacksmithy_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_blacksmithy_1
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+		heavy_infantry_defensive = 0.2
+		knights_defensive = 0.2
+		heavy_infantry_offensive = 0.2
+		knights_offensive = 0.2
+	}	
+	da_city_blacksmithy_3 = { #Veridium +3
+		desc = da_city_blacksmithy_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_blacksmithy_2
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 88
+		heavy_infantry_defensive = 0.3
+		knights_defensive = 0.3
+		heavy_infantry_offensive = 0.3
+		knights_offensive = 0.3
+	}
+	da_city_blacksmithy_4 = { #Silverite +4
+		desc = da_city_blacksmithy_4_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		prerequisites = { da_city_silverite_3 } 
+		upgrades_from = da_city_blacksmithy_3
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 87
+		heavy_infantry_defensive = 0.4
+		knights_defensive = 0.4
+		heavy_infantry_offensive = 0.4
+		knights_offensive = 0.4
+	}
+	da_city_blacksmithy_5 = { #Aurum +4
+		desc = da_city_blacksmithy_5_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		upgrades_from = da_city_blacksmithy_3
+		prerequisites = { da_city_gold_4 } 
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 87
+		heavy_infantry_defensive = 0.4
+		knights_defensive = 0.4
+		heavy_infantry_offensive = 0.4
+		knights_offensive = 0.4
+	}
+	
+#FLETCHERS
+	da_city_fletchery_1 = { #Yew +1
+		desc = da_city_fletchery_1_desc
+		trigger = { TECH_city_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		build_cost = 200
+		build_time = 730
+		extra_tech_building_start = 3.0
+		ai_creation_factor = 90
+	}
+	da_city_fletchery_2 = { #Whitewood +2
+		desc = da_city_fletchery_2_desc
+		trigger = { TECH_city_CONSTRUCTION = 1 }
+		upgrades_from = da_city_fletchery_1
+		build_cost = 200
+		build_time = 1095
+		extra_tech_building_start = 4.0
+		ai_creation_factor = 89
+	}
+	da_city_fletchery_3 = { #Ironbark +3
+		desc = da_city_fletchery_3_desc
+		trigger = { TECH_city_CONSTRUCTION = 3 }
+		prerequisites = { da_city_orichalcum_3 } 
+		upgrades_from = da_city_fletchery_2
+		build_cost = 200
+		build_time = 2190
+		extra_tech_building_start = 5.0
+		ai_creation_factor = 88
+	}
+	
 	ct_wall_q_1 = {
 		desc = ct_wall_q_1_desc
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
