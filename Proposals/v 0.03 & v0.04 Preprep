@@ -8,7 +8,7 @@ Map
 Old Features
 - Complete Decisions Localisation
 - Revisit Cultures and Religions, Add Minimum Fabrications
-- Initial Special Troops
+#- Initial Special Troops
 - Revisit Military Cultural buildings
 - Complete Landsmeet Event
   - Focus upon the event itself
@@ -23,15 +23,15 @@ New Features
 - Trade System foundations
   - Compile Special Trade Goods province modifiers
   - Create startup event that places them on map upon launch
-  - Add in relevant Building Chains
-  - Do the same as above, but for Republic Trade posts
+  #- Add in relevant Building Chains
+  #- Do the same as above, but for Republic Trade posts
 - Building Edit
   - Increase frequency of events that burn buildings down in war or accident
   - Add immunity for certain types of buildings: stone walls, ect
 - Military Overhall Foundations
   - Reduce overall troop numbers slightly (Less Provinces does same thing?)
-  - Create Mercenaries and Retinue types
-    - Qunari Mercenaries for example
+  #- Create Mercenaries and Retinue types
+    #- Qunari Mercenaries for example
 - Misc Quibbles
   - Adjust Graphical Culture Types for new Cultures
   - Temporarily Remove Religious Titles
