@@ -1,10 +1,174 @@
 #### Chalkface ####
 
+#Credit to the GoT guys for trigger = { always = no }, saved me a lot of pain.
+
 castle = {
+
+##### The Deposits ####
+
+#Silverite Deposits
+	da_castle_silverite_0 = {
+		desc = da_castle_silverite_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Deep Mushroom Cavern
+	da_castle_deep_mushroom_0 = {
+		desc = da_castle_deep_mushroom_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Drakestone Deposits
+	da_castle_drakestone_0 = { # Silverite Camp
+		desc = da_castle_drakestone_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Orichalcum Pools
+	da_castle_orichalcum_0 = {
+		desc = da_castle_orichalcum_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Crystalline Orichalcum Deposits
+	da_castle_crystalline_orichalcum_0 = {
+		desc = da_castle_crystalline_orichalcum_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+#Embrium Plants
+	da_castle_embrium_0 = {
+		desc = da_castle_embrium_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Ambrosia Specimins
+	da_castle_ambrosia_0 = {
+		desc = da_castle_ambrosia_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Onyx Caverns
+	da_castle_onyx_0 = {
+		desc = da_castle_onyx_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Gold Panning
+	da_castle_gold_0 = {
+		desc = da_castle_gold_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Silver Panning
+	da_castle_silver_0 = {
+		desc = da_castle_silver_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Gemstone Cavern
+	da_castle_gemstone_0 = {
+		desc = da_castle_gemstone_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Opal Cavern
+	da_castle_opal_0 = {
+		desc = da_castle_onpal_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Jetstone Deposits
+	da_castle_jetstone_0 = {
+		desc = da_castle_jetstone_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Elephant
+	da_castle_elephant_0 = {
+		desc = da_castle_elephant_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Drake
+	da_castle_drake_0 = {
+		desc = da_castle_drake_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	}
+	
+#Wyverns
+	da_castle_wyvern_0 = {
+		desc = da_castle_wyvern_0_desc
+		trigger = { always = no }
+		build_cost = 10
+		build_time = 10
+		extra_tech_building_start = 10.0
+		ai_creation_factor = 200
+	]
+
 
 #######RESOURCES######
 	
-#SILVERITE DEPOSIT
+#SILVERITE DEPOSITS
 	da_castle_silverite_1 = { # Silverite Camp
 		desc = da_castle_silverite_1_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
