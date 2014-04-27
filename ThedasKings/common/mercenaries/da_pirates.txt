@@ -1,0 +1,2588 @@
+#KyleTheGerman did aaaaaaall of these.
+
+d_Antivan_Goddess = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 900
+NOT = { year = 913 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Salty_Mabari = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 900
+NOT = { year = 913 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Ferelden
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Kings_Arse = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 900
+NOT = { year = 913 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Qunari_Killer = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 900
+NOT = { year = 913 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Tevinter
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Rivain_Runner = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 900
+NOT = { year = 913 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Marchers_Menace = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 900
+NOT = { year = 913 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Sea_Crow = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 913
+NOT = { year = 926 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Chasind_One = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 913
+NOT = { year = 926 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Andraste's_Wrath = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 913
+NOT = { year = 926 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Blessed_Dragon = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 913
+NOT = { year = 926 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Fist_of_Kirkwall = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 913
+NOT = { year = 926 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Sea's_Assassin = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 913
+NOT = { year = 926 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Exalted_Marcher = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 926
+NOT = { year = 939 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_The_Wounded_God = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 926
+NOT = { year = 939 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Tevinter
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Seekers_Bane = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 926
+NOT = { year = 939 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Orphan's_Bastion = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 926
+NOT = { year = 939 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Waking_Sea_Ravager = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 926
+NOT = { year = 939 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Fair_Maiden = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 926
+NOT = { year = 939 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_River_Raider = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 939
+NOT = { year = 952 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Alamarri_Noble = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 939
+NOT = { year = 952 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Grand_Templar = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 939
+NOT = { year = 952 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Crow's_Revenge = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 939
+NOT = { year = 952 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Elven_Scourge = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 939
+NOT = { year = 932 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Viscounts's_Rage = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 939
+NOT = { year = 952 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Bannorn's_Might = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 952
+NOT = { year = 965 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Wave_Ruler = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 952
+NOT = { year = 965 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Rejects_of_Kont-arr = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 952
+NOT = { year = 965 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Ironfist = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 952
+NOT = { year = 965 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Champion's_Blight = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 952
+NOT = { year = 965 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Floating_Tavern = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 952
+NOT = { year = 965 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Teyrn's_Law = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 965
+NOT = { year = 978 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Night's_Mistress = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 965
+NOT = { year = 978 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Storm_Runner = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 965
+NOT = { year = 978 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Lord's_Triumph = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 965
+NOT = { year = 978 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Widow_Maker = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 965
+NOT = { year = 978 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Merchant's_Fear = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 978
+NOT = { year = 991 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Ghost_of_Amaranthine = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 978
+NOT = { year = 991 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Marcher's_Plight = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 978
+NOT = { year = 991 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Cursed_Sea = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 978
+NOT = { year = 991 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Tevinter
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Rialto_Raider = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 978
+NOT = { year = 991 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Queen's_Glory = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 978
+NOT = { year = 991 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Raging_Invader = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 991
+NOT = { year = 1000 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Blessed_Rebel = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 991
+NOT = { year = 1000 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Silent_Death = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 991
+NOT = { year = 1000 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Dragon_of_Rivain = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 991
+NOT = { year = 1000 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Black_Storm = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 991
+NOT = { year = 1000 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Thundering_champion = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 991
+NOT = { year = 1000 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_High_Seas_Wanderer = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1002
+NOT = { year = 1011 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Marauding_Dwarf = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year 1000
+NOT = { year = 1013 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Rivain_Beauty = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1000
+NOT = { year = 1013 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Calenhad's_Fury = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1000
+NOT = { year = 1013 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Defiant_Rebel = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1000
+NOT = { year = 1013 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Ancient_Glory = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1000
+NOT = { year = 1013 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Merchant_Chaser = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1000
+NOT = { year = 1013 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Noble_Slaughter = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1014
+NOT = { year = 1024 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Storm's_Rampage = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1013
+NOT = { year = 1026 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Mighty_Golem = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1013
+NOT = { year = 1026 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Tevinter
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Swimming_Mabari = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1013
+NOT = { year = 1026 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan 
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Salty_Bar_Maid = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1013
+NOT = { year = 1026 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Wicked_Wench = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1013
+NOT = { year = 1026 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Maimed_Mistress = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1013
+NOT = { year = 1026 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Warden's_Call = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1028
+NOT = { year = 1041 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Golden_Rod = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1026
+NOT = { year = 1039 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Mighty_Beast = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1026
+NOT = { year = 1039 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Tevinter
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Templars_Dread = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1026
+NOT = { year = 1039 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Lusty_Lady = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1026
+NOT = { year = 1039 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Menacing_Marauder = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1026
+NOT = { year = 1039 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Dancing_Lion = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1026
+NOT = { year = 1039 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Dawning_Age = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1042
+NOT = { year = 1055 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Leviathan = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1039
+NOT = { year = 1052 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Dawn's_Hammer = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1039
+NOT = { year = 1052 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Antivan_Victory = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1039
+NOT = { year = 1052 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Drunken_Mate = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1039
+NOT = { year = 1052 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Rivain_Raider = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1039
+NOT = { year = 1052 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Lightning_Striker = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1039
+NOT = { year = 1052 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Tevinter_Terror = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1057
+NOT = { year = 1069 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Tevinter
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Prince's_Rage = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1052
+NOT = { year = 1065 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Maritime_Menace = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1052
+NOT = { year = 1065 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Chant_of_Plight = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1052
+NOT = { year = 1065 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Landless_Lord = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1052
+NOT = { year = 1065 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Silent_Storm = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1052
+NOT = { year = 1065 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Rancid_Raider = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1052
+NOT = { year = 1065 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Unknown_Ravager = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1070
+NOT = { year = 1080 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Golden_Goddess = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1065
+NOT = { year = 1078 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Crow's_Wrath = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1065
+NOT = { year = 1078 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Slippery_Slaver  = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1065
+NOT = { year = 1078 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Tevinter
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Merchant_Hunter = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1065
+NOT = { year = 1078 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Lucky_Lurker = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1065
+NOT = { year = 1078 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Sea_Serpent = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1065
+NOT = { year = 1078 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Perfect_Hunter = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1082
+NOT = { year = 1090 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Exalted_Maiden = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1078
+NOT = { year = 1091 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Chasind_Sailor = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1078
+NOT = { year = 1091 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Antivan_Brawler = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1078
+NOT = { year = 1091 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Savage_Master = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1078
+NOT = { year = 1091 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Champion's_Might = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1078
+NOT = { year = 1091 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Tired_Bandit = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1078
+NOT = { year = 1091 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Banished_Bandit = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1092
+NOT = { year = 1100 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Master's_Thrall = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1091
+NOT = { year = 1100 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Marcher's_Remembrance = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1091
+NOT = { year = 1100 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Burning_Spirit = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1091
+NOT = { year = 1100 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Sea's_Wind = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1091
+NOT = { year = 1100 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Free_Marcher
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Bringer_of_Darkness = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1091
+NOT = { year = 1100 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_Wealthy_Prince = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1091
+NOT = { year = 1100 }
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_andrastes_arse = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1100
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_antivan_scourge = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1100
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = fereldan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_old_hand = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1100
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Antivan
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_last_of_estwatch = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1100
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
+
+d_miracle_of_sound = {
+color = { 255 255 0 }
+color2 = { 255 255 255 }
+ 
+mercenary = yes
+ 
+allow = { religion = andrastian_chantry
+year = 1100
+}
+ 
+title = "MERC_PIRATE_CAPTAIN"
+foa = "FOA_PIRATE_CAPTAIN"
+ 
+landless = yes
+primary = yes
+independent = yes
+ 
+culture = Rivaini
+religion = andrastian_chantry
+ 
+mercenary_type = pirate_single_ship_composition
+}
