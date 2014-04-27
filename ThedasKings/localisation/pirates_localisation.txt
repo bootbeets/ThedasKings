@@ -1,0 +1,116 @@
+d_Golden_Dwarf;The Golden Dwarf;;;;;;;;;;;;;x
+d_Antivan_Goddess;The Antivan Goddess;;;;;;;;;;;;;x
+d_Salty_Mabari;The Salty Mabari;;;;;;;;;;;;;x
+d_Kings_Arse;The Kings Arse;;;;;;;;;;;;;x
+d_Qunari_Killer;The Qunari killer;;;;;;;;;;;;;x
+d_Rivain_Runner;The Rivain Runner;;;;;;;;;;;;;x
+d_Marchers_Menace;The Marchers Menace;;;;;;;;;;;;;x
+d_Ghost_of_Denerim;The Ghost of Denerim;;;;;;;;;;;;;x
+d_Sea_Crow;The Sea Crow;;;;;;;;;;;;;x
+d_Chasind_One;The Chasind One;;;;;;;;;;;;;x
+d_Andrastes_Wrath;Andrastes Wrath;;;;;;;;;;;;;x
+d_Blessed_Dragon;The Blessed Dragon;;;;;;;;;;;;;x
+d_Fist_of_Kirkwall;The Fist of Kirkwall;;;;;;;;;;;;;x
+d_Seas_Assassin;The Sea's Assassin;;;;;;;;;;;;;x
+d_Blighted_Sailor;The Blighted Sailor;;;;;;;;;;;;;x
+d_Exalted_Marcher;The Exalted Marcher;;;;;;;;;;;;;x
+d_The_Wounded_God;The Wounded God;;;;;;;;;;;;;x
+d_Seekers_Bane;The Seekers Bane;;;;;;;;;;;;;x
+d_Orphans_Bastion;The Orphan's Bastion;;;;;;;;;;;;;x
+d_Waking_Sea_Ravager;The Waking Sea Ravager;;;;;;;;;;;;;x
+d_Fair_Maiden;The Fair Maiden;;;;;;;;;;;;;x
+d_Qunari_Crusher;The Qunari Crusher;;;;;;;;;;;;;x
+d_River_Raider;The River Raider;;;;;;;;;;;;;x
+d_Alamarri_Noble;The Alamarri Noble;;;;;;;;;;;;;x
+d_Grand_Templar;The Grand Templar;;;;;;;;;;;;;x
+d_Crows_Revenge;The Crow's Revenge;;;;;;;;;;;;;x
+d_Elven_Scourge;The Elven Scourge;;;;;;;;;;;;;x
+d_Viscounts_Rage;The Viscount's Rage;;;;;;;;;;;;;x
+d_Scums_Haven;Scum's Haven;;;;;;;;;;;;;x
+d_Bannorns_Might;The Bannorn's Might;;;;;;;;;;;;;x
+d_Wave_Ruler;The Wave Ruler;;;;;;;;;;;;;x
+d_Reject_of_Kont_arr;The Reject of Kont-arr;;;;;;;;;;;;;x
+d_Ironfist;The Ironfist;;;;;;;;;;;;;x
+d_Champions_Blight;The Champion's Blight;;;;;;;;;;;;;x
+d_Floating_Tavern;The Floating Tavern;;;;;;;;;;;;;x
+d_High_Seas_Plunderer;The High Seas Plunderer;;;;;;;;;;;;;x
+d_Teyrns_Law;The Teyrn's Law;;;;;;;;;;;;;x
+d_Nights_Mistress;The Night's Mistress;;;;;;;;;;;;;x
+d_Storm_Runner;The Storm Runner;;;;;;;;;;;;;x
+d_Lords_Triumph;The Lord's Triumph;;;;;;;;;;;;;x
+d_Widow_Maker;The Widow Maker;;;;;;;;;;;;;x
+d_Coastlands_Raider;The Coastlands Raider;;;;;;;;;;;;;x
+d_Merchants_Fear;The Merchant's Fear;;;;;;;;;;;;;x
+d_Ghost_of_Amaranthine;The Ghost of Amaranthine;;;;;;;;;;;;;x
+d_Marchers_Plight;The Marcher's Plight;;;;;;;;;;;;;x
+d_Cursed_Sea;The Cursed Sea;;;;;;;;;;;;;x
+d_Rialto_Raider;The Rialto Raider;;;;;;;;;;;;;x
+d_Queens_Glory;The Queen's Glory;;;;;;;;;;;;;x
+d_Dawns_Light;The Dawn's Light;;;;;;;;;;;;;x
+d_Raging_Invader;The Raging Invader;;;;;;;;;;;;;x
+d_Blessed_Rebel;The Blessed Rebel;;;;;;;;;;;;;x
+d_Silent_Death;The Silent Death;;;;;;;;;;;;;x
+d_Dragon_of_Rivain;The Dragon of Rivain;;;;;;;;;;;;;x
+d_Black_Storm;The Black Storm;;;;;;;;;;;;;x
+d_Thundering_champion;The Thundering Champion;;;;;;;;;;;;;x
+d_High_Seas_Wanderer;The High Sea's Wanderer;;;;;;;;;;;;;x
+d_Marauding_Dwarf;The Marauding Dwarf;;;;;;;;;;;;;x
+d_Rivain_Beauty;The Rivain Beauty;;;;;;;;;;;;;x
+d_Calenhads_Fury;Calenhad's Fury;;;;;;;;;;;;;x
+d_Defiant_Rebel;The Defiant Rebel;;;;;;;;;;;;;x
+d_Ancient_Glory;The Ancient Glory;;;;;;;;;;;;;x
+d_Merchant_Chaser;The Merchant Chaser;;;;;;;;;;;;;x
+d_Noble_Slaughter;The Noble Slaughter;;;;;;;;;;;;;x
+d_Storms_Rampage;The Storms Rampage;;;;;;;;;;;;;x
+d_Mighty_Golem;The Mighty Golem;;;;;;;;;;;;;x
+d_Swimming_Mabari;The Swimming Mabari;;;;;;;;;;;;;x
+d_Salty_Bar_Maid;The Salty Bar Maid;;;;;;;;;;;;;x
+d_Wicked_Wench;The Wicked Wench;;;;;;;;;;;;;x
+d_Maimed_Mistress;The Maimed Mistress;;;;;;;;;;;;;x
+d_Warden's_Call;The Warden's Call;;;;;;;;;;;;;x
+d_Golden_Rod;The Golden Rod;;;;;;;;;;;;;x
+d_Mighty_Beast;The Mighty beast;;;;;;;;;;;;;x
+d_Templars_Dread;The Templars Dread;;;;;;;;;;;;;x
+d_Lusty_Lady;The Lusty Lady;;;;;;;;;;;;;x
+d_Menacing_Marauder;The Menacing Marauder;;;;;;;;;;;;;x
+d_Dancing_Lion;The Dancing Lion;;;;;;;;;;;;;x
+d_Dawning_Age;The Dawning Age;;;;;;;;;;;;;x
+d_Leviathan;The Leviathan;;;;;;;;;;;;;x
+d_Dawns_Hammer;Dawn's Hammer;;;;;;;;;;;;;x
+d_Antivan_Victory;Antivan Victory;;;;;;;;;;;;;x
+d_Drunken_Mate;The Drunken Mate;;;;;;;;;;;;;x
+d_Rivain_Raider;The Rivain Raider;;;;;;;;;;;;;x
+d_Lightning_Striker;The Lightning Striker;;;;;;;;;;;;;x
+d_Tevinter_Terror;The Tevinter Terror;;;;;;;;;;;;;x
+d_Princes_Rage;The Prince's Rage;;;;;;;;;;;;;x
+d_Maritime_Menace;The Maritime Menace;;;;;;;;;;;;;x
+d_Chant_of_Plight;The Chant of Plight;;;;;;;;;;;;;x
+d_Landless_Lord;The Landless Lord;;;;;;;;;;;;;x
+d_Silent_Storm;The Silent Storm;;;;;;;;;;;;;x
+d_Rancid_Raider;The Rancid Raider;;;;;;;;;;;;;x
+d_Unknown_Ravager;The Unknown Ravager;;;;;;;;;;;;;x
+d_Golden_Goddess;The Golden Goddess;;;;;;;;;;;;;x
+d_Crows_Wrath;The Crow's Wrath;;;;;;;;;;;;;x
+d_Slippery_Slaver;The Slippery Slaver;;;;;;;;;;;;;x
+d_Merchant_Hunter;The Merchant Hunter;;;;;;;;;;;;;x
+d_Lucky_Lurker;The Lucky Lurker;;;;;;;;;;;;;x
+d_Sea_Serpent;The Sea Serpent;;;;;;;;;;;;;x
+d_Perfect_Hunter;The Perfect Hunter;;;;;;;;;;;;;x
+d_Exalted_Maiden;The Exalted Maiden;;;;;;;;;;;;;x
+d_Chasind_Sailor;The Chasind Sailor;;;;;;;;;;;;;x
+d_Antivan_Brawler;The Antivan Brawler;;;;;;;;;;;;;x
+d_Savage_Master;The Savage Master;;;;;;;;;;;;;x
+d_Champions_Might;The Champion's Might;;;;;;;;;;;;;x
+d_Tired_Bandit;The Tired Bandit;;;;;;;;;;;;;x
+d_Banished_Bandit;The Banished Bandit;;;;;;;;;;;;;x
+d_Masters_Thrall;The Master's Thrall;;;;;;;;;;;;;x
+d_Marchers_Remembrance;The Marcher's Remembrance;;;;;;;;;;;;;x
+d_Burning_Spirit;The Burning Spirit;;;;;;;;;;;;;x
+d_Seas_Wind;The Sea's Wind;;;;;;;;;;;;;x
+d_Bringer_of_Darkness;The Bringer of Darkness;;;;;;;;;;;;;x
+d_Wealthy_Prince;The Wealthy Prince;;;;;;;;;;;;;x
+d_andrastes_arse;Andraste's Arse;;;;;;;;;;;;;x
+d_antivan_scourge;Antivan Scourge;;;;;;;;;;;;;x
+d_old_hand;The Old Hand;;;;;;;;;;;;;x
+d_last_of_estwatch;Last of Estwatch;;;;;;;;;;;;;x
+d_miracle_of_sound;The Miracle of Sound;;;;;;;;;;;;;x
